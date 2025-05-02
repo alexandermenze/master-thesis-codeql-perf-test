@@ -63,19 +63,19 @@ jobs:
             2>&1 | tee $OUTPUT_FILE
 
       - name: Upload resource usage plot
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: psrecord-plot-${{ env.REPO_NAME }}
           path: ${{ env.REPO_NAME }}.psrecord.png
 
       - name: Upload resource usage log
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: psrecord-log-${{ env.REPO_NAME }}
           path: ${{ env.REPO_NAME }}.psrecord.log
 
       - name: Upload script output log
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: codeql-output-${{ env.REPO_NAME }}
           path: ${{ env.REPO_NAME }}.output.log
