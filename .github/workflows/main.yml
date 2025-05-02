@@ -38,7 +38,7 @@ jobs:
           pip install psrecord
 
       - name: Initialize CodeQL CLI
-        uses: github/codeql-action/init@v2
+        uses: github/codeql-action/init@v3
         with:
           tools-path: codeql
 
