@@ -47,8 +47,8 @@ jobs:
         run: |
           CODEQL_VERSION="2.21.2"
           PLATFORM="linux64"
-          ARCHIVE="codeql-bundle-${CODEQL_VERSION}-${PLATFORM}.tar.gz"
-          DOWNLOAD_URL="https://github.com/github/codeql-action/releases/download/codeql-bundle-${CODEQL_VERSION}/${ARCHIVE}"
+          ARCHIVE="codeql-bundle.tar.gz"
+          DOWNLOAD_URL="https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.21.2/codeql-bundle-linux64.tar.gz"
           echo "Downloading CodeQL from $DOWNLOAD_URL"
           curl -L "$DOWNLOAD_URL" -o "$ARCHIVE"
           mkdir codeql
