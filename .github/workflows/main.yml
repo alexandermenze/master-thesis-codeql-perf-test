@@ -19,20 +19,24 @@ jobs:
       REPO_INPUT: ${{ github.event.inputs.repository }}
     steps:
       - name: Checkout workflow repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
       - name: Checkout external repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repository }}
           ref: ${{ github.event.inputs.ref }}
           path: target-repo
           fetch-depth: 1
 
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.x'
+
       - name: Set up Python & install psrecord
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
       - run: |
