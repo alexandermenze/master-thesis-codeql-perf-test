@@ -37,7 +37,7 @@ jobs:
           python-version: '3.x'
       - run: |
           python -m pip install --upgrade pip
-          pip install psrecord[plot]
+          pip install psrecord
 
       - name: Initialize CodeQL CLI
         uses: github/codeql-action/init@v3
@@ -58,7 +58,6 @@ jobs:
           SCRIPT=./run-analysis.sh
           QUERY_FILE="identify-call-paths.ql"
           LOG_FILE="${REPO_NAME}.psrecord.log"
-          PLOT_FILE="${REPO_NAME}.psrecord.png"
           OUTPUT_FILE="${REPO_NAME}.output.log"
 
           chmod +x $SCRIPT
@@ -66,14 +65,7 @@ jobs:
           psrecord "$SCRIPT -s target-repo -d db -q identify-call-paths.ql" \
             --include-children \
             --log "$LOG_FILE" \
-            --plot "$PLOT_FILE" \
             2>&1 | tee $OUTPUT_FILE
-
-      - name: Upload resource usage plot
-        uses: actions/upload-artifact@v4
-        with:
-          name: psrecord-plot-${{ env.REPO_NAME }}
-          path: ${{ env.REPO_NAME }}.psrecord.png
 
       - name: Upload resource usage log
         uses: actions/upload-artifact@v4
