@@ -37,7 +37,7 @@ jobs:
           python-version: '3.x'
       - run: |
           python -m pip install --upgrade pip
-          pip install psrecord
+          pip install psrecord[plot]
 
       - name: Initialize CodeQL CLI
         uses: github/codeql-action/init@v3
