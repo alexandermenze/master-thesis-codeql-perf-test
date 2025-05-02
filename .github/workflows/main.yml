@@ -1,0 +1,80 @@
+name: Monitor CodeQL Query Performance
+
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: 'GitHub repo to analyze (owner/repo)'
+        required: true
+        default: 'octocat/Hello-World'
+      ref:
+        description: 'Branch, Tag or SHA to checkout'
+        required: false
+        default: 'main'
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout workflow repository
+        uses: actions/checkout@v3
+        with:
+          # Wir wollen den default Branch haben, auf dem das Workflow-Repo liegt
+          fetch-depth: 1
+
+      - name: Checkout external repository
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.inputs.repository }}
+          ref: ${{ github.event.inputs.ref }}
+          path: target-repo
+          fetch-depth: 1
+
+      - name: Set up Python & install psrecord
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: |
+          python -m pip install --upgrade pip
+          pip install psrecord
+
+      - name: Initialize CodeQL CLI
+        uses: github/codeql-action/init@v2
+        with:
+          tools-path: codeql
+
+      - name: Run CodeQL script under psrecord
+        run: |
+          REPO_NAME=${{ github.event.inputs.repository//\//- }}
+          SCRIPT=./run-analysis.sh
+          QUERY_FILE="identify-call-paths.ql"
+          LOG_FILE="${REPO_NAME}.psrecord.log"
+          PLOT_FILE="${REPO_NAME}.psrecord.png"
+          OUTPUT_FILE="${REPO_NAME}.output.log"
+
+          chmod +x $SCRIPT
+
+          psrecord "$SCRIPT -s target-repo -d db -q " \
+            --include-children \
+            --log "$LOG_FILE" \
+            --plot "$PLOT_FILE" \
+            2>&1 | tee $OUTPUT_FILE
+
+      - name: Upload resource usage plot
+        uses: actions/upload-artifact@v3
+        with:
+          name: psrecord-plot-${{ github.event.inputs.repository//\//- }}
+          path: ${{ github.event.inputs.repository//\//- }}.psrecord.png
+
+      - name: Upload resource usage log
+        uses: actions/upload-artifact@v3
+        with:
+          name: psrecord-log-${{ github.event.inputs.repository//\//- }}
+          path: ${{ github.event.inputs.repository//\//- }}.psrecord.log
+
+      - name: Upload script output log
+        uses: actions/upload-artifact@v3
+        with:
+          name: codeql-output-${{ github.event.inputs.repository//\//- }}
+          path: ${{ github.event.inputs.repository//\//- }}.output.log
+
