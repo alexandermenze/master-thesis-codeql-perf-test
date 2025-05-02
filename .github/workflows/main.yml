@@ -40,6 +40,7 @@ jobs:
       - name: Initialize CodeQL CLI
         uses: github/codeql-action/init@v3
         with:
+          languages: csharp
           tools-path: codeql
 
       - name: Prepare repository name
