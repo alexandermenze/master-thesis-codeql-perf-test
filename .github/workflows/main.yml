@@ -19,7 +19,6 @@ jobs:
       - name: Checkout workflow repository
         uses: actions/checkout@v3
         with:
-          # Wir wollen den default Branch haben, auf dem das Workflow-Repo liegt
           fetch-depth: 1
 
       - name: Checkout external repository
@@ -43,9 +42,12 @@ jobs:
         with:
           tools-path: codeql
 
+      - name: Prepare repository name
+        run: |
+          echo "REPO_NAME=${REPO_INPUT//\//-}" >> $GITHUB_ENV
+
       - name: Run CodeQL script under psrecord
         run: |
-          REPO_NAME=${{ github.event.inputs.repository//\//- }}
           SCRIPT=./run-analysis.sh
           QUERY_FILE="identify-call-paths.ql"
           LOG_FILE="${REPO_NAME}.psrecord.log"
@@ -63,18 +65,18 @@ jobs:
       - name: Upload resource usage plot
         uses: actions/upload-artifact@v3
         with:
-          name: psrecord-plot-${{ github.event.inputs.repository//\//- }}
-          path: ${{ github.event.inputs.repository//\//- }}.psrecord.png
+          name: psrecord-plot-${{ env.REPO_NAME }}
+          path: ${{ env.REPO_NAME }}.psrecord.png
 
       - name: Upload resource usage log
         uses: actions/upload-artifact@v3
         with:
-          name: psrecord-log-${{ github.event.inputs.repository//\//- }}
-          path: ${{ github.event.inputs.repository//\//- }}.psrecord.log
+          name: psrecord-log-${{ env.REPO_NAME }}
+          path: ${{ env.REPO_NAME }}.psrecord.log
 
       - name: Upload script output log
         uses: actions/upload-artifact@v3
         with:
-          name: codeql-output-${{ github.event.inputs.repository//\//- }}
-          path: ${{ github.event.inputs.repository//\//- }}.output.log
+          name: codeql-output-${{ env.REPO_NAME }}
+          path: ${{ env.REPO_NAME }}.output.log
 
