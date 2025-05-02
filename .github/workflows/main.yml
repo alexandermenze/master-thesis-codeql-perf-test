@@ -43,18 +43,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install psrecord
 
-      - name: Initialize CodeQL CLI
-        id: init-codeql
-        uses: github/codeql-action/init@v3
-        with:
-          languages: csharp
-
-      - name: Add CodeQL to PATH using init output
+      - name: Download and extract CodeQL
         run: |
-          CODEQL_BIN_PATH=${{ steps.init-codeql.outputs.codeql-path }}
-          CODEQL_DIR=$(dirname "$CODEQL_BIN_PATH")
-          echo "Adding CodeQL directory to PATH: $CODEQL_DIR"
-          echo "$CODEQL_DIR" >> $GITHUB_PATH
+          CODEQL_VERSION="2.21.2"
+          PLATFORM="linux64"
+          ARCHIVE="codeql-bundle-${CODEQL_VERSION}-${PLATFORM}.tar.gz"
+          DOWNLOAD_URL="https://github.com/github/codeql-action/releases/download/codeql-bundle-${CODEQL_VERSION}/${ARCHIVE}"
+          echo "Downloading CodeQL from $DOWNLOAD_URL"
+          curl -L "$DOWNLOAD_URL" -o "$ARCHIVE"
+          mkdir codeql
+          tar -xzf "$ARCHIVE" -C codeql --strip-components=1
+          echo "Adding CodeQL binary directory to PATH: $PWD/codeql"
+          echo "$PWD/codeql" >> $GITHUB_PATH
 
       - name: Prepare repository name
         run: |
