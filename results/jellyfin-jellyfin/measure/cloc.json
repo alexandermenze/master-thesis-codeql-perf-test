@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 3.37272310256958,
+  "n_files"            : 1763,
+  "n_lines"            : 223272,
+  "files_per_second"   : 522.723018280635,
+  "lines_per_second"   : 66199.327134177,
+  "report_file"        : "jellyfin-jellyfin.cloc.json"},
+"C#" :{
+  "nFiles": 1763,
+  "blank": 31942,
+  "comment": 40630,
+  "code": 150700},
+"SUM": {
+  "blank": 31942,
+  "comment": 40630,
+  "code": 150700,
+  "nFiles": 1763} }

@@ -1,0 +1,3 @@
+project (github id): jellyfin/jellyfin
+ref (branch / tag / commit hash): v10.10.7
+sln-path (default '.'): 
