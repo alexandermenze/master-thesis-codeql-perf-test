@@ -55,6 +55,14 @@ print_timing() {
          "$step_name" "$offset" "$duration"
 }
 
+# Schritt 0: dotnet restore. Verhindert Abhängigkeit von Netzwerk während 'database create', das implizit dotnet build aufruft.
+STEP="Schritt 0: dotnet restore"
+echo "$STEP"
+STEP0_START=$(date +%s%3N)
+dotnet restore "$SOURCE_ROOT"
+STEP0_END=$(date +%s%3N)
+print_timing "$STEP" "$STEP0_START" "$STEP0_END"
+
 # Schritt 1: Datenbank anlegen
 STEP="Schritt 1: Erstelle CodeQL-Datenbank"
 echo "$STEP"
