@@ -1,0 +1,184 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.ApprovalTests/Serilog.ApprovalTests.csproj (in 2.68 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj (in 2.74 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj (in 3.05 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj (in 3.08 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj (in 439 ms).
+-> Schritt 0: dotnet restore gestartet bei +1 ms, Dauer: 5658 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+[2025-05-03 09:13:30] [build-stdout] CodeQL C# autobuilder
+[2025-05-03 09:13:30] [build-stdout] Working directory: /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo
+[2025-05-03 09:13:31] [build-stdout] Attempting to build using .NET Core
+[2025-05-03 09:13:31] [build-stdout] 8.0.408 [/usr/share/dotnet/sdk]
+[2025-05-03 09:13:31] [build-stdout] 9.0.203 [/usr/share/dotnet/sdk]
+[2025-05-03 09:13:31] [build-stdout] Running chmod u+x /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet-install.sh
+[2025-05-03 09:13:31] [build-stdout] Exit code 0
+[2025-05-03 09:13:31] [build-stdout] Attempting to download .NET 8.0.100
+[2025-05-03 09:13:31] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet-install.sh --channel release --version 8.0.100 --install-dir /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet
+[2025-05-03 09:13:32] [build-stdout] dotnet-install: Attempting to download using primary link https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-linux-x64.tar.gz
+[2025-05-03 09:13:33] [build-stdout] dotnet-install: Remote file https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-linux-x64.tar.gz size is 214395068 bytes.
+[2025-05-03 09:13:33] [build-stdout] dotnet-install: Extracting archive from https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.100/dotnet-sdk-8.0.100-linux-x64.tar.gz
+[2025-05-03 09:13:38] [build-stdout] dotnet-install: Downloaded file size is 214395068 bytes.
+[2025-05-03 09:13:38] [build-stdout] dotnet-install: The remote and local file sizes are equal.
+[2025-05-03 09:13:38] [build-stdout] dotnet-install: Installed version is 8.0.100
+[2025-05-03 09:13:38] [build-stdout] dotnet-install: Adding to current process PATH: `/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet`. Note: This change will be visible only when sourcing script.
+[2025-05-03 09:13:38] [build-stdout] dotnet-install: Note that the script does not resolve dependencies during installation.
+[2025-05-03 09:13:38] [build-stdout] dotnet-install: To check the list of dependencies, go to https://learn.microsoft.com/dotnet/core/install, select your operating system and check the "Dependencies" section.
+[2025-05-03 09:13:38] [build-stdout] dotnet-install: Installation finished successfully.
+[2025-05-03 09:13:38] [build-stdout] Exit code 0
+[2025-05-03 09:13:38] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet --info
+[2025-05-03 09:13:38] [build-stdout] .NET SDK:
+[2025-05-03 09:13:38] [build-stdout]  Version:           8.0.100
+[2025-05-03 09:13:38] [build-stdout]  Commit:            57efcf1350
+[2025-05-03 09:13:38] [build-stdout]  Workload version:  8.0.100-manifests.6c33ef20
+[2025-05-03 09:13:38] [build-stdout] Runtime Environment:
+[2025-05-03 09:13:38] [build-stdout]  OS Name:     ubuntu
+[2025-05-03 09:13:38] [build-stdout]  OS Version:  24.04
+[2025-05-03 09:13:38] [build-stdout]  OS Platform: Linux
+[2025-05-03 09:13:38] [build-stdout]  RID:         linux-x64
+[2025-05-03 09:13:38] [build-stdout]  Base Path:   /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/sdk/8.0.100/
+[2025-05-03 09:13:38] [build-stdout] .NET workloads installed:
+[2025-05-03 09:13:38] [build-stdout]  Workload version: 8.0.100-manifests.6c33ef20
+[2025-05-03 09:13:38] [build-stdout] There are no installed workloads to display.
+[2025-05-03 09:13:38] [build-stdout] Host:
+[2025-05-03 09:13:38] [build-stdout]   Version:      8.0.0
+[2025-05-03 09:13:38] [build-stdout]   Architecture: x64
+[2025-05-03 09:13:38] [build-stdout]   Commit:       5535e31a71
+[2025-05-03 09:13:38] [build-stdout] .NET SDKs installed:
+[2025-05-03 09:13:38] [build-stdout]   8.0.100 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/sdk]
+[2025-05-03 09:13:38] [build-stdout] .NET runtimes installed:
+[2025-05-03 09:13:38] [build-stdout]   Microsoft.AspNetCore.App 8.0.0 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/shared/Microsoft.AspNetCore.App]
+[2025-05-03 09:13:38] [build-stdout]   Microsoft.NETCore.App 8.0.0 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/shared/Microsoft.NETCore.App]
+[2025-05-03 09:13:38] [build-stdout] Other architectures found:
+[2025-05-03 09:13:38] [build-stdout]   None
+[2025-05-03 09:13:38] [build-stdout] Environment variables:
+[2025-05-03 09:13:38] [build-stdout]   DOTNET_ROOT       [/usr/share/dotnet]
+[2025-05-03 09:13:38] [build-stdout] global.json file:
+[2025-05-03 09:13:38] [build-stdout]   /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/global.json
+[2025-05-03 09:13:38] [build-stdout] Learn more:
+[2025-05-03 09:13:38] [build-stdout]   https://aka.ms/dotnet/info
+[2025-05-03 09:13:38] [build-stdout] Download .NET:
+[2025-05-03 09:13:38] [build-stdout]   https://aka.ms/dotnet/download
+[2025-05-03 09:13:38] [build-stdout] Exit code 0
+[2025-05-03 09:13:38] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet clean /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln
+[2025-05-03 09:13:38] [build-stdout] MSBuild version 17.8.3+195e7f5a3 for .NET
+[2025-05-03 09:13:39] [build-stdout] Build started 05/03/2025 09:13:39.
+[2025-05-03 09:13:39] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" on node 1 (Clean target(s)).
+[2025-05-03 09:13:39] [build-stdout]      1>ValidateSolutionConfiguration:
+[2025-05-03 09:13:39] [build-stdout]          Building solution configuration "Debug|Any CPU".
+[2025-05-03 09:13:39] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.ApprovalTests/Serilog.ApprovalTests.csproj" (2) on node 1 (Clean target(s)).
+[2025-05-03 09:13:39] [build-stdout]      2>CoreClean:
+[2025-05-03 09:13:39] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:13:40] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (3) on node 2 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (3:2) on node 2 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      3>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:13:40] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (4) on node 3 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (4:2) on node 1 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      4>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:13:40] [build-stdout]      4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (4:3) on node 3 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      4>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:13:40] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (6) on node 4 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (6:2) on node 1 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      6>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/net462/".
+[2025-05-03 09:13:40] [build-stdout]      6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (6:3) on node 4 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      6>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/netstandard2.0/".
+[2025-05-03 09:13:40] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (3:3) on node 3 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      3>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:13:40] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (3:4) on node 2 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      3>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/net7.0/".
+[2025-05-03 09:13:40] [build-stdout]    4:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (4:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (5:12) on node 2 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      5>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:13:40] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]    6:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (6:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (5:13) on node 1 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      5>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/netstandard2.0/".
+[2025-05-03 09:13:40] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]    4:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (4:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (5:15) on node 1 (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      5>CoreClean:
+[2025-05-03 09:13:40] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:13:40] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.ApprovalTests/Serilog.ApprovalTests.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout]      1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" (Clean target(s)).
+[2025-05-03 09:13:40] [build-stdout] Build succeeded.
+[2025-05-03 09:13:40] [build-stdout]     0 Warning(s)
+[2025-05-03 09:13:40] [build-stdout]     0 Error(s)
+[2025-05-03 09:13:40] [build-stdout] Time Elapsed 00:00:01.93
+[2025-05-03 09:13:41] [build-stdout] Exit code 0
+[2025-05-03 09:13:41] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet restore /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln
+[2025-05-03 09:13:42] [build-stdout]   Determining projects to restore...
+[2025-05-03 09:13:43] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.ApprovalTests/Serilog.ApprovalTests.csproj (in 349 ms).
+[2025-05-03 09:13:43] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj (in 350 ms).
+[2025-05-03 09:13:44] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj (in 1 sec).
+[2025-05-03 09:13:44] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj (in 1.04 sec).
+[2025-05-03 09:13:44] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj (in 971 ms).
+[2025-05-03 09:13:44] [build-stdout] Exit code 0
+[2025-05-03 09:13:44] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet build --no-incremental /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln
+[2025-05-03 09:13:44] [build-stdout] MSBuild version 17.8.3+195e7f5a3 for .NET
+[2025-05-03 09:13:46] [build-stdout]   Determining projects to restore...
+[2025-05-03 09:13:47] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-03 09:14:13] [build-stdout]   Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/netstandard2.0/Serilog.dll
+[2025-05-03 09:14:16] [build-stdout]   Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/net6.0/Serilog.dll
+[2025-05-03 09:14:17] [build-stdout]   Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/net8.0/Serilog.dll
+[2025-05-03 09:14:25] [build-stdout]   Serilog.ApprovalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.ApprovalTests/bin/Debug/net8.0/Serilog.ApprovalTests.dll
+[2025-05-03 09:14:30] [build-stdout]   TestDummies -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/bin/Debug/netstandard2.0/TestDummies.dll
+[2025-05-03 09:14:31] [build-stdout]   Serilog.PerformanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/bin/Debug/net6.0/Serilog.PerformanceTests.dll
+[2025-05-03 09:14:40] [build-stdout]   Serilog.PerformanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/bin/Debug/net8.0/Serilog.PerformanceTests.dll
+[2025-05-03 09:14:47] [build-stdout]   Serilog.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/bin/Debug/net7.0/Serilog.Tests.dll
+[2025-05-03 09:15:02] [build-stdout]   TestDummies -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/bin/Debug/net462/TestDummies.dll
+[2025-05-03 09:15:06] [build-stdout]   Serilog.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/bin/Debug/net6.0/Serilog.Tests.dll
+[2025-05-03 09:15:06] [build-stdout]   Serilog.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/bin/Debug/net8.0/Serilog.Tests.dll
+[2025-05-03 09:15:06] [build-stdout] Build succeeded.
+[2025-05-03 09:15:06] [build-stdout]     0 Warning(s)
+[2025-05-03 09:15:06] [build-stdout]     0 Error(s)
+[2025-05-03 09:15:06] [build-stdout] Time Elapsed 00:01:21.87
+[2025-05-03 09:15:06] [build-stdout] Exit code 0
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 11.94 MiB; string pool: 7.03 MiB).
+TRAP import complete (11s).
+Finished zipping source archive (881.72 KiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +5661 ms, Dauer: 115847 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 52.6s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 58.1s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +121510 ms, Dauer: 117221 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +238733 ms, Dauer: 717 ms
+
+CSV-Ausgabe: serilog-serilog.results.csv
+Starting up command './run-analysis.sh -s target-repo/. -d db -q identify-call-paths.ql -c serilog-serilog.results.csv' and attaching to process
+Process finished (239.45 seconds)

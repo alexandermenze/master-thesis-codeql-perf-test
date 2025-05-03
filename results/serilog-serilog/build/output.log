@@ -1,0 +1,35 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj (in 2.95 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.ApprovalTests/Serilog.ApprovalTests.csproj (in 2.94 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/Serilog.Tests.csproj (in 2.96 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/TestDummies.csproj (in 3.65 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/Serilog.PerformanceTests.csproj (in 1.91 sec).
+-> Schritt 0: dotnet restore gestartet bei +2 ms, Dauer: 7400 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/netstandard2.0/Serilog.dll
+  Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/net6.0/Serilog.dll
+  Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/net8.0/Serilog.dll
+  TestDummies -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/bin/Debug/netstandard2.0/TestDummies.dll
+  TestDummies -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestDummies/bin/Debug/net462/TestDummies.dll
+  Serilog.ApprovalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.ApprovalTests/bin/Debug/net8.0/Serilog.ApprovalTests.dll
+  Serilog.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/bin/Debug/net8.0/Serilog.Tests.dll
+  Serilog.PerformanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/bin/Debug/net8.0/Serilog.PerformanceTests.dll
+  Serilog.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/bin/Debug/net7.0/Serilog.Tests.dll
+  Serilog.PerformanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.PerformanceTests/bin/Debug/net6.0/Serilog.PerformanceTests.dll
+  Serilog.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Serilog.Tests/bin/Debug/net6.0/Serilog.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:19.09
+-> Schritt 1: dotnet build gestartet bei +7404 ms, Dauer: 19402 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 26808 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (26.80 seconds)
