@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.666115999221802,
+  "n_files"            : 770,
+  "n_lines"            : 164658,
+  "files_per_second"   : 1155.95482003069,
+  "lines_per_second"   : 247191.180203394,
+  "report_file"        : "PiranhaCMS-piranha.core.cloc.json"},
+"C#" :{
+  "nFiles": 770,
+  "blank": 35267,
+  "comment": 17688,
+  "code": 111703},
+"SUM": {
+  "blank": 35267,
+  "comment": 17688,
+  "code": 111703,
+  "nFiles": 770} }

@@ -1,0 +1,97 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj (in 4.65 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Piranha.Manager.Tests/Piranha.Manager.Tests.csproj (in 4.83 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Piranha.Tests/Piranha.Tests.csproj (in 5.35 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj (in 439 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj (in 6.22 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj (in 910 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj (in 939 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj (in 14 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/examples/MvcWeb/MvcWeb.csproj (in 1.84 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/Piranha.Data.EF.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj (in 7 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/Piranha.csproj (in 7 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj (in 6 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj (in 1.95 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/Piranha.Manager.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj (in 3.35 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/Piranha.Manager.Localization.csproj (in 6 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/examples/RazorWeb/RazorWeb.csproj (in 2.05 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj (in 5 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj (in 7 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj (in 3 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj (in 6 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj (in 55 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj (in 591 ms).
+-> Schritt 0: dotnet restore gestartet bei +1 ms, Dauer: 13753 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Piranha.Manager.Localization -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/bin/Debug/net8.0/Piranha.Manager.Localization.dll
+  Piranha -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/bin/Debug/net9.0/Piranha.dll
+  Piranha -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/bin/Debug/net8.0/Piranha.dll
+  Piranha.AttributeBuilder -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/bin/Debug/net8.0/Piranha.AttributeBuilder.dll
+  Piranha.AspNetCore.Hosting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/bin/Debug/net8.0/Piranha.AspNetCore.Hosting.dll
+  Piranha.Manager.Localization -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/bin/Debug/net9.0/Piranha.Manager.Localization.dll
+  Piranha.AspNetCore.Hosting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/bin/Debug/net9.0/Piranha.AspNetCore.Hosting.dll
+  Piranha.WebApi -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/bin/Debug/net9.0/Piranha.WebApi.dll
+  Piranha.Data.EF -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/bin/Debug/net8.0/Piranha.Data.EF.dll
+  Piranha.Data.EF -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/bin/Debug/net9.0/Piranha.Data.EF.dll
+  Piranha.ImageSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/bin/Debug/net8.0/Piranha.ImageSharp.dll
+  Piranha.Azure.BlobStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/bin/Debug/net8.0/Piranha.Azure.BlobStorage.dll
+  Piranha.WebApi -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/bin/Debug/net8.0/Piranha.WebApi.dll
+  Piranha.Local.FileStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/bin/Debug/net8.0/Piranha.Local.FileStorage.dll
+  Piranha.ImageSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/bin/Debug/net9.0/Piranha.ImageSharp.dll
+  Piranha.Data.EF.MySql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/bin/Debug/net8.0/Piranha.Data.EF.MySql.dll
+  Piranha.Data.EF.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/bin/Debug/net8.0/Piranha.Data.EF.PostgreSql.dll
+  Piranha.Data.EF.SQLServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/bin/Debug/net8.0/Piranha.Data.EF.SQLServer.dll
+  Piranha.Data.EF.SQLite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/bin/Debug/net8.0/Piranha.Data.EF.SQLite.dll
+  Piranha.Azure.BlobStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/bin/Debug/net9.0/Piranha.Azure.BlobStorage.dll
+  Piranha.Local.FileStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/bin/Debug/net9.0/Piranha.Local.FileStorage.dll
+  Piranha.AttributeBuilder -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/bin/Debug/net9.0/Piranha.AttributeBuilder.dll
+  Piranha.AspNetCore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/bin/Debug/net8.0/Piranha.AspNetCore.dll
+  Piranha.AspNetCore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/bin/Debug/net9.0/Piranha.AspNetCore.dll
+  Piranha.Manager -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/bin/Debug/net8.0/Piranha.Manager.dll
+  Piranha.Data.EF.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/bin/Debug/net9.0/Piranha.Data.EF.PostgreSql.dll
+  Piranha.Data.EF.MySql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/bin/Debug/net9.0/Piranha.Data.EF.MySql.dll
+  Piranha.Data.EF.SQLServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/bin/Debug/net9.0/Piranha.Data.EF.SQLServer.dll
+  Piranha.Manager.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Piranha.Manager.Tests/bin/Debug/net8.0/Piranha.Manager.Tests.dll
+  Piranha.Manager -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/bin/Debug/net9.0/Piranha.Manager.dll
+  Piranha.Data.EF.SQLite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/bin/Debug/net9.0/Piranha.Data.EF.SQLite.dll
+  Piranha.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Piranha.Tests/bin/Debug/net8.0/Piranha.Tests.dll
+  Piranha.Manager.LocalAuth -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/bin/Debug/net8.0/Piranha.Manager.LocalAuth.dll
+  Piranha.Manager.TinyMCE -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/bin/Debug/net8.0/Piranha.Manager.TinyMCE.dll
+  Piranha.AspNetCore.Identity -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/bin/Debug/net8.0/Piranha.AspNetCore.Identity.dll
+  Piranha.Manager.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Piranha.Manager.Tests/bin/Debug/net9.0/Piranha.Manager.Tests.dll
+  Piranha.AspNetCore.Identity.SQLServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/bin/Debug/net8.0/Piranha.AspNetCore.Identity.SQLServer.dll
+  Piranha.AspNetCore.Identity.SQLite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/bin/Debug/net8.0/Piranha.AspNetCore.Identity.SQLite.dll
+  Piranha.AspNetCore.Identity.PostgreSQL -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/bin/Debug/net8.0/Piranha.AspNetCore.Identity.PostgreSQL.dll
+  Piranha.AspNetCore.Identity.MySQL -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/bin/Debug/net8.0/Piranha.AspNetCore.Identity.MySQL.dll
+  Piranha.Manager.TinyMCE -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/bin/Debug/net9.0/Piranha.Manager.TinyMCE.dll
+  RazorWeb -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/examples/RazorWeb/bin/Debug/net8.0/RazorWeb.dll
+  MvcWeb -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/examples/MvcWeb/bin/Debug/net8.0/MvcWeb.dll
+  Piranha.Manager.LocalAuth -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/bin/Debug/net9.0/Piranha.Manager.LocalAuth.dll
+  Piranha.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Piranha.Tests/bin/Debug/net9.0/Piranha.Tests.dll
+  Piranha.AspNetCore.Identity -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/bin/Debug/net9.0/Piranha.AspNetCore.Identity.dll
+  Piranha.AspNetCore.Identity.SQLServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/bin/Debug/net9.0/Piranha.AspNetCore.Identity.SQLServer.dll
+  Piranha.AspNetCore.Identity.PostgreSQL -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/bin/Debug/net9.0/Piranha.AspNetCore.Identity.PostgreSQL.dll
+  Piranha.AspNetCore.Identity.MySQL -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/bin/Debug/net9.0/Piranha.AspNetCore.Identity.MySQL.dll
+  Piranha.AspNetCore.Identity.SQLite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/bin/Debug/net9.0/Piranha.AspNetCore.Identity.SQLite.dll
+  RazorWeb -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/examples/RazorWeb/bin/Debug/net9.0/RazorWeb.dll
+  MvcWeb -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/examples/MvcWeb/bin/Debug/net9.0/MvcWeb.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:00.62
+-> Schritt 1: dotnet build gestartet bei +13756 ms, Dauer: 60979 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 74738 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (74.73 seconds)
