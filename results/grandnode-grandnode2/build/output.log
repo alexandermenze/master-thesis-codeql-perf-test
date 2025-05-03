@@ -1,0 +1,133 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.BrainTree/Payments.BrainTree.csproj (in 9.44 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ByWeight/Shipping.ByWeight.csproj (in 9.44 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.CashOnDelivery/Payments.CashOnDelivery.csproj (in 9.44 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.csproj (in 9.44 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/DiscountRules.Standard/DiscountRules.Standard.csproj (in 21 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/ExchangeRate.McExchange/ExchangeRate.McExchange.csproj (in 40 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Migration/Grand.Module.Migration.csproj (in 49 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Installer/Grand.Module.Installer.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.csproj (in 99 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.SharedKernel/Grand.SharedKernel.csproj (in 1 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Infrastructure/Grand.Infrastructure.csproj (in 21 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Google/Authentication.Google.csproj (in 179 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Facebook/Authentication.Facebook.csproj (in 302 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Common/Grand.Web.Common.csproj (in 283 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Api/Grand.Module.Api.csproj (in 1.65 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/Grand.SharedUIResources.csproj (in 199 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Vendor/Grand.Web.Vendor.csproj (in 2.23 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj (in 1.95 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Grand.Web.csproj (in 2.44 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.SharedKernel.Tests/Grand.SharedKernel.Tests.csproj (in 1.46 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Admin.Tests/Grand.Web.Admin.Tests.csproj (in 1.66 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Modules.Tests/Grand.Modules.Tests.csproj (in 1.36 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Common.Tests/Grand.Web.Common.Tests.csproj (in 1.68 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Infrastructure.Tests/Grand.Infrastructure.Tests.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Domain.Tests/Grand.Domain.Tests.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Data.Tests/Grand.Data.Tests.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Storage.Tests/Grand.Business.Storage.Tests.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Marketing.Tests/Grand.Business.Marketing.Tests.csproj (in 24 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Messages.Tests/Grand.Business.Messages.Tests.csproj (in 23 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Customers.Tests/Grand.Business.Customers.Tests.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Common.Tests/Grand.Business.Common.Tests.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Checkout.Tests/Grand.Business.Checkout.Tests.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Cms.Tests/Grand.Business.Cms.Tests.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Catalog.Tests/Grand.Business.Catalog.Tests.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Authentication.Tests/Grand.Business.Authentication.Tests.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.Slider/Widgets.Slider.csproj (in 26 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.FacebookPixel/Widgets.FacebookPixel.csproj (in 23 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.GoogleAnalytics/Widgets.GoogleAnalytics.csproj (in 25 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Theme.Modern/Theme.Modern.csproj (in 26 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.FixedRate/Tax.FixedRate.csproj (in 23 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.CountryStateZip/Tax.CountryStateZip.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Domain/Grand.Domain.csproj (in 2 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Data/Grand.Data.csproj (in 2 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ShippingPoint/Shipping.ShippingPoint.csproj (in 27 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.FixedRateShipping/Shipping.FixedRateShipping.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Storage/Grand.Business.Storage.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Messages/Grand.Business.Messages.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Customers/Grand.Business.Customers.csproj (in 7 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Core/Grand.Business.Core.csproj (in 6 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Common/Grand.Business.Common.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Cms/Grand.Business.Cms.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Marketing/Grand.Business.Marketing.csproj (in 31 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Catalog/Grand.Business.Catalog.csproj (in 5 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Checkout/Grand.Business.Checkout.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Authentication/Grand.Business.Authentication.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj (in 2.69 sec).
+-> Schritt 0: dotnet restore gestartet bei +2 ms, Dauer: 24092 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Grand.SharedKernel -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.SharedKernel/bin/Debug/net9.0/Grand.SharedKernel.dll
+  Aspire.ServiceDefaults -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.ServiceDefaults/bin/Debug/net9.0/Aspire.ServiceDefaults.dll
+  Grand.SharedKernel.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.SharedKernel.Tests/bin/Debug/net9.0/Grand.SharedKernel.Tests.dll
+  Grand.Domain -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Domain/bin/Debug/net9.0/Grand.Domain.dll
+  Grand.Data -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Data/bin/Debug/net9.0/Grand.Data.dll
+  Grand.Infrastructure -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Infrastructure/bin/Debug/net9.0/Grand.Infrastructure.dll
+  Grand.Module.Migration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Modules/Grand.Module.Migration/Grand.Module.Migration.dll
+  Grand.Business.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Core/bin/Debug/net9.0/Grand.Business.Core.dll
+  Grand.Module.ScheduledTasks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.dll
+  Grand.Infrastructure.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Infrastructure.Tests/bin/Debug/net9.0/Grand.Infrastructure.Tests.dll
+  Grand.Data.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Data.Tests/bin/Debug/net9.0/Grand.Data.Tests.dll
+  Grand.Module.Api -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Modules/Grand.Module.Api/Grand.Module.Api.dll
+  Grand.Business.Messages -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Messages/bin/Debug/net9.0/Grand.Business.Messages.dll
+  Grand.Business.Catalog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Catalog/bin/Debug/net9.0/Grand.Business.Catalog.dll
+  Grand.Business.Storage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Storage/bin/Debug/net9.0/Grand.Business.Storage.dll
+  Grand.Business.Marketing -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Marketing/bin/Debug/net9.0/Grand.Business.Marketing.dll
+  Grand.Business.Customers -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Customers/bin/Debug/net9.0/Grand.Business.Customers.dll
+  Grand.Business.Common -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Common/bin/Debug/net9.0/Grand.Business.Common.dll
+  Grand.Business.Common.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Common.Tests/bin/Debug/net9.0/Grand.Business.Common.Tests.dll
+  Grand.Business.Authentication -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Authentication/bin/Debug/net9.0/Grand.Business.Authentication.dll
+  Grand.Module.Installer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Modules/Grand.Module.Installer/Grand.Module.Installer.dll
+  Grand.Domain.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Domain.Tests/bin/Debug/net9.0/Grand.Domain.Tests.dll
+  Grand.Business.Customers.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Customers.Tests/bin/Debug/net9.0/Grand.Business.Customers.Tests.dll
+  Grand.Modules.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Modules.Tests/bin/Debug/net9.0/Grand.Modules.Tests.dll
+  Grand.Business.Marketing.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Marketing.Tests/bin/Debug/net9.0/Grand.Business.Marketing.Tests.dll
+  Grand.Business.Cms -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Cms/bin/Debug/net9.0/Grand.Business.Cms.dll
+  Grand.Business.Messages.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Messages.Tests/bin/Debug/net9.0/Grand.Business.Messages.Tests.dll
+  Grand.Business.Checkout -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Checkout/bin/Debug/net9.0/Grand.Business.Checkout.dll
+  Grand.Business.Catalog.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Catalog.Tests/bin/Debug/net9.0/Grand.Business.Catalog.Tests.dll
+  Grand.Business.Checkout.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Checkout.Tests/bin/Debug/net9.0/Grand.Business.Checkout.Tests.dll
+  Grand.Business.Authentication.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Authentication.Tests/bin/Debug/net9.0/Grand.Business.Authentication.Tests.dll
+  Grand.Business.Cms.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Cms.Tests/bin/Debug/net9.0/Grand.Business.Cms.Tests.dll
+  Grand.Web.Common -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Common/bin/Debug/net9.0/Grand.Web.Common.dll
+  Payments.StripeCheckout -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.dll
+  Widgets.FacebookPixel -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Widgets.FacebookPixel/Widgets.FacebookPixel.dll
+  Shipping.ByWeight -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Shipping.ByWeight/Shipping.ByWeight.dll
+  Widgets.GoogleAnalytics -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Widgets.GoogleAnalytics/Widgets.GoogleAnalytics.dll
+  Widgets.Slider -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Widgets.Slider/Widgets.Slider.dll
+  Tax.FixedRate -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Tax.FixedRate/Tax.FixedRate.dll
+  Shipping.ShippingPoint -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Shipping.ShippingPoint/Shipping.ShippingPoint.dll
+  Authentication.Google -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Authentication.Google/Authentication.Google.dll
+  Tax.CountryStateZip -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Tax.CountryStateZip/Tax.CountryStateZip.dll
+  Payments.CashOnDelivery -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Payments.CashOnDelivery/Payments.CashOnDelivery.dll
+  Shipping.FixedRateShipping -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Shipping.FixedRateShipping/Shipping.FixedRateShipping.dll
+  DiscountRules.Standard -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/DiscountRules.Standard/DiscountRules.Standard.dll
+  ExchangeRate.McExchange -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/ExchangeRate.McExchange/ExchangeRate.McExchange.dll
+  Payments.BrainTree -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Payments.BrainTree/Payments.BrainTree.dll
+  Authentication.Facebook -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Authentication.Facebook/Authentication.Facebook.dll
+  Grand.Business.Storage.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Storage.Tests/bin/Debug/net9.0/Grand.Business.Storage.Tests.dll
+  Grand.Web.Common.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Common.Tests/bin/Debug/net9.0/Grand.Web.Common.Tests.dll
+  Grand.SharedUIResources -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/bin/Debug/net9.0/Grand.SharedUIResources.dll
+  Grand.Web.Admin -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/bin/Debug/net9.0/Grand.Web.Admin.dll
+  Grand.Web.Vendor -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Vendor/bin/Debug/net9.0/Grand.Web.Vendor.dll
+  Grand.Web.Admin.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Admin.Tests/bin/Debug/net9.0/Grand.Web.Admin.Tests.dll
+  Grand.Web -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/bin/Debug/net9.0/Grand.Web.dll
+  Aspire.AppHost -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/bin/Debug/net9.0/Aspire.AppHost.dll
+  Theme.Modern -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Theme.Modern/Theme.Modern.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:46.69
+-> Schritt 1: dotnet build gestartet bei +24095 ms, Dauer: 107026 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 131123 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (131.11 seconds)

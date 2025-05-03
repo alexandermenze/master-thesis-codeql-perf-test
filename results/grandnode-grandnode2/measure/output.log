@@ -1,0 +1,511 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Infrastructure/Grand.Infrastructure.csproj (in 6.45 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj (in 8.11 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.CashOnDelivery/Payments.CashOnDelivery.csproj (in 1.83 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.csproj (in 8.36 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ByWeight/Shipping.ByWeight.csproj (in 8.36 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.BrainTree/Payments.BrainTree.csproj (in 264 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/ExchangeRate.McExchange/ExchangeRate.McExchange.csproj (in 25 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/DiscountRules.Standard/DiscountRules.Standard.csproj (in 31 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.csproj (in 34 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Migration/Grand.Module.Migration.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Installer/Grand.Module.Installer.csproj (in 7 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.SharedKernel/Grand.SharedKernel.csproj (in 1 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Google/Authentication.Google.csproj (in 178 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Facebook/Authentication.Facebook.csproj (in 176 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Api/Grand.Module.Api.csproj (in 795 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Common/Grand.Web.Common.csproj (in 601 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/Grand.SharedUIResources.csproj (in 203 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Vendor/Grand.Web.Vendor.csproj (in 2.14 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj (in 1.67 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Grand.Web.csproj (in 2.78 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.SharedKernel.Tests/Grand.SharedKernel.Tests.csproj (in 1 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Modules.Tests/Grand.Modules.Tests.csproj (in 955 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Domain.Tests/Grand.Domain.Tests.csproj (in 14 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Common.Tests/Grand.Web.Common.Tests.csproj (in 1.64 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Infrastructure.Tests/Grand.Infrastructure.Tests.csproj (in 23 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Messages.Tests/Grand.Business.Messages.Tests.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Data.Tests/Grand.Data.Tests.csproj (in 32 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Admin.Tests/Grand.Web.Admin.Tests.csproj (in 1.34 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Storage.Tests/Grand.Business.Storage.Tests.csproj (in 34 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Domain/Grand.Domain.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Marketing.Tests/Grand.Business.Marketing.Tests.csproj (in 26 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Storage/Grand.Business.Storage.csproj (in 27 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Marketing/Grand.Business.Marketing.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Messages/Grand.Business.Messages.csproj (in 14 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Data/Grand.Data.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Core/Grand.Business.Core.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Common/Grand.Business.Common.csproj (in 20 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Customers/Grand.Business.Customers.csproj (in 22 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Checkout/Grand.Business.Checkout.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Cms/Grand.Business.Cms.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Catalog/Grand.Business.Catalog.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Authentication/Grand.Business.Authentication.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj (in 46 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Common.Tests/Grand.Business.Common.Tests.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Cms.Tests/Grand.Business.Cms.Tests.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Checkout.Tests/Grand.Business.Checkout.Tests.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Catalog.Tests/Grand.Business.Catalog.Tests.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Customers.Tests/Grand.Business.Customers.Tests.csproj (in 20 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Authentication.Tests/Grand.Business.Authentication.Tests.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.GoogleAnalytics/Widgets.GoogleAnalytics.csproj (in 24 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.FacebookPixel/Widgets.FacebookPixel.csproj (in 22 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.FixedRate/Tax.FixedRate.csproj (in 34 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.Slider/Widgets.Slider.csproj (in 76 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Theme.Modern/Theme.Modern.csproj (in 73 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.CountryStateZip/Tax.CountryStateZip.csproj (in 43 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ShippingPoint/Shipping.ShippingPoint.csproj (in 24 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.FixedRateShipping/Shipping.FixedRateShipping.csproj (in 22 ms).
+-> Schritt 0: dotnet restore gestartet bei +2 ms, Dauer: 19986 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+[2025-05-03 12:49:31] [build-stdout] CodeQL C# autobuilder
+[2025-05-03 12:49:31] [build-stdout] Working directory: /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo
+[2025-05-03 12:49:31] [build-stdout] Attempting to build using .NET Core
+[2025-05-03 12:49:31] [build-stdout] 8.0.408 [/usr/share/dotnet/sdk]
+[2025-05-03 12:49:31] [build-stdout] 9.0.203 [/usr/share/dotnet/sdk]
+[2025-05-03 12:49:32] [build-stdout] Running chmod u+x /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet-install.sh
+[2025-05-03 12:49:32] [build-stdout] Exit code 0
+[2025-05-03 12:49:32] [build-stdout] Attempting to download .NET 9.0.100
+[2025-05-03 12:49:32] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet-install.sh --channel release --version 9.0.100 --install-dir /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet
+[2025-05-03 12:49:34] [build-stdout] dotnet-install: Attempting to download using primary link https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.100/dotnet-sdk-9.0.100-linux-x64.tar.gz
+[2025-05-03 12:49:36] [build-stdout] dotnet-install: Remote file https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.100/dotnet-sdk-9.0.100-linux-x64.tar.gz size is 209148140 bytes.
+[2025-05-03 12:49:36] [build-stdout] dotnet-install: Extracting archive from https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.100/dotnet-sdk-9.0.100-linux-x64.tar.gz
+[2025-05-03 12:49:41] [build-stdout] dotnet-install: Downloaded file size is 209148140 bytes.
+[2025-05-03 12:49:41] [build-stdout] dotnet-install: The remote and local file sizes are equal.
+[2025-05-03 12:49:41] [build-stdout] dotnet-install: Installed version is 9.0.100
+[2025-05-03 12:49:41] [build-stdout] dotnet-install: Adding to current process PATH: `/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet`. Note: This change will be visible only when sourcing script.
+[2025-05-03 12:49:41] [build-stdout] dotnet-install: Note that the script does not resolve dependencies during installation.
+[2025-05-03 12:49:41] [build-stdout] dotnet-install: To check the list of dependencies, go to https://learn.microsoft.com/dotnet/core/install, select your operating system and check the "Dependencies" section.
+[2025-05-03 12:49:41] [build-stdout] dotnet-install: Installation finished successfully.
+[2025-05-03 12:49:41] [build-stdout] Exit code 0
+[2025-05-03 12:49:41] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet --info
+[2025-05-03 12:49:41] [build-stdout] .NET SDK:
+[2025-05-03 12:49:41] [build-stdout]  Version:           9.0.100
+[2025-05-03 12:49:41] [build-stdout]  Commit:            59db016f11
+[2025-05-03 12:49:41] [build-stdout]  Workload version:  9.0.100-manifests.3068a692
+[2025-05-03 12:49:41] [build-stdout]  MSBuild version:   17.12.7+5b8665660
+[2025-05-03 12:49:41] [build-stdout] Runtime Environment:
+[2025-05-03 12:49:41] [build-stdout]  OS Name:     ubuntu
+[2025-05-03 12:49:41] [build-stdout]  OS Version:  24.04
+[2025-05-03 12:49:41] [build-stdout]  OS Platform: Linux
+[2025-05-03 12:49:41] [build-stdout]  RID:         linux-x64
+[2025-05-03 12:49:41] [build-stdout]  Base Path:   /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/sdk/9.0.100/
+[2025-05-03 12:49:41] [build-stdout] .NET workloads installed:
+[2025-05-03 12:49:41] [build-stdout] There are no installed workloads to display.
+[2025-05-03 12:49:41] [build-stdout] Configured to use loose manifests when installing new manifests.
+[2025-05-03 12:49:41] [build-stdout] Host:
+[2025-05-03 12:49:41] [build-stdout]   Version:      9.0.0
+[2025-05-03 12:49:41] [build-stdout]   Architecture: x64
+[2025-05-03 12:49:41] [build-stdout]   Commit:       9d5a6a9aa4
+[2025-05-03 12:49:41] [build-stdout] .NET SDKs installed:
+[2025-05-03 12:49:41] [build-stdout]   9.0.100 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/sdk]
+[2025-05-03 12:49:41] [build-stdout] .NET runtimes installed:
+[2025-05-03 12:49:41] [build-stdout]   Microsoft.AspNetCore.App 9.0.0 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/shared/Microsoft.AspNetCore.App]
+[2025-05-03 12:49:41] [build-stdout]   Microsoft.NETCore.App 9.0.0 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/shared/Microsoft.NETCore.App]
+[2025-05-03 12:49:41] [build-stdout] Other architectures found:
+[2025-05-03 12:49:41] [build-stdout]   None
+[2025-05-03 12:49:41] [build-stdout] Environment variables:
+[2025-05-03 12:49:41] [build-stdout]   DOTNET_ROOT       [/usr/share/dotnet]
+[2025-05-03 12:49:41] [build-stdout] global.json file:
+[2025-05-03 12:49:41] [build-stdout]   /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/global.json
+[2025-05-03 12:49:41] [build-stdout] Learn more:
+[2025-05-03 12:49:41] [build-stdout]   https://aka.ms/dotnet/info
+[2025-05-03 12:49:41] [build-stdout] Download .NET:
+[2025-05-03 12:49:41] [build-stdout]   https://aka.ms/dotnet/download
+[2025-05-03 12:49:41] [build-stdout] Exit code 0
+[2025-05-03 12:49:41] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet clean /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln
+[2025-05-03 12:49:41] [build-stdout] Build started 05/03/2025 12:49:41.
+[2025-05-03 12:49:41] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" on node 1 (Clean target(s)).
+[2025-05-03 12:49:41] [build-stdout]      1>ValidateSolutionConfiguration:
+[2025-05-03 12:49:41] [build-stdout]          Building solution configuration "Debug|Any CPU".
+[2025-05-03 12:49:42] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj" (2) on node 1 (Clean target(s)).
+[2025-05-03 12:49:42] [build-stdout]      2>CoreClean:
+[2025-05-03 12:49:42] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:42] [build-stdout]      2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj" (Clean target(s)).
+[2025-05-03 12:49:42] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Migration/Grand.Module.Migration.csproj" (5) on node 1 (Clean target(s)).
+[2025-05-03 12:49:42] [build-stdout]      5>CoreClean:
+[2025-05-03 12:49:42] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:42] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.csproj" (3) on node 3 (Clean target(s)).
+[2025-05-03 12:49:42] [build-stdout]      3>CoreClean:
+[2025-05-03 12:49:42] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:42] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Api/Grand.Module.Api.csproj" (4) on node 2 (Clean target(s)).
+[2025-05-03 12:49:42] [build-stdout]      4>CoreClean:
+[2025-05-03 12:49:42] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj" (6) on node 4 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]      6>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.csproj" (12) on node 2 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     12>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Installer/Grand.Module.Installer.csproj" (11) on node 1 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     11>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Domain/Grand.Domain.csproj" (9:6) on node 3 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]      9>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Migration/Grand.Module.Migration.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Data/Grand.Data.csproj" (7:6) on node 1 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]      7>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]    7:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Data/Grand.Data.csproj" (7:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.SharedKernel/Grand.SharedKernel.csproj" (8:8) on node 1 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]      8>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.SharedKernel/Grand.SharedKernel.csproj" (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Core/Grand.Business.Core.csproj" (13:4) on node 3 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     13>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]     12>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.csproj" (12) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Infrastructure/Grand.Infrastructure.csproj" (10:7) on node 2 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     10>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Domain/Grand.Domain.csproj" (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     12>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.csproj" (12) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Common/Grand.Web.Common.csproj" (14:2) on node 2 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     14>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj" (15) on node 4 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     15>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Vendor/Grand.Web.Vendor.csproj" (16) on node 1 (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     16>CoreClean:
+[2025-05-03 12:49:43] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:43] [build-stdout]      7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Data/Grand.Data.csproj" (Clean target(s)).
+[2025-05-03 12:49:43] [build-stdout]     10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Infrastructure/Grand.Infrastructure.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Migration/Grand.Module.Migration.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Installer/Grand.Module.Installer.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]      6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Grand.Web.csproj" (21) on node 3 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     21>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Core/Grand.Business.Core.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Api/Grand.Module.Api.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Theme.Modern/Theme.Modern.csproj" (28) on node 2 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     28>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Common.Tests/Grand.Web.Common.Tests.csproj" (27) on node 1 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     27>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]   14:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Common/Grand.Web.Common.csproj" (14:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Authentication/Grand.Business.Authentication.csproj" (17:5) on node 2 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     17>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Admin.Tests/Grand.Web.Admin.Tests.csproj" (30) on node 3 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     30>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     17>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Authentication/Grand.Business.Authentication.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     16>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Vendor/Grand.Web.Vendor.csproj" (16) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Catalog/Grand.Business.Catalog.csproj" (18:6) on node 1 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     18>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Checkout/Grand.Business.Checkout.csproj" (19:6) on node 2 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     19>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/Grand.SharedUIResources.csproj" (29:4) on node 4 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     29>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Storage/Grand.Business.Storage.csproj" (26:7) on node 3 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     26>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     19>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Checkout/Grand.Business.Checkout.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     18>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Catalog/Grand.Business.Catalog.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Cms/Grand.Business.Cms.csproj" (20:7) on node 1 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     20>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Common/Grand.Business.Common.csproj" (22:7) on node 2 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     22>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     26>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Storage/Grand.Business.Storage.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     20>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Cms/Grand.Business.Cms.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]   29:4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/Grand.SharedUIResources.csproj" (29:4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Customers/Grand.Business.Customers.csproj" (23:8) on node 1 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     23>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     22>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Common/Grand.Business.Common.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]   29:4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/Grand.SharedUIResources.csproj" (29:4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Marketing/Grand.Business.Marketing.csproj" (24:8) on node 2 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     24>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     23>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Customers/Grand.Business.Customers.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     21>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Grand.Web.csproj" (21) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Messages/Grand.Business.Messages.csproj" (25:8) on node 1 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     25>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     24>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Marketing/Grand.Business.Marketing.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Infrastructure.Tests/Grand.Infrastructure.Tests.csproj" (31) on node 4 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     31>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Domain.Tests/Grand.Domain.Tests.csproj" (32) on node 3 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     32>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:44] [build-stdout]     25>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Messages/Grand.Business.Messages.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     32>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Domain.Tests/Grand.Domain.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     31>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Infrastructure.Tests/Grand.Infrastructure.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.SharedKernel.Tests/Grand.SharedKernel.Tests.csproj" (33) on node 2 (Clean target(s)).
+[2025-05-03 12:49:44] [build-stdout]     33>CoreClean:
+[2025-05-03 12:49:44] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]     33>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.SharedKernel.Tests/Grand.SharedKernel.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Common/Grand.Web.Common.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Data.Tests/Grand.Data.Tests.csproj" (34) on node 1 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     34>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Checkout.Tests/Grand.Business.Checkout.Tests.csproj" (35) on node 4 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     35>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]     29>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/Grand.SharedUIResources.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     34>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Data.Tests/Grand.Data.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     16>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Vendor/Grand.Web.Vendor.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     27>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Common.Tests/Grand.Web.Common.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Storage.Tests/Grand.Business.Storage.Tests.csproj" (36) on node 2 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     36>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]     35>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Checkout.Tests/Grand.Business.Checkout.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Modules.Tests/Grand.Modules.Tests.csproj" (37) on node 3 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     37>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]     30>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Admin.Tests/Grand.Web.Admin.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     21>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Grand.Web.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     36>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Storage.Tests/Grand.Business.Storage.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     28>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Theme.Modern/Theme.Modern.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Messages.Tests/Grand.Business.Messages.Tests.csproj" (38) on node 1 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     38>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Common.Tests/Grand.Business.Common.Tests.csproj" (39) on node 4 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     39>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Customers.Tests/Grand.Business.Customers.Tests.csproj" (41) on node 2 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     41>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Marketing.Tests/Grand.Business.Marketing.Tests.csproj" (40) on node 3 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     40>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]     38>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Messages.Tests/Grand.Business.Messages.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     39>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Common.Tests/Grand.Business.Common.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     40>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Marketing.Tests/Grand.Business.Marketing.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     41>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Customers.Tests/Grand.Business.Customers.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     37>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Modules.Tests/Grand.Modules.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Cms.Tests/Grand.Business.Cms.Tests.csproj" (42) on node 1 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     42>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Catalog.Tests/Grand.Business.Catalog.Tests.csproj" (43) on node 4 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     43>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Authentication.Tests/Grand.Business.Authentication.Tests.csproj" (44) on node 2 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     44>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]     42>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Cms.Tests/Grand.Business.Cms.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ByWeight/Shipping.ByWeight.csproj" (45) on node 3 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     45>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]     43>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Catalog.Tests/Grand.Business.Catalog.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     44>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Authentication.Tests/Grand.Business.Authentication.Tests.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     45>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ByWeight/Shipping.ByWeight.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/DiscountRules.Standard/DiscountRules.Standard.csproj" (46) on node 1 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     46>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.GoogleAnalytics/Widgets.GoogleAnalytics.csproj" (47) on node 4 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     47>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:45] [build-stdout]     47>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.GoogleAnalytics/Widgets.GoogleAnalytics.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     46>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/DiscountRules.Standard/DiscountRules.Standard.csproj" (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.FacebookPixel/Widgets.FacebookPixel.csproj" (48) on node 2 (Clean target(s)).
+[2025-05-03 12:49:45] [build-stdout]     48>CoreClean:
+[2025-05-03 12:49:45] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]     48>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.FacebookPixel/Widgets.FacebookPixel.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ShippingPoint/Shipping.ShippingPoint.csproj" (49) on node 3 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     49>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/ExchangeRate.McExchange/ExchangeRate.McExchange.csproj" (50) on node 4 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     50>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]     49>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ShippingPoint/Shipping.ShippingPoint.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     50>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/ExchangeRate.McExchange/ExchangeRate.McExchange.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.CountryStateZip/Tax.CountryStateZip.csproj" (51) on node 1 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     51>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]     51>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.CountryStateZip/Tax.CountryStateZip.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.FixedRate/Tax.FixedRate.csproj" (52) on node 4 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     52>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.Slider/Widgets.Slider.csproj" (53) on node 2 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     53>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.CashOnDelivery/Payments.CashOnDelivery.csproj" (54) on node 3 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     54>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]     52>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.FixedRate/Tax.FixedRate.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     53>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.Slider/Widgets.Slider.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     54>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.CashOnDelivery/Payments.CashOnDelivery.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.FixedRateShipping/Shipping.FixedRateShipping.csproj" (55) on node 1 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     55>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.BrainTree/Payments.BrainTree.csproj" (56) on node 4 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     56>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Google/Authentication.Google.csproj" (57) on node 2 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     57>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]     55>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.FixedRateShipping/Shipping.FixedRateShipping.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     56>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.BrainTree/Payments.BrainTree.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     57>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Google/Authentication.Google.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Facebook/Authentication.Facebook.csproj" (58) on node 3 (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]     58>CoreClean:
+[2025-05-03 12:49:46] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 12:49:46] [build-stdout]     58>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Facebook/Authentication.Facebook.csproj" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout]      1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln" (Clean target(s)).
+[2025-05-03 12:49:46] [build-stdout] Build succeeded.
+[2025-05-03 12:49:46] [build-stdout]     0 Warning(s)
+[2025-05-03 12:49:46] [build-stdout]     0 Error(s)
+[2025-05-03 12:49:46] [build-stdout] Time Elapsed 00:00:04.77
+[2025-05-03 12:49:46] [build-stdout] Exit code 0
+[2025-05-03 12:49:46] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet restore /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln
+[2025-05-03 12:49:49] [build-stdout]   Determining projects to restore...
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Data/Grand.Data.csproj (in 768 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Domain/Grand.Domain.csproj (in 769 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/Aspire.AppHost.csproj (in 810 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Storage/Grand.Business.Storage.csproj (in 888 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Marketing/Grand.Business.Marketing.csproj (in 80 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Messages/Grand.Business.Messages.csproj (in 87 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Customers/Grand.Business.Customers.csproj (in 36 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Core/Grand.Business.Core.csproj (in 27 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Cms/Grand.Business.Cms.csproj (in 36 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Checkout/Grand.Business.Checkout.csproj (in 39 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Catalog/Grand.Business.Catalog.csproj (in 78 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Authentication/Grand.Business.Authentication.csproj (in 72 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Common/Grand.Business.Common.csproj (in 204 ms).
+[2025-05-03 12:49:52] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.ServiceDefaults/Aspire.ServiceDefaults.csproj (in 180 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ByWeight/Shipping.ByWeight.csproj (in 80 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.csproj (in 124 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.CashOnDelivery/Payments.CashOnDelivery.csproj (in 94 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Grand.Web.csproj (in 337 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/ExchangeRate.McExchange/ExchangeRate.McExchange.csproj (in 49 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/DiscountRules.Standard/DiscountRules.Standard.csproj (in 77 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Facebook/Authentication.Facebook.csproj (in 47 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Authentication.Google/Authentication.Google.csproj (in 96 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Migration/Grand.Module.Migration.csproj (in 30 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Installer/Grand.Module.Installer.csproj (in 30 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.SharedKernel/Grand.SharedKernel.csproj (in 4 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.csproj (in 145 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/Grand.Module.Api/Grand.Module.Api.csproj (in 50 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Infrastructure/Grand.Infrastructure.csproj (in 52 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Vendor/Grand.Web.Vendor.csproj (in 81 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Common/Grand.Web.Common.csproj (in 76 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/Grand.Web.Admin.csproj (in 91 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/Grand.SharedUIResources.csproj (in 112 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.SharedKernel.Tests/Grand.SharedKernel.Tests.csproj (in 17 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Common.Tests/Grand.Web.Common.Tests.csproj (in 188 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Admin.Tests/Grand.Web.Admin.Tests.csproj (in 73 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Common.Tests/Grand.Business.Common.Tests.csproj (in 21 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Customers.Tests/Grand.Business.Customers.Tests.csproj (in 65 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Cms.Tests/Grand.Business.Cms.Tests.csproj (in 29 ms).
+[2025-05-03 12:49:53] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Payments.BrainTree/Payments.BrainTree.csproj (in 852 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Authentication.Tests/Grand.Business.Authentication.Tests.csproj (in 24 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Catalog.Tests/Grand.Business.Catalog.Tests.csproj (in 40 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Checkout.Tests/Grand.Business.Checkout.Tests.csproj (in 51 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.Slider/Widgets.Slider.csproj (in 28 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.FacebookPixel/Widgets.FacebookPixel.csproj (in 40 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.FixedRate/Tax.FixedRate.csproj (in 40 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Widgets.GoogleAnalytics/Widgets.GoogleAnalytics.csproj (in 52 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.FixedRateShipping/Shipping.FixedRateShipping.csproj (in 23 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Shipping.ShippingPoint/Shipping.ShippingPoint.csproj (in 57 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Tax.CountryStateZip/Tax.CountryStateZip.csproj (in 54 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Plugins/Theme.Modern/Theme.Modern.csproj (in 128 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Domain.Tests/Grand.Domain.Tests.csproj (in 22 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Modules.Tests/Grand.Modules.Tests.csproj (in 16 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Infrastructure.Tests/Grand.Infrastructure.Tests.csproj (in 26 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Messages.Tests/Grand.Business.Messages.Tests.csproj (in 16 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Marketing.Tests/Grand.Business.Marketing.Tests.csproj (in 19 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Data.Tests/Grand.Data.Tests.csproj (in 37 ms).
+[2025-05-03 12:49:54] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Storage.Tests/Grand.Business.Storage.Tests.csproj (in 28 ms).
+[2025-05-03 12:49:54] [build-stdout] Exit code 0
+[2025-05-03 12:49:54] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet build --no-incremental /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/GrandNode.sln
+[2025-05-03 12:49:57] [build-stdout]   Determining projects to restore...
+[2025-05-03 12:49:59] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-03 12:50:19] [build-stdout]   Grand.SharedKernel -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.SharedKernel/bin/Debug/net9.0/Grand.SharedKernel.dll
+[2025-05-03 12:50:23] [build-stdout]   Aspire.ServiceDefaults -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.ServiceDefaults/bin/Debug/net9.0/Aspire.ServiceDefaults.dll
+[2025-05-03 12:50:32] [build-stdout]   Grand.SharedKernel.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.SharedKernel.Tests/bin/Debug/net9.0/Grand.SharedKernel.Tests.dll
+[2025-05-03 12:50:33] [build-stdout]   Grand.Domain -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Domain/bin/Debug/net9.0/Grand.Domain.dll
+[2025-05-03 12:50:39] [build-stdout]   Grand.Data -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Data/bin/Debug/net9.0/Grand.Data.dll
+[2025-05-03 12:50:43] [build-stdout]   Grand.Domain.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Domain.Tests/bin/Debug/net9.0/Grand.Domain.Tests.dll
+[2025-05-03 12:50:53] [build-stdout]   Grand.Infrastructure -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Core/Grand.Infrastructure/bin/Debug/net9.0/Grand.Infrastructure.dll
+[2025-05-03 12:51:01] [build-stdout]   Grand.Business.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Core/bin/Debug/net9.0/Grand.Business.Core.dll
+[2025-05-03 12:51:06] [build-stdout]   Grand.Business.Authentication -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Authentication/bin/Debug/net9.0/Grand.Business.Authentication.dll
+[2025-05-03 12:51:13] [build-stdout]   Grand.Business.Storage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Storage/bin/Debug/net9.0/Grand.Business.Storage.dll
+[2025-05-03 12:51:17] [build-stdout]   Grand.Data.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Data.Tests/bin/Debug/net9.0/Grand.Data.Tests.dll
+[2025-05-03 12:51:23] [build-stdout]   Grand.Business.Marketing -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Marketing/bin/Debug/net9.0/Grand.Business.Marketing.dll
+[2025-05-03 12:51:36] [build-stdout]   Grand.Business.Common -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Common/bin/Debug/net9.0/Grand.Business.Common.dll
+[2025-05-03 12:51:43] [build-stdout]   Grand.Business.Authentication.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Authentication.Tests/bin/Debug/net9.0/Grand.Business.Authentication.Tests.dll
+[2025-05-03 12:51:49] [build-stdout]   Grand.Module.Migration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Modules/Grand.Module.Migration/Grand.Module.Migration.dll
+[2025-05-03 12:51:58] [build-stdout]   Grand.Module.ScheduledTasks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Modules/Grand.Module.ScheduledTasks/Grand.Module.ScheduledTasks.dll
+[2025-05-03 12:52:01] [build-stdout]   Grand.Module.Api -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Modules/Grand.Module.Api/Grand.Module.Api.dll
+[2025-05-03 12:52:24] [build-stdout]   Grand.Business.Catalog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Catalog/bin/Debug/net9.0/Grand.Business.Catalog.dll
+[2025-05-03 12:52:29] [build-stdout]   Grand.Infrastructure.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Infrastructure.Tests/bin/Debug/net9.0/Grand.Infrastructure.Tests.dll
+[2025-05-03 12:52:29] [build-stdout]   Grand.Business.Customers -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Customers/bin/Debug/net9.0/Grand.Business.Customers.dll
+[2025-05-03 12:52:34] [build-stdout]   Grand.Business.Cms -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Cms/bin/Debug/net9.0/Grand.Business.Cms.dll
+[2025-05-03 12:52:42] [build-stdout]   Grand.Business.Messages -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Messages/bin/Debug/net9.0/Grand.Business.Messages.dll
+[2025-05-03 12:52:54] [build-stdout]   Grand.Business.Checkout -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Business/Grand.Business.Checkout/bin/Debug/net9.0/Grand.Business.Checkout.dll
+[2025-05-03 12:53:10] [build-stdout]   Grand.Module.Installer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Modules/Grand.Module.Installer/Grand.Module.Installer.dll
+[2025-05-03 12:53:32] [build-stdout]   Grand.Business.Common.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Common.Tests/bin/Debug/net9.0/Grand.Business.Common.Tests.dll
+[2025-05-03 12:53:32] [build-stdout]   Grand.Business.Catalog.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Catalog.Tests/bin/Debug/net9.0/Grand.Business.Catalog.Tests.dll
+[2025-05-03 12:53:41] [build-stdout]   Grand.Modules.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Modules.Tests/bin/Debug/net9.0/Grand.Modules.Tests.dll
+[2025-05-03 12:54:01] [build-stdout]   Grand.Business.Cms.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Cms.Tests/bin/Debug/net9.0/Grand.Business.Cms.Tests.dll
+[2025-05-03 12:54:01] [build-stdout]   Grand.Business.Messages.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Messages.Tests/bin/Debug/net9.0/Grand.Business.Messages.Tests.dll
+[2025-05-03 12:54:07] [build-stdout]   Grand.Business.Customers.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Customers.Tests/bin/Debug/net9.0/Grand.Business.Customers.Tests.dll
+[2025-05-03 12:54:08] [build-stdout]   Grand.Web.Common -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Common/bin/Debug/net9.0/Grand.Web.Common.dll
+[2025-05-03 12:54:21] [build-stdout]   Authentication.Google -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Authentication.Google/Authentication.Google.dll
+[2025-05-03 12:54:23] [build-stdout]   Grand.Business.Checkout.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Checkout.Tests/bin/Debug/net9.0/Grand.Business.Checkout.Tests.dll
+[2025-05-03 12:54:28] [build-stdout]   Payments.StripeCheckout -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Payments.StripeCheckout/Payments.StripeCheckout.dll
+[2025-05-03 12:54:34] [build-stdout]   Tax.CountryStateZip -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Tax.CountryStateZip/Tax.CountryStateZip.dll
+[2025-05-03 12:54:35] [build-stdout]   DiscountRules.Standard -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/DiscountRules.Standard/DiscountRules.Standard.dll
+[2025-05-03 12:54:44] [build-stdout]   Tax.FixedRate -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Tax.FixedRate/Tax.FixedRate.dll
+[2025-05-03 12:54:45] [build-stdout]   Widgets.FacebookPixel -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Widgets.FacebookPixel/Widgets.FacebookPixel.dll
+[2025-05-03 12:54:54] [build-stdout]   Shipping.FixedRateShipping -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Shipping.FixedRateShipping/Shipping.FixedRateShipping.dll
+[2025-05-03 12:54:57] [build-stdout]   Widgets.GoogleAnalytics -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Widgets.GoogleAnalytics/Widgets.GoogleAnalytics.dll
+[2025-05-03 12:54:58] [build-stdout]   Shipping.ByWeight -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Shipping.ByWeight/Shipping.ByWeight.dll
+[2025-05-03 12:55:04] [build-stdout]   ExchangeRate.McExchange -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/ExchangeRate.McExchange/ExchangeRate.McExchange.dll
+[2025-05-03 12:55:08] [build-stdout]   Widgets.Slider -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Widgets.Slider/Widgets.Slider.dll
+[2025-05-03 12:55:10] [build-stdout]   Authentication.Facebook -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Authentication.Facebook/Authentication.Facebook.dll
+[2025-05-03 12:55:13] [build-stdout]   Grand.Business.Storage.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Storage.Tests/bin/Debug/net9.0/Grand.Business.Storage.Tests.dll
+[2025-05-03 12:55:19] [build-stdout]   Shipping.ShippingPoint -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Shipping.ShippingPoint/Shipping.ShippingPoint.dll
+[2025-05-03 12:55:21] [build-stdout]   Grand.SharedUIResources -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.SharedUIResources/bin/Debug/net9.0/Grand.SharedUIResources.dll
+[2025-05-03 12:55:22] [build-stdout]   Payments.BrainTree -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Payments.BrainTree/Payments.BrainTree.dll
+[2025-05-03 12:55:22] [build-stdout]   Grand.Business.Marketing.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Business.Marketing.Tests/bin/Debug/net9.0/Grand.Business.Marketing.Tests.dll
+[2025-05-03 12:55:28] [build-stdout]   Payments.CashOnDelivery -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Payments.CashOnDelivery/Payments.CashOnDelivery.dll
+[2025-05-03 12:56:44] [build-stdout]   Grand.Web.Common.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Common.Tests/bin/Debug/net9.0/Grand.Web.Common.Tests.dll
+[2025-05-03 12:57:50] [build-stdout]   Grand.Web.Admin -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Admin/bin/Debug/net9.0/Grand.Web.Admin.dll
+[2025-05-03 12:57:50] [build-stdout]   Grand.Web.Vendor -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web.Vendor/bin/Debug/net9.0/Grand.Web.Vendor.dll
+[2025-05-03 12:58:01] [build-stdout]   Grand.Web.Admin.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Tests/Grand.Web.Admin.Tests/bin/Debug/net9.0/Grand.Web.Admin.Tests.dll
+[2025-05-03 12:58:55] [build-stdout]   Grand.Web -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/bin/Debug/net9.0/Grand.Web.dll
+[2025-05-03 12:59:17] [build-stdout]   Aspire.AppHost -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Aspire/Aspire.AppHost/bin/Debug/net9.0/Aspire.AppHost.dll
+[2025-05-03 12:59:24] [build-stdout]   Theme.Modern -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Web/Grand.Web/Plugins/Theme.Modern/Theme.Modern.dll
+[2025-05-03 12:59:24] [build-stdout] Build succeeded.
+[2025-05-03 12:59:24] [build-stdout]     0 Warning(s)
+[2025-05-03 12:59:24] [build-stdout]     0 Error(s)
+[2025-05-03 12:59:24] [build-stdout] Time Elapsed 00:09:29.87
+[2025-05-03 12:59:24] [build-stdout] Exit code 0
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 77.20 MiB; string pool: 22.03 MiB).
+TRAP import complete (54.4s).
+Finished zipping source archive (11.15 MiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +19990 ms, Dauer: 664775 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 53.5s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 18m1s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +684767 ms, Dauer: 1141047 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +1825816 ms, Dauer: 1154 ms
+
+CSV-Ausgabe: grandnode-grandnode2.results.csv
+Starting up command './run-analysis.sh -s target-repo/. -d db -q identify-call-paths.ql -c grandnode-grandnode2.results.csv' and attaching to process
+Process finished (1826.98 seconds)
