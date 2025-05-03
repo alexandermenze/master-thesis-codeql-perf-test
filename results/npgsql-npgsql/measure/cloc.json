@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.40312385559082,
+  "n_files"            : 468,
+  "n_lines"            : 101239,
+  "files_per_second"   : 1160.93352826787,
+  "lines_per_second"   : 251136.216812631,
+  "report_file"        : "npgsql-npgsql.cloc.json"},
+"C#" :{
+  "nFiles": 468,
+  "blank": 14634,
+  "comment": 12097,
+  "code": 74508},
+"SUM": {
+  "blank": 14634,
+  "comment": 12097,
+  "code": 74508,
+  "nFiles": 468} }

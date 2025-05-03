@@ -1,0 +1,262 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.OpenTelemetry/Npgsql.OpenTelemetry.csproj (in 1.47 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NodaTime/Npgsql.NodaTime.csproj (in 1.47 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NetTopologySuite/Npgsql.NetTopologySuite.csproj (in 1.47 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.Json.NET/Npgsql.Json.NET.csproj (in 284 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.GeoJSON/Npgsql.GeoJSON.csproj (in 450 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj (in 547 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj (in 2.24 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/Npgsql.Tests.csproj (in 425 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj (in 197 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/Npgsql.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.SourceGenerators/Npgsql.SourceGenerators.csproj (in 2.69 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj (in 3.26 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj (in 4.79 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj (in 5 sec).
+-> Schritt 0: dotnet restore gestartet bei +2 ms, Dauer: 10184 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+[2025-05-03 09:37:58] [build-stdout] CodeQL C# autobuilder
+[2025-05-03 09:37:58] [build-stdout] Working directory: /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo
+[2025-05-03 09:37:58] [build-stdout] Attempting to build using .NET Core
+[2025-05-03 09:37:58] [build-stdout] 8.0.408 [/usr/share/dotnet/sdk]
+[2025-05-03 09:37:58] [build-stdout] 9.0.203 [/usr/share/dotnet/sdk]
+[2025-05-03 09:37:59] [build-stdout] Running chmod u+x /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet-install.sh
+[2025-05-03 09:37:59] [build-stdout] Exit code 0
+[2025-05-03 09:37:59] [build-stdout] Attempting to download .NET 9.0.100
+[2025-05-03 09:37:59] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet-install.sh --channel release --version 9.0.100 --install-dir /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet
+[2025-05-03 09:38:00] [build-stdout] dotnet-install: Attempting to download using primary link https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.100/dotnet-sdk-9.0.100-linux-x64.tar.gz
+[2025-05-03 09:38:02] [build-stdout] dotnet-install: Remote file https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.100/dotnet-sdk-9.0.100-linux-x64.tar.gz size is 209148140 bytes.
+[2025-05-03 09:38:02] [build-stdout] dotnet-install: Extracting archive from https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.100/dotnet-sdk-9.0.100-linux-x64.tar.gz
+[2025-05-03 09:38:07] [build-stdout] dotnet-install: Downloaded file size is 209148140 bytes.
+[2025-05-03 09:38:07] [build-stdout] dotnet-install: The remote and local file sizes are equal.
+[2025-05-03 09:38:07] [build-stdout] dotnet-install: Installed version is 9.0.100
+[2025-05-03 09:38:07] [build-stdout] dotnet-install: Adding to current process PATH: `/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet`. Note: This change will be visible only when sourcing script.
+[2025-05-03 09:38:07] [build-stdout] dotnet-install: Note that the script does not resolve dependencies during installation.
+[2025-05-03 09:38:07] [build-stdout] dotnet-install: To check the list of dependencies, go to https://learn.microsoft.com/dotnet/core/install, select your operating system and check the "Dependencies" section.
+[2025-05-03 09:38:07] [build-stdout] dotnet-install: Installation finished successfully.
+[2025-05-03 09:38:07] [build-stdout] Exit code 0
+[2025-05-03 09:38:07] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet --info
+[2025-05-03 09:38:07] [build-stdout] .NET SDK:
+[2025-05-03 09:38:07] [build-stdout]  Version:           9.0.100
+[2025-05-03 09:38:07] [build-stdout]  Commit:            59db016f11
+[2025-05-03 09:38:07] [build-stdout]  Workload version:  9.0.100-manifests.3068a692
+[2025-05-03 09:38:07] [build-stdout]  MSBuild version:   17.12.7+5b8665660
+[2025-05-03 09:38:07] [build-stdout] Runtime Environment:
+[2025-05-03 09:38:07] [build-stdout]  OS Name:     ubuntu
+[2025-05-03 09:38:07] [build-stdout]  OS Version:  24.04
+[2025-05-03 09:38:07] [build-stdout]  OS Platform: Linux
+[2025-05-03 09:38:07] [build-stdout]  RID:         linux-x64
+[2025-05-03 09:38:07] [build-stdout]  Base Path:   /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/sdk/9.0.100/
+[2025-05-03 09:38:07] [build-stdout] .NET workloads installed:
+[2025-05-03 09:38:07] [build-stdout] There are no installed workloads to display.
+[2025-05-03 09:38:07] [build-stdout] Configured to use loose manifests when installing new manifests.
+[2025-05-03 09:38:07] [build-stdout] Host:
+[2025-05-03 09:38:07] [build-stdout]   Version:      9.0.0
+[2025-05-03 09:38:07] [build-stdout]   Architecture: x64
+[2025-05-03 09:38:07] [build-stdout]   Commit:       9d5a6a9aa4
+[2025-05-03 09:38:07] [build-stdout] .NET SDKs installed:
+[2025-05-03 09:38:07] [build-stdout]   9.0.100 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/sdk]
+[2025-05-03 09:38:07] [build-stdout] .NET runtimes installed:
+[2025-05-03 09:38:07] [build-stdout]   Microsoft.AspNetCore.App 9.0.0 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/shared/Microsoft.AspNetCore.App]
+[2025-05-03 09:38:07] [build-stdout]   Microsoft.NETCore.App 9.0.0 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/shared/Microsoft.NETCore.App]
+[2025-05-03 09:38:07] [build-stdout] Other architectures found:
+[2025-05-03 09:38:07] [build-stdout]   None
+[2025-05-03 09:38:07] [build-stdout] Environment variables:
+[2025-05-03 09:38:07] [build-stdout]   DOTNET_ROOT       [/usr/share/dotnet]
+[2025-05-03 09:38:07] [build-stdout] global.json file:
+[2025-05-03 09:38:07] [build-stdout]   Not found
+[2025-05-03 09:38:07] [build-stdout] Learn more:
+[2025-05-03 09:38:07] [build-stdout]   https://aka.ms/dotnet/info
+[2025-05-03 09:38:07] [build-stdout] Download .NET:
+[2025-05-03 09:38:07] [build-stdout]   https://aka.ms/dotnet/download
+[2025-05-03 09:38:07] [build-stdout] Exit code 0
+[2025-05-03 09:38:07] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet clean /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln
+[2025-05-03 09:38:07] [build-stdout] Build started 05/03/2025 09:38:07.
+[2025-05-03 09:38:07] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" on node 1 (Clean target(s)).
+[2025-05-03 09:38:07] [build-stdout]      1>ValidateSolutionConfiguration:
+[2025-05-03 09:38:07] [build-stdout]          Building solution configuration "Debug|Any CPU".
+[2025-05-03 09:38:08] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (2) on node 1 (Clean target(s)).
+[2025-05-03 09:38:08] [build-stdout]      2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (2:2) on node 1 (Clean target(s)).
+[2025-05-03 09:38:08] [build-stdout]      2>CoreClean:
+[2025-05-03 09:38:08] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:38:08] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (3) on node 4 (Clean target(s)).
+[2025-05-03 09:38:08] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (3:2) on node 4 (Clean target(s)).
+[2025-05-03 09:38:08] [build-stdout]      3>CoreClean:
+[2025-05-03 09:38:08] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:38:09] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.OpenTelemetry/Npgsql.OpenTelemetry.csproj" (6) on node 3 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      6>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:38:09] [build-stdout]    2:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (2:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/Npgsql.csproj" (5:5) on node 1 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      5>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:38:09] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj" (4) on node 2 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj" (4:2) on node 2 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      4>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:38:09] [build-stdout]    5:5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/Npgsql.csproj" (5:5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.SourceGenerators/Npgsql.SourceGenerators.csproj" (8:2) on node 1 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      8>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/netstandard2.0/".
+[2025-05-03 09:38:09] [build-stdout]      8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.SourceGenerators/Npgsql.SourceGenerators.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/Npgsql.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.OpenTelemetry/Npgsql.OpenTelemetry.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/Npgsql.csproj" (5:8) on node 1 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      5>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:38:09] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/Npgsql.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (3:3) on node 4 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      3>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 09:38:09] [build-stdout]      2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (2:3) on node 1 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      2>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 09:38:09] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj" (4:3) on node 3 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      4>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:38:09] [build-stdout]      2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.OpenTelemetry/Npgsql.OpenTelemetry.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.GeoJSON/Npgsql.GeoJSON.csproj" (10) on node 1 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]     10>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:38:09] [build-stdout]     10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.GeoJSON/Npgsql.GeoJSON.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj" (9) on node 4 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj" (9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj" (9:2) on node 2 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      9>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 09:38:09] [build-stdout]      9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj" (9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj" (9:3) on node 4 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      9>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:38:09] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (11) on node 1 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]     11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (11:2) on node 1 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]     11>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:38:09] [build-stdout]      9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NetTopologySuite/Npgsql.NetTopologySuite.csproj" (12) on node 3 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]     12>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:38:09] [build-stdout]     12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NetTopologySuite/Npgsql.NetTopologySuite.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.Json.NET/Npgsql.Json.NET.csproj" (14:2) on node 2 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]     14>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:38:09] [build-stdout]      9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]     14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.Json.NET/Npgsql.Json.NET.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]     11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (11:3) on node 1 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]     11>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 09:38:09] [build-stdout]    3:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (3:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/Npgsql.Tests.csproj" (7:6) on node 4 (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      7>CoreClean:
+[2025-05-03 09:38:09] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 09:38:09] [build-stdout]      7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/Npgsql.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:38:09] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]    3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/Npgsql.Tests.csproj" (7:9) on node 4 (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]      7>CoreClean:
+[2025-05-03 09:38:10] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:38:10] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj" (15) on node 3 (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj" (15:2) on node 3 (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     15>CoreClean:
+[2025-05-03 09:38:10] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 09:38:10] [build-stdout]   11:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (11:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NodaTime/Npgsql.NodaTime.csproj" (13:3) on node 1 (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     13>CoreClean:
+[2025-05-03 09:38:10] [build-stdout]          Creating directory "obj/Debug/net6.0/".
+[2025-05-03 09:38:10] [build-stdout]     15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj" (15:3) on node 2 (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     15>CoreClean:
+[2025-05-03 09:38:10] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 09:38:10] [build-stdout]      7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/Npgsql.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NodaTime/Npgsql.NodaTime.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]     15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout]      1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln" (Clean target(s)).
+[2025-05-03 09:38:10] [build-stdout] Build succeeded.
+[2025-05-03 09:38:10] [build-stdout]     0 Warning(s)
+[2025-05-03 09:38:10] [build-stdout]     0 Error(s)
+[2025-05-03 09:38:10] [build-stdout] Time Elapsed 00:00:02.34
+[2025-05-03 09:38:10] [build-stdout] Exit code 0
+[2025-05-03 09:38:10] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet restore /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln
+[2025-05-03 09:38:11] [build-stdout]   Determining projects to restore...
+[2025-05-03 09:38:13] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.SourceGenerators/Npgsql.SourceGenerators.csproj (in 677 ms).
+[2025-05-03 09:38:13] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NetTopologySuite/Npgsql.NetTopologySuite.csproj (in 683 ms).
+[2025-05-03 09:38:13] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.OpenTelemetry/Npgsql.OpenTelemetry.csproj (in 27 ms).
+[2025-05-03 09:38:13] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NodaTime/Npgsql.NodaTime.csproj (in 6 ms).
+[2025-05-03 09:38:13] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.Json.NET/Npgsql.Json.NET.csproj (in 52 ms).
+[2025-05-03 09:38:13] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.GeoJSON/Npgsql.GeoJSON.csproj (in 19 ms).
+[2025-05-03 09:38:14] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj (in 1.31 sec).
+[2025-05-03 09:38:14] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/Npgsql.csproj (in 532 ms).
+[2025-05-03 09:38:14] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/Npgsql.Tests.csproj (in 423 ms).
+[2025-05-03 09:38:14] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj (in 54 ms).
+[2025-05-03 09:38:14] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj (in 13 ms).
+[2025-05-03 09:38:14] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj (in 1.42 sec).
+[2025-05-03 09:38:14] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj (in 189 ms).
+[2025-05-03 09:38:16] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj (in 2.19 sec).
+[2025-05-03 09:38:16] [build-stdout] Exit code 0
+[2025-05-03 09:38:16] [build-stdout] Running /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db/working/.dotnet/dotnet build --no-incremental /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Npgsql.sln
+[2025-05-03 09:38:18] [build-stdout]   Determining projects to restore...
+[2025-05-03 09:38:19] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-03 09:38:31] [build-stdout]   Npgsql.SourceGenerators -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.SourceGenerators/bin/Debug/netstandard2.0/Npgsql.SourceGenerators.dll
+[2025-05-03 09:39:30] [build-stdout]   Npgsql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/bin/Debug/net6.0/Npgsql.dll
+[2025-05-03 09:39:40] [build-stdout]   Npgsql.GeoJSON -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.GeoJSON/bin/Debug/net6.0/Npgsql.GeoJSON.dll
+[2025-05-03 09:39:41] [build-stdout]   Npgsql.OpenTelemetry -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.OpenTelemetry/bin/Debug/net6.0/Npgsql.OpenTelemetry.dll
+[2025-05-03 09:39:41] [build-stdout]   Npgsql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/bin/Debug/net8.0/Npgsql.dll
+[2025-05-03 09:39:46] [build-stdout]   Npgsql.NetTopologySuite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NetTopologySuite/bin/Debug/net6.0/Npgsql.NetTopologySuite.dll
+[2025-05-03 09:39:46] [build-stdout]   Npgsql.NodaTime -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NodaTime/bin/Debug/net6.0/Npgsql.NodaTime.dll
+[2025-05-03 09:39:46] [build-stdout]   Npgsql.Json.NET -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.Json.NET/bin/Debug/net6.0/Npgsql.Json.NET.dll
+[2025-05-03 09:39:47] [build-stdout]   Npgsql.DependencyInjection -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/bin/Debug/net6.0/Npgsql.DependencyInjection.dll
+[2025-05-03 09:40:50] [build-stdout]   Npgsql.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/bin/Debug/net8.0/Npgsql.Tests.dll
+[2025-05-03 09:40:57] [build-stdout]   Npgsql.NativeAotTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/bin/Debug/net9.0/Npgsql.NativeAotTests.dll
+[2025-05-03 09:40:57] [build-stdout]   Npgsql.Specification.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/bin/Debug/net8.0/Npgsql.Specification.Tests.dll
+[2025-05-03 09:40:57] [build-stdout]   Npgsql.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/bin/Debug/net8.0/Npgsql.Benchmarks.dll
+[2025-05-03 09:40:57] [build-stdout]   Npgsql.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/bin/Debug/net9.0/Npgsql.Benchmarks.dll
+[2025-05-03 09:41:00] [build-stdout]   Npgsql.DependencyInjection -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/bin/Debug/net8.0/Npgsql.DependencyInjection.dll
+[2025-05-03 09:41:00] [build-stdout]   Npgsql.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/bin/Debug/net9.0/Npgsql.Tests.dll
+[2025-05-03 09:41:00] [build-stdout]   Npgsql.Specification.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/bin/Debug/net9.0/Npgsql.Specification.Tests.dll
+[2025-05-03 09:41:04] [build-stdout]   Npgsql.NativeAotTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/bin/Debug/net8.0/Npgsql.NativeAotTests.dll
+[2025-05-03 09:41:10] [build-stdout]   Npgsql.PluginTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/bin/Debug/net8.0/Npgsql.PluginTests.dll
+[2025-05-03 09:41:18] [build-stdout]   Npgsql.DependencyInjection.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/bin/Debug/net8.0/Npgsql.DependencyInjection.Tests.dll
+[2025-05-03 09:41:19] [build-stdout]   Npgsql.DependencyInjection.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/bin/Debug/net9.0/Npgsql.DependencyInjection.Tests.dll
+[2025-05-03 09:41:20] [build-stdout]   Npgsql.PluginTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/bin/Debug/net9.0/Npgsql.PluginTests.dll
+[2025-05-03 09:41:20] [build-stdout] Build succeeded.
+[2025-05-03 09:41:20] [build-stdout]     0 Warning(s)
+[2025-05-03 09:41:20] [build-stdout]     0 Error(s)
+[2025-05-03 09:41:20] [build-stdout] Time Elapsed 00:03:03.56
+[2025-05-03 09:41:20] [build-stdout] Exit code 0
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 24.00 MiB; string pool: 11.03 MiB).
+TRAP import complete (17.5s).
+Finished zipping source archive (2.97 MiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +10188 ms, Dauer: 231024 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 57.1s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 41m53s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +241214 ms, Dauer: 2576465 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +2817680 ms, Dauer: 1934 ms
+
+CSV-Ausgabe: npgsql-npgsql.results.csv
+Starting up command './run-analysis.sh -s target-repo/. -d db -q identify-call-paths.ql -c npgsql-npgsql.results.csv' and attaching to process
+Process finished (2819.61 seconds)

@@ -1,0 +1,55 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/Npgsql.csproj (in 2.54 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NetTopologySuite/Npgsql.NetTopologySuite.csproj (in 2.54 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.SourceGenerators/Npgsql.SourceGenerators.csproj (in 2.82 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.OpenTelemetry/Npgsql.OpenTelemetry.csproj (in 818 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NodaTime/Npgsql.NodaTime.csproj (in 815 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/Npgsql.DependencyInjection.csproj (in 36 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.GeoJSON/Npgsql.GeoJSON.csproj (in 195 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.Json.NET/Npgsql.Json.NET.csproj (in 1.11 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/Npgsql.Benchmarks.csproj (in 4.19 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/Npgsql.Tests.csproj (in 2.22 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/Npgsql.PluginTests.csproj (in 2.1 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/Npgsql.DependencyInjection.Tests.csproj (in 29 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/Npgsql.Specification.Tests.csproj (in 2.78 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/Npgsql.NativeAotTests.csproj (in 2.8 sec).
+-> Schritt 0: dotnet restore gestartet bei +1 ms, Dauer: 10091 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Npgsql.SourceGenerators -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.SourceGenerators/bin/Debug/netstandard2.0/Npgsql.SourceGenerators.dll
+  Npgsql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/bin/Debug/net8.0/Npgsql.dll
+  Npgsql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql/bin/Debug/net6.0/Npgsql.dll
+  Npgsql.GeoJSON -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.GeoJSON/bin/Debug/net6.0/Npgsql.GeoJSON.dll
+  Npgsql.NetTopologySuite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NetTopologySuite/bin/Debug/net6.0/Npgsql.NetTopologySuite.dll
+  Npgsql.NodaTime -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.NodaTime/bin/Debug/net6.0/Npgsql.NodaTime.dll
+  Npgsql.DependencyInjection -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/bin/Debug/net6.0/Npgsql.DependencyInjection.dll
+  Npgsql.OpenTelemetry -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.OpenTelemetry/bin/Debug/net6.0/Npgsql.OpenTelemetry.dll
+  Npgsql.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/bin/Debug/net8.0/Npgsql.Tests.dll
+  Npgsql.DependencyInjection -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.DependencyInjection/bin/Debug/net8.0/Npgsql.DependencyInjection.dll
+  Npgsql.Specification.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/bin/Debug/net8.0/Npgsql.Specification.Tests.dll
+  Npgsql.NativeAotTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/bin/Debug/net8.0/Npgsql.NativeAotTests.dll
+  Npgsql.Specification.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Specification.Tests/bin/Debug/net9.0/Npgsql.Specification.Tests.dll
+  Npgsql.DependencyInjection.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/bin/Debug/net8.0/Npgsql.DependencyInjection.Tests.dll
+  Npgsql.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Tests/bin/Debug/net9.0/Npgsql.Tests.dll
+  Npgsql.NativeAotTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.NativeAotTests/bin/Debug/net9.0/Npgsql.NativeAotTests.dll
+  Npgsql.Json.NET -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Npgsql.Json.NET/bin/Debug/net6.0/Npgsql.Json.NET.dll
+  Npgsql.DependencyInjection.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.DependencyInjection.Tests/bin/Debug/net9.0/Npgsql.DependencyInjection.Tests.dll
+  Npgsql.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/bin/Debug/net9.0/Npgsql.Benchmarks.dll
+  Npgsql.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.Benchmarks/bin/Debug/net8.0/Npgsql.Benchmarks.dll
+  Npgsql.PluginTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/bin/Debug/net9.0/Npgsql.PluginTests.dll
+  Npgsql.PluginTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Npgsql.PluginTests/bin/Debug/net8.0/Npgsql.PluginTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:47.14
+-> Schritt 1: dotnet build gestartet bei +10093 ms, Dauer: 47470 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 57565 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (57.56 seconds)
