@@ -25,7 +25,8 @@ jobs:
       - name: Checkout workflow repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+          fetch-tags: true
 
       - name: Checkout external repository
         uses: actions/checkout@v4
@@ -33,7 +34,8 @@ jobs:
           repository: ${{ github.event.inputs.repository }}
           ref: ${{ github.event.inputs.ref }}
           path: target-repo
-          fetch-depth: 1
+          fetch-depth: 0
+          fetch-tags: true
 
       - uses: actions/setup-dotnet@v4
         with:
@@ -125,7 +127,8 @@ jobs:
       - name: Checkout workflow repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+          fetch-tags: true
 
       - name: Checkout external repository
         uses: actions/checkout@v4
@@ -133,7 +136,8 @@ jobs:
           repository: ${{ github.event.inputs.repository }}
           ref: ${{ github.event.inputs.ref }}
           path: target-repo
-          fetch-depth: 1
+          fetch-depth: 0
+          fetch-tags: true
 
       - uses: actions/setup-dotnet@v4
         with:
