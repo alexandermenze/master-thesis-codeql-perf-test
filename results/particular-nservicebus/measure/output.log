@@ -1,0 +1,238 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTesting/NServiceBus.AcceptanceTesting.csproj (in 2.51 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj (in 2.51 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj (in 2.54 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj (in 2.54 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Testing.Fakes/NServiceBus.Testing.Fakes.csproj (in 5 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj (in 231 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/NServiceBus.Core.Analyzer.csproj (in 1.29 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj (in 1.26 sec).
+-> Schritt 0: dotnet restore gestartet bei +2 ms, Dauer: 6468 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+[2025-05-03 10:40:38] [build-stdout] CodeQL C# autobuilder
+[2025-05-03 10:40:38] [build-stdout] Working directory: /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src
+[2025-05-03 10:40:39] [build-stdout] Attempting to build using .NET Core
+[2025-05-03 10:40:39] [build-stdout] Running dotnet --info
+[2025-05-03 10:40:39] [build-stdout] .NET SDK:
+[2025-05-03 10:40:39] [build-stdout]  Version:           9.0.203
+[2025-05-03 10:40:39] [build-stdout]  Commit:            dc7acfa194
+[2025-05-03 10:40:39] [build-stdout]  Workload version:  9.0.200-manifests.9df47798
+[2025-05-03 10:40:39] [build-stdout]  MSBuild version:   17.13.20+a4ef1e90f
+[2025-05-03 10:40:39] [build-stdout] Runtime Environment:
+[2025-05-03 10:40:39] [build-stdout]  OS Name:     ubuntu
+[2025-05-03 10:40:39] [build-stdout]  OS Version:  24.04
+[2025-05-03 10:40:39] [build-stdout]  OS Platform: Linux
+[2025-05-03 10:40:39] [build-stdout]  RID:         linux-x64
+[2025-05-03 10:40:39] [build-stdout]  Base Path:   /usr/share/dotnet/sdk/9.0.203/
+[2025-05-03 10:40:39] [build-stdout] .NET workloads installed:
+[2025-05-03 10:40:39] [build-stdout] There are no installed workloads to display.
+[2025-05-03 10:40:39] [build-stdout] Configured to use loose manifests when installing new manifests.
+[2025-05-03 10:40:39] [build-stdout] Host:
+[2025-05-03 10:40:39] [build-stdout]   Version:      9.0.4
+[2025-05-03 10:40:39] [build-stdout]   Architecture: x64
+[2025-05-03 10:40:39] [build-stdout]   Commit:       f57e6dc747
+[2025-05-03 10:40:39] [build-stdout] .NET SDKs installed:
+[2025-05-03 10:40:39] [build-stdout]   8.0.408 [/usr/share/dotnet/sdk]
+[2025-05-03 10:40:39] [build-stdout]   9.0.203 [/usr/share/dotnet/sdk]
+[2025-05-03 10:40:39] [build-stdout] .NET runtimes installed:
+[2025-05-03 10:40:39] [build-stdout]   Microsoft.AspNetCore.App 8.0.15 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+[2025-05-03 10:40:39] [build-stdout]   Microsoft.AspNetCore.App 9.0.4 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+[2025-05-03 10:40:39] [build-stdout]   Microsoft.NETCore.App 8.0.15 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+[2025-05-03 10:40:39] [build-stdout]   Microsoft.NETCore.App 9.0.4 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+[2025-05-03 10:40:39] [build-stdout] Other architectures found:
+[2025-05-03 10:40:39] [build-stdout]   None
+[2025-05-03 10:40:39] [build-stdout] Environment variables:
+[2025-05-03 10:40:39] [build-stdout]   DOTNET_ROOT       [/usr/share/dotnet]
+[2025-05-03 10:40:39] [build-stdout] global.json file:
+[2025-05-03 10:40:39] [build-stdout]   /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/global.json
+[2025-05-03 10:40:39] [build-stdout] Learn more:
+[2025-05-03 10:40:39] [build-stdout]   https://aka.ms/dotnet/info
+[2025-05-03 10:40:39] [build-stdout] Download .NET:
+[2025-05-03 10:40:39] [build-stdout]   https://aka.ms/dotnet/download
+[2025-05-03 10:40:39] [build-stdout] Exit code 0
+[2025-05-03 10:40:39] [build-stdout] Running dotnet clean /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln
+[2025-05-03 10:40:39] [build-stdout] Build started 05/03/2025 10:40:39.
+[2025-05-03 10:40:39] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" on node 1 (Clean target(s)).
+[2025-05-03 10:40:39] [build-stdout]      1>ValidateSolutionConfiguration:
+[2025-05-03 10:40:39] [build-stdout]          Building solution configuration "Debug|Any CPU".
+[2025-05-03 10:40:40] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj" (3) on node 3 (Clean target(s)).
+[2025-05-03 10:40:40] [build-stdout]      3>MinVer:
+[2025-05-03 10:40:40] [build-stdout]          "/usr/share/dotnet/dotnet" "/home/runner/.nuget/packages/minver/6.0.0/build/bin/net6.0/MinVer.dll" "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests" --auto-increment "patch" --build-metadata "" --default-pre-release-identifiers "" --default-pre-release-phase "" --minimum-major-minor "9.0" --tag-prefix "" --verbosity "" --version-override ""
+[2025-05-03 10:40:40] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj.metaproj" (2) on node 1 (Clean target(s)).
+[2025-05-03 10:40:40] [build-stdout]      2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj.metaproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/NServiceBus.Core.Analyzer.csproj" (6) on node 1 (Clean target(s)).
+[2025-05-03 10:40:40] [build-stdout]      6>CoreClean:
+[2025-05-03 10:40:40] [build-stdout]          Creating directory "obj/Debug/netstandard2.0/".
+[2025-05-03 10:40:40] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj" (4) on node 2 (Clean target(s)).
+[2025-05-03 10:40:40] [build-stdout]      4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj" (4:2) on node 2 (Clean target(s)).
+[2025-05-03 10:40:40] [build-stdout]      4>CoreClean:
+[2025-05-03 10:40:40] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:40] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (5) on node 4 (Clean target(s)).
+[2025-05-03 10:40:40] [build-stdout]      5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (5:2) on node 4 (Clean target(s)).
+[2025-05-03 10:40:40] [build-stdout]      5>CoreClean:
+[2025-05-03 10:40:40] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:40] [build-stdout]      6>MinVer:
+[2025-05-03 10:40:40] [build-stdout]          "/usr/share/dotnet/dotnet" "/home/runner/.nuget/packages/minver/6.0.0/build/bin/net6.0/MinVer.dll" "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer" --auto-increment "patch" --build-metadata "" --default-pre-release-identifiers "" --default-pre-release-phase "" --minimum-major-minor "9.0" --tag-prefix "" --verbosity "" --version-override ""
+[2025-05-03 10:40:41] [build-stdout]    5:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (5:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTesting/NServiceBus.AcceptanceTesting.csproj" (8:2) on node 4 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]      8>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:41] [build-stdout]      5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (5:3) on node 2 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]      5>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 10:40:41] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj" (3:2) on node 4 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]      3>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 10:40:41] [build-stdout]    5:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (5:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj" (7:6) on node 2 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]      7>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:41] [build-stdout]      3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj" (3:3) on node 3 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]      3>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:41] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj" (9) on node 2 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]      9>MinVer:
+[2025-05-03 10:40:41] [build-stdout]          "/usr/share/dotnet/dotnet" "/home/runner/.nuget/packages/minver/6.0.0/build/bin/net6.0/MinVer.dll" "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests" --auto-increment "patch" --build-metadata "" --default-pre-release-identifiers "" --default-pre-release-phase "" --minimum-major-minor "9.0" --tag-prefix "" --verbosity "" --version-override ""
+[2025-05-03 10:40:41] [build-stdout]      4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj" (4:3) on node 4 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]      4>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 10:40:41] [build-stdout]      6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/NServiceBus.Core.Analyzer.csproj" (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj" (10) on node 1 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]     10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj" (10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj" (10:2) on node 1 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]     10>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:41] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (11) on node 4 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]     11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (11:2) on node 4 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]     11>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:41] [build-stdout]     10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj" (10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj" (10:3) on node 1 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]     10>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 10:40:41] [build-stdout]     11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (11:3) on node 3 (Clean target(s)).
+[2025-05-03 10:40:41] [build-stdout]     11>CoreClean:
+[2025-05-03 10:40:41] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 10:40:42] [build-stdout]   11:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (11:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Testing.Fakes/NServiceBus.Testing.Fakes.csproj" (12:2) on node 4 (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]     12>CoreClean:
+[2025-05-03 10:40:42] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:42] [build-stdout]      7>AddCommitDatesToAssembly:
+[2025-05-03 10:40:42] [build-stdout]          git show -s --format=%cI 9.2.0^{commit}
+[2025-05-03 10:40:42] [build-stdout]          2024-08-05T15:37:59+02:00
+[2025-05-03 10:40:42] [build-stdout]          git show -s --format=%cI
+[2025-05-03 10:40:42] [build-stdout]          2025-04-10T08:26:11+02:00
+[2025-05-03 10:40:42] [build-stdout]      7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj" (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj" (13) on node 1 (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]     13>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj" (13) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj" (13:2) on node 1 (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]     13>CoreClean:
+[2025-05-03 10:40:42] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:42] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj" (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]     10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]      9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj" (9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj" (9:2) on node 4 (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]      9>CoreClean:
+[2025-05-03 10:40:42] [build-stdout]          Creating directory "obj/Debug/net8.0/".
+[2025-05-03 10:40:42] [build-stdout]     10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]     10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]      2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj.metaproj" (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]     13>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj" (13) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj" (13:3) on node 3 (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]     13>CoreClean:
+[2025-05-03 10:40:42] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 10:40:42] [build-stdout]      9>MinVer:
+[2025-05-03 10:40:42] [build-stdout]          "/usr/share/dotnet/dotnet" "/home/runner/.nuget/packages/minver/6.0.0/build/bin/net6.0/MinVer.dll" "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests" --auto-increment "patch" --build-metadata "" --default-pre-release-identifiers "" --default-pre-release-phase "" --minimum-major-minor "9.0" --tag-prefix "" --verbosity "" --version-override ""
+[2025-05-03 10:40:42] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]      9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj" (9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj" (9:3) on node 2 (Clean target(s)).
+[2025-05-03 10:40:42] [build-stdout]      9>CoreClean:
+[2025-05-03 10:40:42] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 10:40:42] [build-stdout]      9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]     12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Testing.Fakes/NServiceBus.Testing.Fakes.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]     11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]     11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]     11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTesting/NServiceBus.AcceptanceTesting.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]     13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]     13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]     13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout]      1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (Clean target(s)).
+[2025-05-03 10:40:43] [build-stdout] Build succeeded.
+[2025-05-03 10:40:43] [build-stdout]     0 Warning(s)
+[2025-05-03 10:40:43] [build-stdout]     0 Error(s)
+[2025-05-03 10:40:43] [build-stdout] Time Elapsed 00:00:03.69
+[2025-05-03 10:40:43] [build-stdout] Exit code 0
+[2025-05-03 10:40:43] [build-stdout] Running dotnet restore /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln
+[2025-05-03 10:40:44] [build-stdout]   Determining projects to restore...
+[2025-05-03 10:40:46] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-03 10:40:46] [build-stdout] Exit code 0
+[2025-05-03 10:40:46] [build-stdout] Running dotnet build --no-incremental /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln
+[2025-05-03 10:40:47] [build-stdout]   Determining projects to restore...
+[2025-05-03 10:40:49] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-03 10:40:51] [build-stdout]   2024-08-05T15:37:59+02:00
+[2025-05-03 10:40:51] [build-stdout]   2025-04-10T08:26:11+02:00
+[2025-05-03 10:41:03] [build-stdout]   NServiceBus.Core.Analyzer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/bin/Debug/netstandard2.0/NServiceBus.Core.Analyzer.dll
+[2025-05-03 10:41:39] [build-stdout]   NServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/bin/Debug/net8.0/NServiceBus.Core.dll
+[2025-05-03 10:41:54] [build-stdout]   NServiceBus.Core.Analyzer.Tests.Roslyn4 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/bin/Debug/net9.0/NServiceBus.Core.Analyzer.Tests.Roslyn4.dll
+[2025-05-03 10:41:54] [build-stdout]   Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.9.2.7.nupkg'.
+[2025-05-03 10:42:03] [build-stdout]   NServiceBus.Testing.Fakes -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Testing.Fakes/bin/Debug/net8.0/NServiceBus.Testing.Fakes.dll
+[2025-05-03 10:42:11] [build-stdout]   NServiceBus.PersistenceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/bin/Debug/net9.0/NServiceBus.PersistenceTests.dll
+[2025-05-03 10:42:11] [build-stdout]   NServiceBus.AcceptanceTesting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTesting/bin/Debug/net8.0/NServiceBus.AcceptanceTesting.dll
+[2025-05-03 10:42:12] [build-stdout]   2024-08-05T15:37:59+02:00
+[2025-05-03 10:42:12] [build-stdout]   2025-04-10T08:26:11+02:00
+[2025-05-03 10:42:12] [build-stdout]   Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.AcceptanceTesting.9.2.7.nupkg'.
+[2025-05-03 10:42:35] [build-stdout]   NServiceBus.Core.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/bin/Debug/net8.0/NServiceBus.Core.Tests.dll
+[2025-05-03 10:42:50] [build-stdout]   NServiceBus.ContainerTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/bin/Debug/net9.0/NServiceBus.ContainerTests.dll
+[2025-05-03 10:43:12] [build-stdout]   NServiceBus.PersistenceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/bin/Debug/net8.0/NServiceBus.PersistenceTests.dll
+[2025-05-03 10:43:26] [build-stdout]   NServiceBus.Core.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/bin/Debug/net9.0/NServiceBus.Core.Tests.dll
+[2025-05-03 10:43:28] [build-stdout]   NServiceBus.Core.Analyzer.Tests.Roslyn4 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/bin/Debug/net8.0/NServiceBus.Core.Analyzer.Tests.Roslyn4.dll
+[2025-05-03 10:43:38] [build-stdout]   NServiceBus.ContainerTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/bin/Debug/net8.0/NServiceBus.ContainerTests.dll
+[2025-05-03 10:44:39] [build-stdout]   NServiceBus.AcceptanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/bin/Debug/net9.0/NServiceBus.AcceptanceTests.dll
+[2025-05-03 10:44:40] [build-stdout]   Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.PersistenceTests.Sources.9.2.7.nupkg'.
+[2025-05-03 10:44:50] [build-stdout]   NServiceBus.Learning.AcceptanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/bin/Debug/net8.0/NServiceBus.Learning.AcceptanceTests.dll
+[2025-05-03 10:44:50] [build-stdout]   NServiceBus.AcceptanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/bin/Debug/net8.0/NServiceBus.AcceptanceTests.dll
+[2025-05-03 10:44:50] [build-stdout]   NServiceBus.Learning.AcceptanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/bin/Debug/net9.0/NServiceBus.Learning.AcceptanceTests.dll
+[2025-05-03 10:44:56] [build-stdout]   NServiceBus.TransportTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/bin/Debug/net9.0/NServiceBus.TransportTests.dll
+[2025-05-03 10:45:03] [build-stdout]   NServiceBus.TransportTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/bin/Debug/net8.0/NServiceBus.TransportTests.dll
+[2025-05-03 10:45:04] [build-stdout]   Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.TransportTests.Sources.9.2.7.nupkg'.
+[2025-05-03 10:45:04] [build-stdout]   Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.AcceptanceTests.Sources.9.2.7.nupkg'.
+[2025-05-03 10:45:04] [build-stdout] Build succeeded.
+[2025-05-03 10:45:04] [build-stdout]     0 Warning(s)
+[2025-05-03 10:45:04] [build-stdout]     0 Error(s)
+[2025-05-03 10:45:04] [build-stdout] Time Elapsed 00:04:17.94
+[2025-05-03 10:45:04] [build-stdout] Exit code 0
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 20.40 MiB; string pool: 5.53 MiB).
+TRAP import complete (19.4s).
+Finished zipping source archive (2.66 MiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +6471 ms, Dauer: 291754 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 54s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 1m4s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +298226 ms, Dauer: 123782 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +422010 ms, Dauer: 865 ms
+
+CSV-Ausgabe: Particular-NServiceBus.results.csv
+Starting up command './run-analysis.sh -s target-repo/src -d db -q identify-call-paths.ql -c Particular-NServiceBus.results.csv' and attaching to process
+Process finished (422.87 seconds)

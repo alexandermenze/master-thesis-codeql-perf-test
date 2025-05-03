@@ -1,0 +1,57 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/NServiceBus.TransportTests.csproj (in 3.65 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/NServiceBus.ContainerTests.csproj (in 3.63 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Testing.Fakes/NServiceBus.Testing.Fakes.csproj (in 4 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj (in 3.79 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/NServiceBus.PersistenceTests.csproj (in 45 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/NServiceBus.Core.Analyzer.Tests.Roslyn4.csproj (in 73 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/NServiceBus.Core.Analyzer.csproj (in 4.08 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTesting/NServiceBus.AcceptanceTesting.csproj (in 35 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/NServiceBus.AcceptanceTests.csproj (in 321 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/NServiceBus.Learning.AcceptanceTests.csproj (in 617 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/NServiceBus.Core.Tests.csproj (in 493 ms).
+-> Schritt 0: dotnet restore gestartet bei +1 ms, Dauer: 7665 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  NServiceBus.Core.Analyzer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/bin/Debug/netstandard2.0/NServiceBus.Core.Analyzer.dll
+  2024-08-05T15:37:59+02:00
+  2025-04-10T08:26:11+02:00
+  NServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/bin/Debug/net8.0/NServiceBus.Core.dll
+  Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.9.2.7.nupkg'.
+  NServiceBus.AcceptanceTesting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTesting/bin/Debug/net8.0/NServiceBus.AcceptanceTesting.dll
+  NServiceBus.Core.Analyzer.Tests.Roslyn4 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/bin/Debug/net9.0/NServiceBus.Core.Analyzer.Tests.Roslyn4.dll
+  NServiceBus.TransportTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/bin/Debug/net9.0/NServiceBus.TransportTests.dll
+  NServiceBus.TransportTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.TransportTests/bin/Debug/net8.0/NServiceBus.TransportTests.dll
+  NServiceBus.ContainerTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/bin/Debug/net9.0/NServiceBus.ContainerTests.dll
+  2024-08-05T15:37:59+02:00
+  2025-04-10T08:26:11+02:00
+  Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.AcceptanceTesting.9.2.7.nupkg'.
+  NServiceBus.Learning.AcceptanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/bin/Debug/net8.0/NServiceBus.Learning.AcceptanceTests.dll
+  Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.TransportTests.Sources.9.2.7.nupkg'.
+  NServiceBus.Testing.Fakes -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Testing.Fakes/bin/Debug/net8.0/NServiceBus.Testing.Fakes.dll
+  NServiceBus.PersistenceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/bin/Debug/net8.0/NServiceBus.PersistenceTests.dll
+  NServiceBus.PersistenceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.PersistenceTests/bin/Debug/net9.0/NServiceBus.PersistenceTests.dll
+  NServiceBus.Core.Analyzer.Tests.Roslyn4 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer.Tests.Roslyn4/bin/Debug/net8.0/NServiceBus.Core.Analyzer.Tests.Roslyn4.dll
+  NServiceBus.Learning.AcceptanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Learning.AcceptanceTests/bin/Debug/net9.0/NServiceBus.Learning.AcceptanceTests.dll
+  NServiceBus.AcceptanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/bin/Debug/net9.0/NServiceBus.AcceptanceTests.dll
+  NServiceBus.AcceptanceTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.AcceptanceTests/bin/Debug/net8.0/NServiceBus.AcceptanceTests.dll
+  NServiceBus.Core.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/bin/Debug/net8.0/NServiceBus.Core.Tests.dll
+  NServiceBus.ContainerTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.ContainerTests/bin/Debug/net8.0/NServiceBus.ContainerTests.dll
+  NServiceBus.Core.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Tests/bin/Debug/net9.0/NServiceBus.Core.Tests.dll
+  Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.PersistenceTests.Sources.9.2.7.nupkg'.
+  Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.AcceptanceTests.Sources.9.2.7.nupkg'.
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:26.92
+-> Schritt 1: dotnet build gestartet bei +7668 ms, Dauer: 87284 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 94955 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/src' and attaching to process
+Process finished (94.95 seconds)
