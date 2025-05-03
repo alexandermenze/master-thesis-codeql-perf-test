@@ -1,0 +1,3 @@
+project (github id): grandnode/grandnode2
+ref (branch / tag / commit hash): 2.3.0
+sln-path (default '.'): 

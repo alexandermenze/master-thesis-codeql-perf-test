@@ -1,0 +1,3 @@
+project (github id): PiranhaCMS/piranha.core
+ref (branch / tag / commit hash): v12.0
+sln-path (default '.'): 
