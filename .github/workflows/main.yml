@@ -64,16 +64,23 @@ jobs:
         run: |
           SCRIPT=./run-analysis.sh
           QUERY_FILE="identify-call-paths.ql"
+          RESULTS_FILE="${REPO_NAME}.results.csv"
           LOG_FILE="${REPO_NAME}.psrecord.log"
           OUTPUT_FILE="${REPO_NAME}.output.log"
 
           chmod +x $SCRIPT
 
-          psrecord "$SCRIPT -s target-repo -d db -q identify-call-paths.ql" \
+          psrecord "$SCRIPT -s target-repo -d db -q identify-call-paths.ql -c $RESULTS_FILE" \
             --include-children \
             --log "$LOG_FILE" \
             2>&1 | tee $OUTPUT_FILE
 
+      - name: Upload results csv
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-csv-${{ env.REPO_NAME }}
+          path: ${{ env.REPO_NAME }}.results.csv
+      
       - name: Upload resource usage log
         uses: actions/upload-artifact@v4
         with:
