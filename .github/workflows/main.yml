@@ -56,9 +56,24 @@ jobs:
           echo "Adding CodeQL binary directory to PATH: $PWD/codeql"
           echo "$PWD/codeql" >> $GITHUB_PATH
 
+      - name: Install cloc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cloc
+
       - name: Prepare repository name
         run: |
           echo "REPO_NAME=${REPO_INPUT//\//-}" >> $GITHUB_ENV
+
+      - name: Run cloc for C# files
+        run: |
+          cloc target-repo --include-lang="C#" --exclude-dir=bin,obj --json --out="${REPO_NAME}.cloc.json"
+
+      - name: Upload cloc results
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-cloc-${{ env.REPO_NAME }}
+          path: ${{ env.REPO_NAME }}.cloc.json
 
       - name: Run CodeQL script under psrecord
         run: |
