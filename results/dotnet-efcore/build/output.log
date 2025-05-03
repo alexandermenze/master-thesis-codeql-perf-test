@@ -1,0 +1,137 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Relational.Specification.Tests/EFCore.Relational.Specification.Tests.csproj (in 7.81 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Proxies.Tests/EFCore.Proxies.Tests.csproj (in 7.81 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.OData.FunctionalTests/EFCore.OData.FunctionalTests.csproj (in 7.81 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Relational.Tests/EFCore.Relational.Tests.csproj (in 7.81 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.InMemory.FunctionalTests/EFCore.InMemory.FunctionalTests.csproj (in 1.29 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.InMemory.Tests/EFCore.InMemory.Tests.csproj (in 1.29 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Design.Tests/EFCore.Design.Tests.csproj (in 1.81 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Cosmos.Tests/EFCore.Cosmos.Tests.csproj (in 2.65 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Cosmos.FunctionalTests/EFCore.Cosmos.FunctionalTests.csproj (in 2.64 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.CrossStore.FunctionalTests/EFCore.CrossStore.FunctionalTests.csproj (in 3.94 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.AspNet.Sqlite.FunctionalTests/EFCore.AspNet.Sqlite.FunctionalTests.csproj (in 3.27 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.AspNet.Specification.Tests/EFCore.AspNet.Specification.Tests.csproj (in 1.12 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.AspNet.SqlServer.FunctionalTests/EFCore.AspNet.SqlServer.FunctionalTests.csproj (in 1.14 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.AspNet.InMemory.FunctionalTests/EFCore.AspNet.InMemory.FunctionalTests.csproj (in 1.12 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Microsoft.Data.Sqlite.Tests/Microsoft.Data.Sqlite.Tests.csproj (in 1.44 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Microsoft.Data.Sqlite.Tests/Microsoft.Data.Sqlite.sqlite3.Tests.csproj (in 1.52 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Microsoft.Data.Sqlite.Tests/Microsoft.Data.Sqlite.e_sqlcipher.Tests.csproj (in 1.47 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.VisualBasic.FunctionalTests/EFCore.VisualBasic.FunctionalTests.vbproj (in 29 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Tests/EFCore.Tests.csproj (in 27 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Sqlite.Tests/EFCore.Sqlite.Tests.csproj (in 37 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Sqlite.FunctionalTests/EFCore.Sqlite.FunctionalTests.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.SqlServer.FunctionalTests/EFCore.SqlServer.FunctionalTests.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.SqlServer.Tests/EFCore.SqlServer.Tests.csproj (in 680 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.SqlServer.HierarchyId.Tests/EFCore.SqlServer.HierarchyId.Tests.csproj (in 734 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Microsoft.Data.Sqlite.Tests/Microsoft.Data.Sqlite.e_sqlite3mc.Tests.csproj (in 2.89 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.SqlServer.Abstractions/EFCore.SqlServer.Abstractions.csproj (in 338 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Specification.Tests/EFCore.Specification.Tests.csproj (in 1.44 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Relational/EFCore.Relational.csproj (in 200 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Proxies/EFCore.Proxies.csproj (in 103 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.InMemory/EFCore.InMemory.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.SqlServer.HierarchyId/EFCore.SqlServer.HierarchyId.csproj (in 1.03 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.SqlServer.NTS/EFCore.SqlServer.NTS.csproj (in 1.08 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Cosmos/EFCore.Cosmos.csproj (in 66 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Abstractions/EFCore.Abstractions.csproj (in 230 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Design/EFCore.Design.csproj (in 404 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Analyzers/EFCore.Analyzers.csproj (in 385 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/ef.Tests/ef.Tests.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/dotnet-ef.Tests/dotnet-ef.Tests.csproj (in 4 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Microsoft.Data.Sqlite.Tests/Microsoft.Data.Sqlite.winsqlite3.Tests.csproj (in 372 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/benchmark/EFCore.Benchmarks/EFCore.Benchmarks.csproj (in 1.44 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/benchmark/EFCore.Sqlite.Benchmarks/EFCore.Sqlite.Benchmarks.csproj (in 1.78 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/benchmark/EFCore.SqlServer.Benchmarks/EFCore.SqlServer.Benchmarks.csproj (in 1.59 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Microsoft.Data.Sqlite/Microsoft.Data.Sqlite.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Microsoft.Data.Sqlite.Core/Microsoft.Data.Sqlite.Core.csproj (in 1.57 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore/EFCore.csproj (in 29 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Tools/EFCore.Tools.csproj (in 493 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Templates/EFCore.Templates.csproj (in 2 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/EFCore.Analyzers.Tests/EFCore.Analyzers.Tests.csproj (in 3.6 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Sqlite/EFCore.Sqlite.csproj (in 6 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Sqlite.NTS/EFCore.Sqlite.NTS.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Sqlite.Core/EFCore.Sqlite.Core.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.SqlServer/EFCore.SqlServer.csproj (in 22 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/dotnet-ef/dotnet-ef.csproj (in 3.3 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ef/ef.csproj (in 3.58 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/EFCore.Tasks/EFCore.Tasks.csproj (in 1.32 sec).
+-> Schritt 0: dotnet restore gestartet bei +1 ms, Dauer: 28805 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  ef -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/ef/Debug/net472/ef.exe
+  ef -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/ef/Debug/netcoreapp2.0/ef.dll
+  EFCore.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Abstractions/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+  EFCore.Analyzers -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Analyzers/Debug/netstandard2.0/Microsoft.EntityFrameworkCore.Analyzers.dll
+  ef -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/ef/x86/Debug/net472/ef.exe
+  EFCore.Templates -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Templates/Debug/netstandard2.0/EFCore.Templates.dll
+  ef -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/ef/ARM64/Debug/net472/ef.exe
+  EFCore.SqlServer.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.SqlServer.Abstractions/Debug/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.Abstractions.dll
+  Microsoft.Data.Sqlite.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.Core/Debug/netstandard2.0/Microsoft.Data.Sqlite.dll
+  EFCore.Tasks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Tasks/Debug/net8.0/Microsoft.EntityFrameworkCore.Tasks.dll
+  EFCore.Tasks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Tasks/Debug/net472/Microsoft.EntityFrameworkCore.Tasks.dll
+  dotnet-ef -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/dotnet-ef/Debug/net8.0/dotnet-ef.dll
+  dotnet-ef.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/dotnet-ef.Tests/Debug/net9.0/dotnet-ef.Tests.dll
+  EFCore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+  EFCore.InMemory -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.InMemory/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
+  EFCore.Proxies -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Proxies/Debug/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll
+  EFCore.Relational -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Relational/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+  EFCore.Design -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Design/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+  EFCore.Specification.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Specification.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Specification.Tests.dll
+  EFCore.InMemory.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.InMemory.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.FunctionalTests.dll
+  EFCore.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Tests.dll
+  EFCore.InMemory.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.InMemory.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.Tests.dll
+  EFCore.Proxies.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Proxies.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Proxies.Tests.dll
+  EFCore.Relational.Specification.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Relational.Specification.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.Specification.Tests.dll
+  EFCore.Relational.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Relational.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.Tests.dll
+  Microsoft.Data.Sqlite.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.Core/Debug/net8.0/Microsoft.Data.Sqlite.dll
+  Microsoft.Data.Sqlite.e_sqlcipher.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.e_sqlcipher.Tests/Debug/net9.0/Microsoft.Data.Sqlite.e_sqlcipher.Tests.dll
+  Microsoft.Data.Sqlite.e_sqlite3mc.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.e_sqlite3mc.Tests/Debug/net9.0/Microsoft.Data.Sqlite.e_sqlite3mc.Tests.dll
+  EFCore.Sqlite.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Sqlite.Core/Debug/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+  Microsoft.Data.Sqlite.sqlite3.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.sqlite3.Tests/Debug/net9.0/Microsoft.Data.Sqlite.sqlite3.Tests.dll
+  EFCore.SqlServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.SqlServer/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+  Microsoft.Data.Sqlite.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.Tests/Debug/net9.0/Microsoft.Data.Sqlite.Tests.dll
+  Microsoft.Data.Sqlite.sqlite3.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.sqlite3.Tests/Debug/net462/Microsoft.Data.Sqlite.sqlite3.Tests.dll
+  Microsoft.Data.Sqlite.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.Tests/Debug/net462/Microsoft.Data.Sqlite.Tests.dll
+  Microsoft.Data.Sqlite.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.Core/Debug/net6.0/Microsoft.Data.Sqlite.dll
+  Microsoft.Data.Sqlite.winsqlite3.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.winsqlite3.Tests/Debug/net9.0/Microsoft.Data.Sqlite.winsqlite3.Tests.dll
+  Microsoft.Data.Sqlite.e_sqlite3mc.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.e_sqlite3mc.Tests/Debug/net462/Microsoft.Data.Sqlite.e_sqlite3mc.Tests.dll
+  Microsoft.Data.Sqlite.e_sqlcipher.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.e_sqlcipher.Tests/Debug/net462/Microsoft.Data.Sqlite.e_sqlcipher.Tests.dll
+  Microsoft.Data.Sqlite.winsqlite3.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Microsoft.Data.Sqlite.winsqlite3.Tests/Debug/net462/Microsoft.Data.Sqlite.winsqlite3.Tests.dll
+  ef.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/ef.Tests/Debug/net9.0/ef.Tests.dll
+  EFCore.AspNet.Specification.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.AspNet.Specification.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.AspNet.Specification.Tests.dll
+  EFCore.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Benchmarks/Debug/net8.0/EFCore.Benchmarks.dll
+  EFCore.Analyzers.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Analyzers.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Analyzers.Tests.dll
+  EFCore.AspNet.InMemory.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.AspNet.InMemory.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.AspNet.InMemory.FunctionalTests.dll
+  EFCore.SqlServer.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.SqlServer.Benchmarks/Debug/net8.0/EFCore.SqlServer.Benchmarks.dll
+  EFCore.Sqlite.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Sqlite.Benchmarks/Debug/net8.0/EFCore.Sqlite.Benchmarks.dll
+  EFCore.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Cosmos/Debug/net8.0/Microsoft.EntityFrameworkCore.Cosmos.dll
+  EFCore.Cosmos.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Cosmos.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.Cosmos.FunctionalTests.dll
+  EFCore.SqlServer.NTS -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.SqlServer.NTS/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+  EFCore.SqlServer.HierarchyId -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.SqlServer.HierarchyId/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.HierarchyId.dll
+  EFCore.SqlServer.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.SqlServer.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.SqlServer.FunctionalTests.dll
+  EFCore.SqlServer.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.SqlServer.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.SqlServer.Tests.dll
+  EFCore.SqlServer.HierarchyId.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.SqlServer.HierarchyId.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.SqlServer.HierarchyId.Tests.dll
+  EFCore.Sqlite.NTS -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Sqlite.NTS/Debug/net8.0/Microsoft.EntityFrameworkCore.Sqlite.NetTopologySuite.dll
+  EFCore.Cosmos.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Cosmos.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Cosmos.Tests.dll
+  EFCore.OData.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.OData.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.OData.FunctionalTests.dll
+  EFCore.AspNet.SqlServer.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.AspNet.SqlServer.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.AspNet.SqlServer.FunctionalTests.dll
+  EFCore.Sqlite.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Sqlite.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.Sqlite.FunctionalTests.dll
+  EFCore.Sqlite.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Sqlite.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Sqlite.Tests.dll
+  EFCore.VisualBasic.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.VisualBasic.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.VisualBasic.FunctionalTests.dll
+  EFCore.AspNet.Sqlite.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.AspNet.Sqlite.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.AspNet.Sqlite.FunctionalTests.dll
+  EFCore.CrossStore.FunctionalTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.CrossStore.FunctionalTests/Debug/net9.0/Microsoft.EntityFrameworkCore.CrossStore.FunctionalTests.dll
+  EFCore.Design.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/EFCore.Design.Tests/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:03:24.70
+-> Schritt 1: dotnet build gestartet bei +28808 ms, Dauer: 205055 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 233865 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (233.86 seconds)
