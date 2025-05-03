@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.102251052856445,
+  "n_files"            : 125,
+  "n_lines"            : 24084,
+  "files_per_second"   : 1222.48129978175,
+  "lines_per_second"   : 235537.91699155,
+  "report_file"        : "MichaCo-DnsClient.NET.cloc.json"},
+"C#" :{
+  "nFiles": 125,
+  "blank": 3613,
+  "comment": 5692,
+  "code": 14779},
+"SUM": {
+  "blank": 3613,
+  "comment": 5692,
+  "code": 14779,
+  "nFiles": 125} }
