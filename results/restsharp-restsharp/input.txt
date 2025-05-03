@@ -1,0 +1,3 @@
+project (github id): restsharp/RestSharp
+ref (branch / tag / commit hash): 112.1.0
+sln-path (default '.'): 

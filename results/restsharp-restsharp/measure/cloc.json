@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.115909099578857,
+  "n_files"            : 223,
+  "n_lines"            : 19433,
+  "files_per_second"   : 1923.921424722,
+  "lines_per_second"   : 167657.242361537,
+  "report_file"        : "restsharp-RestSharp.cloc.json"},
+"C#" :{
+  "nFiles": 223,
+  "blank": 3598,
+  "comment": 4096,
+  "code": 11739},
+"SUM": {
+  "blank": 3598,
+  "comment": 4096,
+  "code": 11739,
+  "nFiles": 223} }
