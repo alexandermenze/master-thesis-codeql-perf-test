@@ -108,3 +108,60 @@ jobs:
           name: codeql-output-${{ env.REPO_NAME }}
           path: ${{ env.REPO_NAME }}.output.log
 
+  build-monitor:
+    runs-on: ubuntu-latest
+    env:
+      REPO_INPUT: ${{ github.event.inputs.repository }}
+    steps:
+      - name: Checkout workflow repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Checkout external repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.repository }}
+          ref: ${{ github.event.inputs.ref }}
+          path: target-repo
+          fetch-depth: 1
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.x'
+
+      - name: Set up Python & install psrecord
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: |
+          python -m pip install --upgrade pip
+          pip install psrecord
+
+      - name: Prepare repository name
+        run: echo "REPO_NAME=${REPO_INPUT//\//-}" >> $GITHUB_ENV
+
+      - name: Run build-analysis script under psrecord
+        run: |
+          SCRIPT=./run-analysis-build.sh
+          BUILD_LOG_FILE="${REPO_NAME}.build-psrecord.log"
+          BUILD_OUTPUT="${REPO_NAME}.build-output.log"
+
+          chmod +x $SCRIPT
+
+          psrecord "$SCRIPT -s target-repo" \
+            --include-children \
+            --log "$BUILD_LOG_FILE" \
+            2>&1 | tee $BUILD_OUTPUT
+
+      - name: Upload build resource usage log
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-psrecord-log-${{ env.REPO_NAME }}
+          path: ${{ env.REPO_NAME }}.build-psrecord.log
+
+      - name: Upload build script output log
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output-${{ env.REPO_NAME }}
+          path: ${{ env.REPO_NAME }}.build-output.log
