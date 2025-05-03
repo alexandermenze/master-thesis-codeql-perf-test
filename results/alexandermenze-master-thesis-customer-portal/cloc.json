@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.0729210376739502,
+  "n_files"            : 92,
+  "n_lines"            : 3486,
+  "files_per_second"   : 1261.63865647877,
+  "lines_per_second"   : 47805.1343096193,
+  "report_file"        : "alexandermenze-master-thesis-customer-portal.cloc.json"},
+"C#" :{
+  "nFiles": 92,
+  "blank": 658,
+  "comment": 34,
+  "code": 2794},
+"SUM": {
+  "blank": 658,
+  "comment": 34,
+  "code": 2794,
+  "nFiles": 92} }

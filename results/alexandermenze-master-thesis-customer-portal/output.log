@@ -1,0 +1,154 @@
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/autobuild.sh]
+[2025-05-03 06:52:53] [build-stdout] CodeQL C# autobuilder
+[2025-05-03 06:52:53] [build-stdout] Working directory: /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo
+[2025-05-03 06:52:53] [build-stdout] Attempting to build using .NET Core
+[2025-05-03 06:52:53] [build-stdout] Running dotnet --info
+[2025-05-03 06:52:53] [build-stdout] .NET SDK:
+[2025-05-03 06:52:53] [build-stdout]  Version:           9.0.203
+[2025-05-03 06:52:53] [build-stdout]  Commit:            dc7acfa194
+[2025-05-03 06:52:53] [build-stdout]  Workload version:  9.0.200-manifests.9df47798
+[2025-05-03 06:52:53] [build-stdout]  MSBuild version:   17.13.20+a4ef1e90f
+[2025-05-03 06:52:53] [build-stdout] Runtime Environment:
+[2025-05-03 06:52:53] [build-stdout]  OS Name:     ubuntu
+[2025-05-03 06:52:53] [build-stdout]  OS Version:  24.04
+[2025-05-03 06:52:54] [build-stdout]  OS Platform: Linux
+[2025-05-03 06:52:54] [build-stdout]  RID:         linux-x64
+[2025-05-03 06:52:54] [build-stdout]  Base Path:   /usr/share/dotnet/sdk/9.0.203/
+[2025-05-03 06:52:54] [build-stdout] .NET workloads installed:
+[2025-05-03 06:52:54] [build-stdout] There are no installed workloads to display.
+[2025-05-03 06:52:54] [build-stdout] Configured to use loose manifests when installing new manifests.
+[2025-05-03 06:52:54] [build-stdout] Host:
+[2025-05-03 06:52:54] [build-stdout]   Version:      9.0.4
+[2025-05-03 06:52:54] [build-stdout]   Architecture: x64
+[2025-05-03 06:52:54] [build-stdout]   Commit:       f57e6dc747
+[2025-05-03 06:52:54] [build-stdout] .NET SDKs installed:
+[2025-05-03 06:52:54] [build-stdout]   9.0.203 [/usr/share/dotnet/sdk]
+[2025-05-03 06:52:54] [build-stdout] .NET runtimes installed:
+[2025-05-03 06:52:54] [build-stdout]   Microsoft.AspNetCore.App 9.0.4 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+[2025-05-03 06:52:54] [build-stdout]   Microsoft.NETCore.App 8.0.15 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+[2025-05-03 06:52:54] [build-stdout]   Microsoft.NETCore.App 9.0.4 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+[2025-05-03 06:52:54] [build-stdout] Other architectures found:
+[2025-05-03 06:52:54] [build-stdout]   None
+[2025-05-03 06:52:54] [build-stdout] Environment variables:
+[2025-05-03 06:52:54] [build-stdout]   DOTNET_ROOT       [/usr/share/dotnet]
+[2025-05-03 06:52:54] [build-stdout] global.json file:
+[2025-05-03 06:52:54] [build-stdout]   Not found
+[2025-05-03 06:52:54] [build-stdout] Learn more:
+[2025-05-03 06:52:54] [build-stdout]   https://aka.ms/dotnet/info
+[2025-05-03 06:52:54] [build-stdout] Download .NET:
+[2025-05-03 06:52:54] [build-stdout]   https://aka.ms/dotnet/download
+[2025-05-03 06:52:54] [build-stdout] Exit code 0
+[2025-05-03 06:52:54] [build-stdout] Running dotnet clean /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln
+[2025-05-03 06:52:54] [build-stdout] Build started 05/03/2025 06:52:54.
+[2025-05-03 06:52:54] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" on node 1 (Clean target(s)).
+[2025-05-03 06:52:54] [build-stdout]      1>ValidateSolutionConfiguration:
+[2025-05-03 06:52:54] [build-stdout]          Building solution configuration "Debug|Any CPU".
+[2025-05-03 06:52:54] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj" (2) on node 1 (Clean target(s)).
+[2025-05-03 06:52:54] [build-stdout]      2>CoreClean:
+[2025-05-03 06:52:54] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:54] [build-stdout]      2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Domain/CustomerPortal.UserAuthService.Domain.csproj" (3) on node 1 (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      3>CoreClean:
+[2025-05-03 06:52:55] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:55] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Postgres/CustomerPortal.UserAuthService.Postgres.csproj" (4) on node 1 (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      4>CoreClean:
+[2025-05-03 06:52:55] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:55] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Messages/CustomerPortal.Messages.csproj" (5) on node 2 (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      5>CoreClean:
+[2025-05-03 06:52:55] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:55] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Extensions/CustomerPortal.Extensions.csproj" (6) on node 4 (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      6>CoreClean:
+[2025-05-03 06:52:55] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:55] [build-stdout]      5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Messages/CustomerPortal.Messages.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Extensions/CustomerPortal.Extensions.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.InternalWebsite/CustomerPortal.InternalWebsite.csproj" (7) on node 3 (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      7>CoreClean:
+[2025-05-03 06:52:55] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:55] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.PriceListGenerationService/CustomerPortal.PriceListGenerationService.csproj" (8) on node 2 (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      8>CoreClean:
+[2025-05-03 06:52:55] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:55] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService/CustomerPortal.UserAuthService.csproj" (9) on node 1 (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      9>CoreClean:
+[2025-05-03 06:52:55] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:55] [build-stdout]      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Domain/CustomerPortal.UserAuthService.Domain.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Postgres/CustomerPortal.UserAuthService.Postgres.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService/CustomerPortal.UserAuthService.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.CustomerWebsite/CustomerPortal.CustomerWebsite.csproj" (10) on node 4 (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]     10>CoreClean:
+[2025-05-03 06:52:55] [build-stdout]          Creating directory "obj/Debug/net9.0/".
+[2025-05-03 06:52:55] [build-stdout]      8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.PriceListGenerationService/CustomerPortal.PriceListGenerationService.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]     10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.CustomerWebsite/CustomerPortal.CustomerWebsite.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.InternalWebsite/CustomerPortal.InternalWebsite.csproj" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout]      1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln" (Clean target(s)).
+[2025-05-03 06:52:55] [build-stdout] Build succeeded.
+[2025-05-03 06:52:55] [build-stdout]     0 Warning(s)
+[2025-05-03 06:52:55] [build-stdout]     0 Error(s)
+[2025-05-03 06:52:55] [build-stdout] Time Elapsed 00:00:01.65
+[2025-05-03 06:52:55] [build-stdout] Exit code 0
+[2025-05-03 06:52:55] [build-stdout] Running dotnet restore /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln
+[2025-05-03 06:52:57] [build-stdout]   Determining projects to restore...
+[2025-05-03 06:52:59] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Extensions/CustomerPortal.Extensions.csproj (in 1.8 sec).
+[2025-05-03 06:52:59] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Postgres/CustomerPortal.UserAuthService.Postgres.csproj (in 1.82 sec).
+[2025-05-03 06:52:59] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj (in 2 ms).
+[2025-05-03 06:52:59] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Domain/CustomerPortal.UserAuthService.Domain.csproj (in 11 ms).
+[2025-05-03 06:52:59] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Messages/CustomerPortal.Messages.csproj (in 3 ms).
+[2025-05-03 06:52:59] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.InternalWebsite/CustomerPortal.InternalWebsite.csproj (in 5 ms).
+[2025-05-03 06:53:00] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.CustomerWebsite/CustomerPortal.CustomerWebsite.csproj (in 893 ms).
+[2025-05-03 06:53:01] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService/CustomerPortal.UserAuthService.csproj (in 3.36 sec).
+[2025-05-03 06:53:01] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.PriceListGenerationService/CustomerPortal.PriceListGenerationService.csproj (in 3.61 sec).
+[2025-05-03 06:53:01] [build-stdout] Exit code 0
+[2025-05-03 06:53:01] [build-stdout] Running dotnet build --no-incremental /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.sln
+[2025-05-03 06:53:03] [build-stdout]   Determining projects to restore...
+[2025-05-03 06:53:03] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-03 06:53:08] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/InboundProgramCallPointAttribute.cs(4,54): warning CS9113: Parameter 'ProcessName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+[2025-05-03 06:53:08] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/InboundFrameworkCallPointAttribute.cs(4,56): warning CS9113: Parameter 'ProcessName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+[2025-05-03 06:53:08] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/OutboundDataPushCallPointAttribute.cs(4,56): warning CS9113: Parameter 'DataflowName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+[2025-05-03 06:53:08] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/OutboundDataPushCallPointAttribute.cs(4,77): warning CS9113: Parameter 'CallName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+[2025-05-03 06:53:20] [build-stdout]   CustomerPortal.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Extensions/bin/Debug/net9.0/CustomerPortal.Extensions.dll
+[2025-05-03 06:53:20] [build-stdout]   ThreatModel -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/bin/Debug/net9.0/ThreatModel.dll
+[2025-05-03 06:53:24] [build-stdout]   CustomerPortal.Messages -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Messages/bin/Debug/net9.0/CustomerPortal.Messages.dll
+[2025-05-03 06:53:32] [build-stdout]   CustomerPortal.UserAuthService.Domain -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Domain/bin/Debug/net9.0/CustomerPortal.UserAuthService.Domain.dll
+[2025-05-03 06:53:32] [build-stdout]   CustomerPortal.PriceListGenerationService -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.PriceListGenerationService/bin/Debug/net9.0/CustomerPortal.PriceListGenerationService.dll
+[2025-05-03 06:53:48] [build-stdout]   CustomerPortal.UserAuthService.Postgres -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Postgres/bin/Debug/net9.0/CustomerPortal.UserAuthService.Postgres.dll
+[2025-05-03 06:53:53] [build-stdout]   CustomerPortal.CustomerWebsite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.CustomerWebsite/bin/Debug/net9.0/CustomerPortal.CustomerWebsite.dll
+[2025-05-03 06:54:01] [build-stdout]   CustomerPortal.InternalWebsite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.InternalWebsite/bin/Debug/net9.0/CustomerPortal.InternalWebsite.dll
+[2025-05-03 06:54:01] [build-stdout]   CustomerPortal.UserAuthService -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService/bin/Debug/net9.0/CustomerPortal.UserAuthService.dll
+[2025-05-03 06:54:01] [build-stdout] Build succeeded.
+[2025-05-03 06:54:01] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/InboundProgramCallPointAttribute.cs(4,54): warning CS9113: Parameter 'ProcessName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+[2025-05-03 06:54:01] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/InboundFrameworkCallPointAttribute.cs(4,56): warning CS9113: Parameter 'ProcessName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+[2025-05-03 06:54:01] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/OutboundDataPushCallPointAttribute.cs(4,56): warning CS9113: Parameter 'DataflowName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+[2025-05-03 06:54:01] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/OutboundDataPushCallPointAttribute.cs(4,77): warning CS9113: Parameter 'CallName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+[2025-05-03 06:54:01] [build-stdout]     4 Warning(s)
+[2025-05-03 06:54:01] [build-stdout]     0 Error(s)
+[2025-05-03 06:54:01] [build-stdout] Time Elapsed 00:00:59.34
+[2025-05-03 06:54:01] [build-stdout] Exit code 0
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 7.73 MiB; string pool: 5.53 MiB).
+TRAP import complete (6.4s).
+Finished zipping source archive (216.86 KiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +1 ms, Dauer: 80949 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 52.2s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 20.5s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +80951 ms, Dauer: 78846 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +159799 ms, Dauer: 545 ms
+
+CSV-Ausgabe: alexandermenze-master-thesis-customer-portal.results.csv
+Starting up command './run-analysis.sh -s target-repo -d db -q identify-call-paths.ql -c alexandermenze-master-thesis-customer-portal.results.csv' and attaching to process
+Process finished (160.34 seconds)
