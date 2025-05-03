@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 3.78297090530396,
+  "n_files"            : 2108,
+  "n_lines"            : 464870,
+  "files_per_second"   : 557.233997502983,
+  "lines_per_second"   : 122884.899629607,
+  "report_file"        : "akkadotnet-akka.net.cloc.json"},
+"C#" :{
+  "nFiles": 2108,
+  "blank": 60341,
+  "comment": 100528,
+  "code": 304001},
+"SUM": {
+  "blank": 60341,
+  "comment": 100528,
+  "code": 304001,
+  "nFiles": 2108} }
