@@ -1,0 +1,235 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Transactions/Orleans.Transactions.Tests/Orleans.Transactions.Tests.csproj (in 6.57 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Orleans.Serialization.FSharp.Tests/Orleans.Serialization.FSharp.Tests.fsproj (in 6.58 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Orleans.Serialization.UnitTests/Orleans.Serialization.UnitTests.csproj (in 6.58 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestSerializerExternalModels/TestSerializerExternalModels.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Transactions/Orleans.Transactions.Azure.Test/Orleans.Transactions.Azure.Test.csproj (in 6.58 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestInternalDtosRefOrleans/TestInternalDtosRefOrleans.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Orleans.Connections.Security.Tests/Orleans.Connections.Security.Tests.csproj (in 37 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TesterInternal/TesterInternal.csproj (in 38 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Tester/Tester.csproj (in 40 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestInfrastructure/Orleans.TestingHost.Tests/Orleans.TestingHost.Tests.csproj (in 22 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestInterfaces/TestInterfaces.csproj (in 1 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestInfrastructure/TestExtensions/TestExtensions.csproj (in 30 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestFSharpInterfaces/TestFSharpInterfaces.fsproj (in 2 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestVersionGrains/TestVersionGrains.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestVersionGrains2/TestVersionGrains2.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestInternalGrainInterfaces/TestInternalGrainInterfaces.csproj (in 8 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestGrains/TestGrains.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestInternalGrains/TestInternalGrains.csproj (in 30 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestGrainInterfaces/TestGrainInterfaces.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestFSharp/TestFSharp.fsproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestFSharpGrainInterfaces/TestFSharpGrainInterfaces.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/BenchmarkGrains/BenchmarkGrains.csproj (in 8 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/BenchmarkGrainInterfaces/BenchmarkGrainInterfaces.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/TesterAzureUtils/Tester.AzureUtils.csproj (in 35 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Streaming/Orleans.Streaming.csproj (in 500 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DistributedTests/DistributedTests.Common/DistributedTests.Common.csproj (in 321 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/TesterZooKeeperUtils/Tester.ZooKeeperUtils.csproj (in 539 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DistributedTests/DistributedTests.Client/DistributedTests.Client.csproj (in 374 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/NonSilo.Tests/NonSilo.Tests.csproj (in 1.27 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/TesterAdoNet/Tester.AdoNet.csproj (in 1.52 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DefaultCluster.Tests/DefaultCluster.Tests.csproj (in 934 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Analyzers.Tests/Analyzers.Tests.csproj (in 546 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DependencyInjection.Tests/DependencyInjection.Tests.csproj (in 2.35 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serializers/Orleans.Serialization.Protobuf/Orleans.Serialization.Protobuf.csproj (in 741 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Redis/Orleans.Persistence.Redis/Orleans.Persistence.Redis.csproj (in 244 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Redis/Orleans.Reminders.Redis/Orleans.Reminders.Redis.csproj (in 947 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Redis/Orleans.GrainDirectory.Redis/Orleans.GrainDirectory.Redis.csproj (in 14 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Redis/Orleans.Clustering.Redis/Orleans.Clustering.Redis.csproj (in 53 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Transactions/Orleans.Transactions.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Transactions.TestKit.Base/Orleans.Transactions.TestKit.Base.csproj (in 20 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Transactions.TestKit.xUnit/Orleans.Transactions.TestKit.xUnit.csproj (in 50 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.TestingHost/Orleans.TestingHost.csproj (in 25 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Server/Orleans.Server.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization/Orleans.Serialization.csproj (in 33 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Benchmarks.AdoNet/Benchmarks.AdoNet.csproj (in 2.59 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.SystemTextJson/Orleans.Serialization.SystemTextJson.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.NewtonsoftJson/Orleans.Serialization.NewtonsoftJson.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.FSharp/Orleans.Serialization.FSharp.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.MessagePack/Orleans.Serialization.MessagePack.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Sdk/Orleans.Sdk.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Benchmarks/Benchmarks.csproj (in 3.38 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Runtime/Orleans.Runtime.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Reminders/Orleans.Reminders.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.TestKit/Orleans.Serialization.TestKit.csproj (in 150 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Persistence.Memory/Orleans.Persistence.Memory.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.EventSourcing/Orleans.EventSourcing.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Core/Orleans.Core.csproj (in 14 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Core.Abstractions/Orleans.Core.Abstractions.csproj (in 8 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Connections.Security/Orleans.Connections.Security.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Clustering.ZooKeeper/Orleans.Clustering.ZooKeeper.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.Abstractions/Orleans.Serialization.Abstractions.csproj (in 209 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.CodeGenerator/Orleans.CodeGenerator.csproj (in 76 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Client/Orleans.Client.csproj (in 8 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.BroadcastChannel/Orleans.BroadcastChannel.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Analyzers/Orleans.Analyzers.csproj (in 23 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Transactions.AzureStorage/Orleans.Transactions.AzureStorage.csproj (in 39 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Clustering.Consul/Orleans.Clustering.Consul.csproj (in 167 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/Tester.Redis/Tester.Redis.csproj (in 38 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Hosting.Kubernetes/Orleans.Hosting.Kubernetes.csproj (in 1.01 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/ServiceBus.Tests/ServiceBus.Tests.csproj (in 46 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Cassandra/Orleans.Clustering.Cassandra/Orleans.Clustering.Cassandra.csproj (in 1.24 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/Tester.Cosmos/Tester.Cosmos.csproj (in 1.08 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DistributedTests/DistributedTests.Server/DistributedTests.Server.csproj (in 22 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/Consul.Tests/Consul.Tests.csproj (in 40 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DistributedTests/DistributedTests.Grains/DistributedTests.Grains.csproj (in 21 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/Tester.Cassandra/Tester.Cassandra.csproj (in 1.18 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Streaming.EventHubs/Orleans.Streaming.EventHubs.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Streaming.AzureStorage/Orleans.Streaming.AzureStorage.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Reminders.AzureStorage/Orleans.Reminders.AzureStorage.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Persistence.AzureStorage/Orleans.Persistence.AzureStorage.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Hosting.AzureCloudServices/Orleans.Hosting.AzureCloudServices.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.GrainDirectory.AzureStorage/Orleans.GrainDirectory.AzureStorage.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Reminders.Cosmos/Orleans.Reminders.Cosmos.csproj (in 232 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Persistence.Cosmos/Orleans.Persistence.Cosmos.csproj (in 204 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Clustering.Cosmos/Orleans.Clustering.Cosmos.csproj (in 146 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Clustering.AzureStorage/Orleans.Clustering.AzureStorage.csproj (in 36 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AdoNet/Orleans.Streaming.AdoNet/Orleans.Streaming.AdoNet.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AdoNet/Orleans.Reminders.AdoNet/Orleans.Reminders.AdoNet.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AdoNet/Orleans.Persistence.AdoNet/Orleans.Persistence.AdoNet.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AdoNet/Orleans.Clustering.AdoNet/Orleans.Clustering.AdoNet.csproj (in 19 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AWS/Orleans.Persistence.DynamoDB/Orleans.Persistence.DynamoDB.csproj (in 117 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AWS/Orleans.Reminders.DynamoDB/Orleans.Reminders.DynamoDB.csproj (in 127 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AWS/Orleans.Clustering.DynamoDB/Orleans.Clustering.DynamoDB.csproj (in 17 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/AWSUtils.Tests/AWSUtils.Tests.csproj (in 759 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AWS/Orleans.Streaming.SQS/Orleans.Streaming.SQS.csproj (in 295 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/DashboardToy/DashboardToy.Frontend/DashboardToy.Frontend.csproj (in 435 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ChaoticCluster/ChaoticCluster.Silo/ChaoticCluster.Silo.csproj (in 2.01 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ChaoticCluster/ChaoticCluster.ServiceDefaults/ChaoticCluster.ServiceDefaults.csproj (in 2.06 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ActivationRebalancing/ActivationRebalancing.Cluster/ActivationRebalancing.Cluster.csproj (in 17 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ActivationRebalancing/ActivationRebalancing.Frontend/ActivationRebalancing.Frontend.csproj (in 23 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ChaoticCluster/ChaoticCluster.AppHost/ChaoticCluster.AppHost.csproj (in 2.41 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/DashboardToy/DashboardToy.AppHost/DashboardToy.AppHost.csproj (in 2.87 sec).
+-> Schritt 0: dotnet restore gestartet bei +2 ms, Dauer: 26914 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  TestInterfaces -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestInterfaces/bin/Debug/net8.0/TestInterfaces.dll
+  Orleans.Serialization.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.Abstractions/bin/Debug/net8.0/Orleans.Serialization.Abstractions.dll
+  Orleans.CodeGenerator -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.CodeGenerator/bin/Debug/netstandard2.0/Orleans.CodeGenerator.dll
+  Orleans.Analyzers -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Analyzers/bin/Debug/netstandard2.0/Orleans.Analyzers.dll
+  TestSerializerExternalModels -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestSerializerExternalModels/bin/Debug/net8.0/SerializerExternalModels.dll
+  TestFSharpInterfaces -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestFSharpInterfaces/bin/Debug/net8.0/TestFSharpInterfaces.dll
+  ChaoticCluster.ServiceDefaults -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ChaoticCluster/ChaoticCluster.ServiceDefaults/bin/Debug/net8.0/ChaoticCluster.ServiceDefaults.dll
+  Orleans.Serialization -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization/bin/Debug/net8.0/Orleans.Serialization.dll
+  Orleans.Serialization.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.Abstractions/bin/Debug/netstandard2.0/Orleans.Serialization.Abstractions.dll
+  Orleans.Serialization.FSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.FSharp/bin/Debug/net8.0/Orleans.Serialization.FSharp.dll
+  Orleans.Serialization.MessagePack -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.MessagePack/bin/Debug/net8.0/Orleans.Serialization.MessagePack.dll
+  Orleans.Serialization.TestKit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.TestKit/bin/Debug/net8.0/Orleans.Serialization.TestKit.dll
+  TestSerializerExternalModels -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestSerializerExternalModels/bin/Debug/netcoreapp3.1/SerializerExternalModels.dll
+  Orleans.Serialization -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization/bin/Debug/netstandard2.1/Orleans.Serialization.dll
+  Orleans.Core.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Core.Abstractions/bin/Debug/net8.0/Orleans.Core.Abstractions.dll
+  Orleans.Serialization.NewtonsoftJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.NewtonsoftJson/bin/Debug/net8.0/Orleans.Serialization.NewtonsoftJson.dll
+  Orleans.Serialization.SystemTextJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.SystemTextJson/bin/Debug/net8.0/Orleans.Serialization.SystemTextJson.dll
+  Orleans.Serialization.Protobuf -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serializers/Orleans.Serialization.Protobuf/bin/Debug/net8.0/Orleans.Serialization.Protobuf.dll
+  Orleans.Serialization.TestKit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.TestKit/bin/Debug/netstandard2.1/Orleans.Serialization.TestKit.dll
+  Orleans.Serialization.MessagePack -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.MessagePack/bin/Debug/netstandard2.1/Orleans.Serialization.MessagePack.dll
+  Orleans.Serialization.SystemTextJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.SystemTextJson/bin/Debug/netstandard2.1/Orleans.Serialization.SystemTextJson.dll
+  Orleans.Serialization.NewtonsoftJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.NewtonsoftJson/bin/Debug/netstandard2.1/Orleans.Serialization.NewtonsoftJson.dll
+  Orleans.Serialization.FSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Serialization.FSharp/bin/Debug/netstandard2.1/Orleans.Serialization.FSharp.dll
+  Orleans.Serialization.Protobuf -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serializers/Orleans.Serialization.Protobuf/bin/Debug/netstandard2.1/Orleans.Serialization.Protobuf.dll
+  Orleans.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Core/bin/Debug/net8.0/Orleans.Core.dll
+  Orleans.Sdk -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Sdk/bin/Debug/net8.0/Orleans.Sdk.dll
+  Orleans.Client -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Client/bin/Debug/net8.0/Orleans.Client.dll
+  Orleans.Runtime -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Runtime/bin/Debug/net8.0/Orleans.Runtime.dll
+  Orleans.Streaming -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Streaming/bin/Debug/net8.0/Orleans.Streaming.dll
+  Orleans.Connections.Security -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Connections.Security/bin/Debug/net8.0/Orleans.Connections.Security.dll
+  Orleans.Hosting.Kubernetes -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Hosting.Kubernetes/bin/Debug/net8.0/Orleans.Hosting.Kubernetes.dll
+  Orleans.Clustering.Redis -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Redis/Orleans.Clustering.Redis/bin/Debug/net8.0/Orleans.Clustering.Redis.dll
+  Orleans.Clustering.AdoNet -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AdoNet/Orleans.Clustering.AdoNet/bin/Debug/net8.0/Orleans.Clustering.AdoNet.dll
+  Orleans.Persistence.Memory -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Persistence.Memory/bin/Debug/net8.0/Orleans.Persistence.Memory.dll
+  Orleans.EventSourcing -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.EventSourcing/bin/Debug/net8.0/Orleans.EventSourcing.dll
+  Orleans.Clustering.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Clustering.Cosmos/bin/Debug/net8.0/Orleans.Clustering.Cosmos.dll
+  Orleans.Persistence.Redis -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Redis/Orleans.Persistence.Redis/bin/Debug/net8.0/Orleans.Persistence.Redis.dll
+  Orleans.Clustering.Consul -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Clustering.Consul/bin/Debug/net8.0/Orleans.Clustering.Consul.dll
+  Orleans.GrainDirectory.Redis -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Redis/Orleans.GrainDirectory.Redis/bin/Debug/net8.0/Orleans.GrainDirectory.Redis.dll
+  Orleans.Streaming.AdoNet -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AdoNet/Orleans.Streaming.AdoNet/bin/Debug/net8.0/Orleans.Streaming.AdoNet.dll
+  Orleans.Transactions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Transactions/bin/Debug/net8.0/Orleans.Transactions.dll
+  Orleans.Clustering.Cassandra -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Cassandra/Orleans.Clustering.Cassandra/bin/Debug/net8.0/Orleans.Clustering.Cassandra.dll
+  Orleans.Clustering.ZooKeeper -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Clustering.ZooKeeper/bin/Debug/net8.0/Orleans.Clustering.ZooKeeper.dll
+  Orleans.Persistence.AzureStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Persistence.AzureStorage/bin/Debug/net8.0/Orleans.Persistence.AzureStorage.dll
+  Orleans.Reminders -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Reminders/bin/Debug/net8.0/Orleans.Reminders.dll
+  Orleans.BroadcastChannel -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.BroadcastChannel/bin/Debug/net8.0/Orleans.BroadcastChannel.dll
+  Orleans.Clustering.AzureStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Clustering.AzureStorage/bin/Debug/net8.0/Orleans.Clustering.AzureStorage.dll
+  Orleans.GrainDirectory.AzureStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.GrainDirectory.AzureStorage/bin/Debug/net8.0/Orleans.GrainDirectory.AzureStorage.dll
+  Orleans.Clustering.DynamoDB -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AWS/Orleans.Clustering.DynamoDB/bin/Debug/net8.0/Orleans.Clustering.DynamoDB.dll
+  Orleans.Persistence.DynamoDB -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AWS/Orleans.Persistence.DynamoDB/bin/Debug/net8.0/Orleans.Persistence.DynamoDB.dll
+  Orleans.Persistence.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Persistence.Cosmos/bin/Debug/net8.0/Orleans.Persistence.Cosmos.dll
+  Orleans.Reminders.Redis -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Redis/Orleans.Reminders.Redis/bin/Debug/net8.0/Orleans.Reminders.Redis.dll
+  Orleans.Reminders.DynamoDB -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AWS/Orleans.Reminders.DynamoDB/bin/Debug/net8.0/Orleans.Reminders.DynamoDB.dll
+  Orleans.Reminders.AzureStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Reminders.AzureStorage/bin/Debug/net8.0/Orleans.Reminders.AzureStorage.dll
+  Orleans.Reminders.AdoNet -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AdoNet/Orleans.Reminders.AdoNet/bin/Debug/net8.0/Orleans.Reminders.AdoNet.dll
+  Orleans.Persistence.AdoNet -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AdoNet/Orleans.Persistence.AdoNet/bin/Debug/net8.0/Orleans.Persistence.AdoNet.dll
+  Orleans.Serialization.UnitTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Orleans.Serialization.UnitTests/bin/Debug/netcoreapp3.1/Orleans.Serialization.UnitTests.dll
+  Orleans.TestingHost -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.TestingHost/bin/Debug/net8.0/Orleans.TestingHost.dll
+  Orleans.Reminders.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Reminders.Cosmos/bin/Debug/net8.0/Orleans.Reminders.Cosmos.dll
+  DistributedTests.Common -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DistributedTests/DistributedTests.Common/bin/Debug/net8.0/DistributedTests.Common.dll
+  Orleans.Transactions.AzureStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Transactions.AzureStorage/bin/Debug/net8.0/Orleans.Transactions.AzureStorage.dll
+  Orleans.Server -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Server/bin/Debug/net8.0/Orleans.Server.dll
+  Orleans.Transactions.TestKit.Base -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Transactions.TestKit.Base/bin/Debug/net8.0/Orleans.Transactions.TestKit.Base.dll
+  ActivationRebalancing.Cluster -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ActivationRebalancing/ActivationRebalancing.Cluster/bin/Debug/net8.0/ActivationRebalancing.Cluster.dll
+  Orleans.Streaming.AzureStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Streaming.AzureStorage/bin/Debug/net8.0/Orleans.Streaming.AzureStorage.dll
+  Orleans.Serialization.UnitTests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Orleans.Serialization.UnitTests/bin/Debug/net8.0/Orleans.Serialization.UnitTests.dll
+  Orleans.Streaming.SQS -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/AWS/Orleans.Streaming.SQS/bin/Debug/net8.0/Orleans.Streaming.SQS.dll
+  DashboardToy.Frontend -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/DashboardToy/DashboardToy.Frontend/bin/Debug/net8.0/DashboardToy.Frontend.dll
+  DistributedTests.Client -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Artifacts/DistributedTests/DistributedTests.Client/net8.0/DistributedTests.Client.dll
+  Orleans.Hosting.AzureCloudServices -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Hosting.AzureCloudServices/bin/Debug/net8.0/Orleans.Hosting.AzureCloudServices.dll
+  Orleans.Streaming.EventHubs -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Azure/Orleans.Streaming.EventHubs/bin/Debug/net8.0/Orleans.Streaming.EventHubs.dll
+  BenchmarkGrainInterfaces -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/BenchmarkGrainInterfaces/bin/Debug/net8.0/BenchmarkGrainInterfaces.dll
+  ChaoticCluster.Silo -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ChaoticCluster/ChaoticCluster.Silo/bin/Debug/net8.0/ChaoticCluster.Silo.dll
+  Orleans.Connections.Security.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Orleans.Connections.Security.Tests/bin/Debug/net8.0/Orleans.Connections.Security.Tests.dll
+  DistributedTests.Grains -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DistributedTests/DistributedTests.Grains/bin/Debug/net8.0/DistributedTests.Grains.dll
+  Orleans.Transactions.TestKit.xUnit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Orleans.Transactions.TestKit.xUnit/bin/Debug/net8.0/Orleans.Transactions.TestKit.xUnit.dll
+  DashboardToy.AppHost -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/DashboardToy/DashboardToy.AppHost/bin/Debug/net8.0/DashboardToy.AppHost.dll
+  DistributedTests.Server -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Artifacts/DistributedTests/DistributedTests.Server/net8.0/DistributedTests.Server.dll
+  TestExtensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestInfrastructure/TestExtensions/bin/Debug/net8.0/TestExtensions.dll
+  TestGrainInterfaces -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestGrainInterfaces/bin/Debug/net8.0/TestGrainInterfaces.dll
+  ChaoticCluster.AppHost -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ChaoticCluster/ChaoticCluster.AppHost/bin/Debug/net8.0/ChaoticCluster.AppHost.dll
+  TestInternalDtosRefOrleans -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Misc/TestInternalDtosRefOrleans/bin/Debug/net8.0/TestInternalDtosRefOrleans.dll
+  TestInternalGrainInterfaces -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestInternalGrainInterfaces/bin/Debug/net8.0/TestInternalGrainInterfaces.dll
+  BenchmarkGrains -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/BenchmarkGrains/bin/Debug/net8.0/BenchmarkGrains.dll
+  Orleans.TestingHost.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TestInfrastructure/Orleans.TestingHost.Tests/bin/Debug/net8.0/Orleans.TestingHost.Tests.dll
+  Analyzers.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Analyzers.Tests/bin/Debug/net8.0/Analyzers.Tests.dll
+  Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Benchmarks/bin/Debug/net8.0/Benchmarks.dll
+  Orleans.Transactions.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Transactions/Orleans.Transactions.Tests/bin/Debug/net8.0/Orleans.Transactions.Tests.dll
+  ActivationRebalancing.Frontend -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/playground/ActivationRebalancing/ActivationRebalancing.Frontend/bin/Debug/net8.0/ActivationRebalancing.Frontend.dll
+  TestFSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestFSharp/bin/Debug/net8.0/TestFSharp.dll
+  TestFSharpGrainInterfaces -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestFSharpGrainInterfaces/bin/Debug/net8.0/TestFSharpGrainInterfaces.dll
+  TestGrains -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestGrains/bin/Debug/net8.0/TestGrains.dll
+  TestVersionGrains -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestVersionGrains/bin/Debug/net8.0/TestVersionGrains.dll
+  DependencyInjection.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DependencyInjection.Tests/bin/Debug/net8.0/DependencyInjection.Tests.dll
+  TestVersionGrains2 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestVersionGrains2/bin/Debug/net8.0/TestVersionGrains.dll
+  TestInternalGrains -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestInternalGrains/bin/Debug/net8.0/TestInternalGrains.dll
+  Orleans.Serialization.FSharp.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Orleans.Serialization.FSharp.Tests/bin/Debug/net8.0/Orleans.Serialization.FSharp.Tests.dll
+  Tester -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Tester/bin/Debug/net8.0/Tester.dll
+  TestVersionGrains2 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestVersionGrains2/bin/Debug/publish/net8.0/
+  TestVersionGrains -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Grains/TestVersionGrains/bin/Debug/publish/net8.0/
+  TesterInternal -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/TesterInternal/bin/Debug/net8.0/TesterInternal.dll
+  AWSUtils.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/AWSUtils.Tests/bin/Debug/net8.0/AWSUtils.Tests.dll
+  Tester.Redis -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/Tester.Redis/bin/Debug/net8.0/Tester.Redis.dll
+  Tester.AdoNet -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/TesterAdoNet/bin/Debug/net8.0/Tester.AdoNet.dll
+  Benchmarks.AdoNet -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Benchmarks.AdoNet/bin/Debug/net8.0/Benchmarks.AdoNet.dll
+  Tester.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/Tester.Cosmos/bin/Debug/net8.0/Tester.Cosmos.dll
+  Consul.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/Consul.Tests/bin/Debug/net8.0/Consul.Tests.dll
+  DefaultCluster.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/DefaultCluster.Tests/bin/Debug/net8.0/DefaultCluster.Tests.dll
+  NonSilo.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/NonSilo.Tests/bin/Debug/net8.0/NonSilo.Tests.dll
+  Tester.ZooKeeperUtils -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/TesterZooKeeperUtils/bin/Debug/net8.0/Tester.ZooKeeperUtils.dll
+  Tester.AzureUtils -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/TesterAzureUtils/bin/Debug/net8.0/Tester.AzureUtils.dll
+  Tester.Cassandra -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/Tester.Cassandra/bin/Debug/net8.0/Tester.Cassandra.dll
+  Orleans.Transactions.Azure.Test -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Transactions/Orleans.Transactions.Azure.Test/bin/Debug/net8.0/Orleans.Transactions.Azure.Tests.dll
+  ServiceBus.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Extensions/ServiceBus.Tests/bin/Debug/net8.0/ServiceBus.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:49.79
+-> Schritt 1: dotnet build gestartet bei +26918 ms, Dauer: 110127 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 137048 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (137.04 seconds)
