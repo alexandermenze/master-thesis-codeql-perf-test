@@ -1,0 +1,3 @@
+project (github id): 
+ref (branch / tag / commit hash): 
+sln-path (default '.'): 

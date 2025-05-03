@@ -1,0 +1,3 @@
+project (github id): serilog/serilog
+ref (branch / tag / commit hash): v2234
+sln-path (default '.'): 

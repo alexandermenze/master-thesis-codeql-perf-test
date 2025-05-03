@@ -1,0 +1,3 @@
+project (github id): FluentValidation/FluentValidation
+ref (branch / tag / commit hash): 11.11.0
+sln-path (default '.'): 

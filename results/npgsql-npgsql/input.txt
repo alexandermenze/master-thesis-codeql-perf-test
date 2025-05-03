@@ -1,0 +1,3 @@
+project (github id): npgsql/npgsql
+ref (branch / tag / commit hash): v9.0.3
+sln-path (default '.'): 

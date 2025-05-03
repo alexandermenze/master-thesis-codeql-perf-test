@@ -1,0 +1,3 @@
+project (github id): MassTransit/MassTransit
+ref (branch / tag / commit hash): v8.4.0
+sln-path (default '.'): 

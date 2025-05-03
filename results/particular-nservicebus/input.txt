@@ -1,0 +1,3 @@
+project (github id): Particular/NServiceBus
+ref (branch / tag / commit hash): 9.2.7
+sln-path (default '.'): src

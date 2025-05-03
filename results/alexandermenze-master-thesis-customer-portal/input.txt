@@ -1,0 +1,3 @@
+project (github id): alexandermenze/master-thesis-customer-portal
+ref (branch / tag / commit hash): e92a89cbe65606f4601c9599b770a01f6b2bd16e
+sln-path (default '.'): src

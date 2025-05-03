@@ -1,0 +1,3 @@
+project (github id): dotnet/efcore
+ref (branch / tag / commit hash): release/9.0
+sln-path (default '.'): 
