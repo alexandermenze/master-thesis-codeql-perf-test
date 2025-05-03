@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.449297904968262,
+  "n_files"            : 814,
+  "n_lines"            : 60788,
+  "files_per_second"   : 1811.71554774443,
+  "lines_per_second"   : 135295.534049495,
+  "report_file"        : "simplcommerce-SimplCommerce.cloc.json"},
+"C#" :{
+  "nFiles": 814,
+  "blank": 11041,
+  "comment": 1914,
+  "code": 47833},
+"SUM": {
+  "blank": 11041,
+  "comment": 1914,
+  "code": 47833,
+  "nFiles": 814} }

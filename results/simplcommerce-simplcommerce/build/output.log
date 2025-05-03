@@ -1,0 +1,123 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ProductRecentlyViewed/SimplCommerce.Module.ProductRecentlyViewed.csproj (in 5.37 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.ShippingFree.Tests/SimplCommerce.Module.ShippingFree.Tests.csproj (in 5.37 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.ProductComparison.Tests/SimplCommerce.Module.ProductComparison.Tests.csproj (in 5.37 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.Pricing.Tests/SimplCommerce.Module.Pricing.Tests.csproj (in 5.37 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.Cms.Tests/SimplCommerce.Module.Cms.Tests.csproj (in 40 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.Core.Tests/SimplCommerce.Module.Core.Tests.csproj (in 95 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/SimplCommerce.Infrastructure/SimplCommerce.Infrastructure.csproj (in 140 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Infrastructure.Tests/SimplCommerce.Infrastructure.Tests.csproj (in 511 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Vendors/SimplCommerce.Module.Vendors.csproj (in 28 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.WishList/SimplCommerce.Module.WishList.csproj (in 152 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Tax/SimplCommerce.Module.Tax.csproj (in 104 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.StorageLocal/SimplCommerce.Module.StorageLocal.csproj (in 106 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.Inventory.Tests/SimplCommerce.Module.Inventory.Tests.csproj (in 991 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ShoppingCart/SimplCommerce.Module.ShoppingCart.csproj (in 140 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ShippingTableRate/SimplCommerce.Module.ShippingTableRate.csproj (in 87 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ShippingPrices/SimplCommerce.Module.ShippingPrices.csproj (in 94 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ShippingFree/SimplCommerce.Module.ShippingFree.csproj (in 84 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.StorageAzureBlob/SimplCommerce.Module.StorageAzureBlob.csproj (in 795 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.StorageAmazonS3/SimplCommerce.Module.StorageAmazonS3.csproj (in 717 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Shipping/SimplCommerce.Module.Shipping.csproj (in 75 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Shipments/SimplCommerce.Module.Shipments.csproj (in 48 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Search/SimplCommerce.Module.Search.csproj (in 99 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.SampleData/SimplCommerce.Module.SampleData.csproj (in 169 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Reviews/SimplCommerce.Module.Reviews.csproj (in 184 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Pricing/SimplCommerce.Module.Pricing.csproj (in 67 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ProductComparison/SimplCommerce.Module.ProductComparison.csproj (in 165 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Payments/SimplCommerce.Module.Payments.csproj (in 621 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentPaypalExpress/SimplCommerce.Module.PaymentPaypalExpress.csproj (in 168 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentMomo/SimplCommerce.Module.PaymentMomo.csproj (in 85 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentNganLuong/SimplCommerce.Module.PaymentNganLuong.csproj (in 482 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentCoD/SimplCommerce.Module.PaymentCoD.csproj (in 164 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentCashfree/SimplCommerce.Module.PaymentCashfree.csproj (in 139 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentBraintree/SimplCommerce.Module.PaymentBraintree.csproj (in 393 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentStripe/SimplCommerce.Module.PaymentStripe.csproj (in 1.77 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Orders/SimplCommerce.Module.Orders.csproj (in 311 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.News/SimplCommerce.Module.News.csproj (in 108 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Localization/SimplCommerce.Module.Localization.csproj (in 100 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Inventory/SimplCommerce.Module.Inventory.csproj (in 465 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.EmailSenderSendgrid/SimplCommerce.Module.EmailSenderSendgrid.csproj (in 540 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.DinkToPdf/SimplCommerce.Module.DinkToPdf.csproj (in 440 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Contacts/SimplCommerce.Module.Contacts.csproj (in 25 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Core/SimplCommerce.Module.Core.csproj (in 27 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Cms/SimplCommerce.Module.Cms.csproj (in 33 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Comments/SimplCommerce.Module.Comments.csproj (in 49 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Checkouts/SimplCommerce.Module.Checkouts.csproj (in 31 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Catalog/SimplCommerce.Module.Catalog.csproj (in 38 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.EmailSenderSmtp/SimplCommerce.Module.EmailSenderSmtp.csproj (in 904 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ActivityLog/SimplCommerce.Module.ActivityLog.csproj (in 36 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/SimplCommerce.WebHost/SimplCommerce.WebHost.csproj (in 5.92 sec).
+-> Schritt 0: dotnet restore gestartet bei +2 ms, Dauer: 16003 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  SimplCommerce.Infrastructure -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/SimplCommerce.Infrastructure/bin/Debug/net8.0/SimplCommerce.Infrastructure.dll
+  SimplCommerce.Infrastructure.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Infrastructure.Tests/bin/Debug/net8.0/SimplCommerce.Infrastructure.Tests.dll
+  SimplCommerce.Module.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Core/bin/Debug/net8.0/SimplCommerce.Module.Core.dll
+  SimplCommerce.Module.Core.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.Core.Tests/bin/Debug/net8.0/SimplCommerce.Module.Core.Tests.dll
+  SimplCommerce.Module.StorageLocal -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.StorageLocal/bin/Debug/net8.0/SimplCommerce.Module.StorageLocal.dll
+  SimplCommerce.Module.Contacts -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Contacts/bin/Debug/net8.0/SimplCommerce.Module.Contacts.dll
+  SimplCommerce.Module.News -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.News/bin/Debug/net8.0/SimplCommerce.Module.News.dll
+  SimplCommerce.Module.Localization -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Localization/bin/Debug/net8.0/SimplCommerce.Module.Localization.dll
+  SimplCommerce.Module.SampleData -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.SampleData/bin/Debug/net8.0/SimplCommerce.Module.SampleData.dll
+  SimplCommerce.Module.StorageAmazonS3 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.StorageAmazonS3/bin/Debug/net8.0/SimplCommerce.Module.StorageAmazonS3.dll
+  SimplCommerce.Module.Tax -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Tax/bin/Debug/net8.0/SimplCommerce.Module.Tax.dll
+  SimplCommerce.Module.DinkToPdf -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.DinkToPdf/bin/Debug/net8.0/SimplCommerce.Module.DinkToPdf.dll
+  SimplCommerce.Module.EmailSenderSmtp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.EmailSenderSmtp/bin/Debug/net8.0/SimplCommerce.Module.EmailSenderSmtp.dll
+  SimplCommerce.Module.Cms -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Cms/bin/Debug/net8.0/SimplCommerce.Module.Cms.dll
+  SimplCommerce.Module.StorageAzureBlob -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.StorageAzureBlob/bin/Debug/net8.0/SimplCommerce.Module.StorageAzureBlob.dll
+  SimplCommerce.Module.EmailSenderSendgrid -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.EmailSenderSendgrid/bin/Debug/net8.0/SimplCommerce.Module.EmailSenderSendgrid.dll
+  SimplCommerce.Module.Vendors -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Vendors/bin/Debug/net8.0/SimplCommerce.Module.Vendors.dll
+  SimplCommerce.Module.ActivityLog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ActivityLog/bin/Debug/net8.0/SimplCommerce.Module.ActivityLog.dll
+  SimplCommerce.Module.Cms.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.Cms.Tests/bin/Debug/net8.0/SimplCommerce.Module.Cms.Tests.dll
+  SimplCommerce.Module.Catalog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Catalog/bin/Debug/net8.0/SimplCommerce.Module.Catalog.dll
+  SimplCommerce.Module.Comments -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Comments/bin/Debug/net8.0/SimplCommerce.Module.Comments.dll
+  SimplCommerce.Module.WishList -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.WishList/bin/Debug/net8.0/SimplCommerce.Module.WishList.dll
+  SimplCommerce.Module.Search -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Search/bin/Debug/net8.0/SimplCommerce.Module.Search.dll
+  SimplCommerce.Module.Inventory -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Inventory/bin/Debug/net8.0/SimplCommerce.Module.Inventory.dll
+  SimplCommerce.Module.Shipping -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Shipping/bin/Debug/net8.0/SimplCommerce.Module.Shipping.dll
+  SimplCommerce.Module.ProductComparison -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ProductComparison/bin/Debug/net8.0/SimplCommerce.Module.ProductComparison.dll
+  SimplCommerce.Module.ShippingPrices -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ShippingPrices/bin/Debug/net8.0/SimplCommerce.Module.ShippingPrices.dll
+  SimplCommerce.Module.ShippingFree -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ShippingFree/bin/Debug/net8.0/SimplCommerce.Module.ShippingFree.dll
+  SimplCommerce.Module.Pricing -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Pricing/bin/Debug/net8.0/SimplCommerce.Module.Pricing.dll
+  SimplCommerce.Module.ShippingTableRate -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ShippingTableRate/bin/Debug/net8.0/SimplCommerce.Module.ShippingTableRate.dll
+  SimplCommerce.Module.ProductRecentlyViewed -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ProductRecentlyViewed/bin/Debug/net8.0/SimplCommerce.Module.ProductRecentlyViewed.dll
+  SimplCommerce.Module.ProductComparison.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.ProductComparison.Tests/bin/Debug/net8.0/SimplCommerce.Module.ProductComparison.Tests.dll
+  SimplCommerce.Module.Inventory.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.Inventory.Tests/bin/Debug/net8.0/SimplCommerce.Module.Inventory.Tests.dll
+  SimplCommerce.Module.ShoppingCart -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.ShoppingCart/bin/Debug/net8.0/SimplCommerce.Module.ShoppingCart.dll
+  SimplCommerce.Module.ShippingFree.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.ShippingFree.Tests/bin/Debug/net8.0/SimplCommerce.Module.ShippingFree.Tests.dll
+  SimplCommerce.Module.Checkouts -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Checkouts/bin/Debug/net8.0/SimplCommerce.Module.Checkouts.dll
+  SimplCommerce.Module.Orders -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Orders/bin/Debug/net8.0/SimplCommerce.Module.Orders.dll
+  SimplCommerce.Module.Shipments -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Shipments/bin/Debug/net8.0/SimplCommerce.Module.Shipments.dll
+  SimplCommerce.Module.Payments -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Payments/bin/Debug/net8.0/SimplCommerce.Module.Payments.dll
+  SimplCommerce.Module.Reviews -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.Reviews/bin/Debug/net8.0/SimplCommerce.Module.Reviews.dll
+  SimplCommerce.Module.PaymentBraintree -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentBraintree/bin/Debug/net8.0/SimplCommerce.Module.PaymentBraintree.dll
+  SimplCommerce.Module.Pricing.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/SimplCommerce.Module.Pricing.Tests/bin/Debug/net8.0/SimplCommerce.Module.Pricing.Tests.dll
+  SimplCommerce.Module.PaymentMomo -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentMomo/bin/Debug/net8.0/SimplCommerce.Module.PaymentMomo.dll
+  SimplCommerce.Module.PaymentPaypalExpress -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentPaypalExpress/bin/Debug/net8.0/SimplCommerce.Module.PaymentPaypalExpress.dll
+  SimplCommerce.Module.PaymentStripe -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentStripe/bin/Debug/net8.0/SimplCommerce.Module.PaymentStripe.dll
+  SimplCommerce.Module.PaymentCashfree -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentCashfree/bin/Debug/net8.0/SimplCommerce.Module.PaymentCashfree.dll
+  SimplCommerce.Module.PaymentNganLuong -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentNganLuong/bin/Debug/net8.0/SimplCommerce.Module.PaymentNganLuong.dll
+  SimplCommerce.Module.PaymentCoD -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Modules/SimplCommerce.Module.PaymentCoD/bin/Debug/net8.0/SimplCommerce.Module.PaymentCoD.dll
+  
+  Bundler: Begin processing bundleconfig.json
+  Bundler: Done processing bundleconfig.json
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/SimplCommerce.WebHost/Program.cs(103,9): warning ASP0014: Suggest using top level route registrations instead of UseEndpoints (https://aka.ms/aspnet/analyzers) [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/SimplCommerce.WebHost/SimplCommerce.WebHost.csproj]
+  SimplCommerce.WebHost -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/SimplCommerce.WebHost/bin/Debug/net8.0/SimplCommerce.WebHost.dll
+
+Build succeeded.
+
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/SimplCommerce.WebHost/Program.cs(103,9): warning ASP0014: Suggest using top level route registrations instead of UseEndpoints (https://aka.ms/aspnet/analyzers) [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/SimplCommerce.WebHost/SimplCommerce.WebHost.csproj]
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:41.48
+-> Schritt 1: dotnet build gestartet bei +16007 ms, Dauer: 41879 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 57889 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (57.89 seconds)
