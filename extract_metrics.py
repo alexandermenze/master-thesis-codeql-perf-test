@@ -11,6 +11,7 @@ def parse_build_output(log_path):
     match = re.search(r"Process finished \((\d+(?:\.\d+)?) seconds\)", text)
     return float(match.group(1)) if match else np.nan
 
+
 def parse_analysis_output(log_path):
     """Extract analysis times (total, DB creation, query execution, result decode) in seconds."""
     text = open(log_path, 'r', encoding='utf-8').read()
@@ -27,6 +28,7 @@ def parse_analysis_output(log_path):
     decode = float(decode_match.group(1)) / 1000 if decode_match else np.nan
 
     return total, db, query, decode
+
 
 def parse_psrecord(log_path):
     """Compute avg, max, median for CPU (%) and Real memory (MB)."""
@@ -52,17 +54,20 @@ def parse_psrecord(log_path):
         'median_mem': np.median(arr_mem) if arr_mem.size else np.nan
     }
 
+
 def parse_cloc_json(json_path):
     """Extract C# file and code-line counts."""
     data = json.load(open(json_path, 'r', encoding='utf-8'))
     cs = data.get('C#', {})
     return cs.get('nFiles', np.nan), cs.get('code', np.nan)
 
+
 def parse_results_csv(csv_path):
     """Count distinct processes and total dataflows."""
     df = pd.read_csv(csv_path)
     first_col = df.columns[0]
     return df[first_col].nunique(), len(df)
+
 
 def process_repo(repo_path):
     metrics = {}
@@ -72,13 +77,22 @@ def process_repo(repo_path):
     build_ps = parse_psrecord(os.path.join(repo_path, 'build', 'psrecord.log'))
     metrics.update({f"Build {k.replace('_', ' ').title()}": v for k, v in build_ps.items()})
 
-    # Analysis metrics
-    analysis_outs = parse_analysis_output(os.path.join(repo_path, 'measure', 'output.log'))
-    metrics['Analysis Total (s)'] = analysis_outs[0]
-    metrics['Analysis Database (s)'] = analysis_outs[1]
-    metrics['Analysis Query (s)'] = analysis_outs[2]
-    metrics['Analysis Decode (s)'] = analysis_outs[3]
-    measure_ps = parse_psrecord(os.path.join(repo_path, 'measure', 'psrecord.log'))
+    # Analysis metrics (optional)
+    analysis_total = analysis_db = analysis_query = analysis_decode = np.nan
+    analysis_output_path = os.path.join(repo_path, 'measure', 'output.log')
+    if os.path.exists(analysis_output_path):
+        analysis_total, analysis_db, analysis_query, analysis_decode = parse_analysis_output(analysis_output_path)
+    metrics['Analysis Total (s)'] = analysis_total
+    metrics['Analysis Database (s)'] = analysis_db
+    metrics['Analysis Query (s)'] = analysis_query
+    metrics['Analysis Decode (s)'] = analysis_decode
+
+    # Analysis psrecord (optional)
+    measure_ps = {'avg_cpu': np.nan, 'max_cpu': np.nan, 'median_cpu': np.nan,
+                  'avg_mem': np.nan, 'max_mem': np.nan, 'median_mem': np.nan}
+    measure_ps_path = os.path.join(repo_path, 'measure', 'psrecord.log')
+    if os.path.exists(measure_ps_path):
+        measure_ps = parse_psrecord(measure_ps_path)
     metrics.update({f"Analysis {k.replace('_', ' ').title()}": v for k, v in measure_ps.items()})
 
     # cloc metrics
@@ -86,14 +100,18 @@ def process_repo(repo_path):
     metrics['# Code Files'] = nfiles
     metrics['# Code Lines'] = nlines
 
-    # results.csv metrics
-    res_procs, res_flows = parse_results_csv(os.path.join(repo_path, 'results.csv'))
-    metrics['# Result Processes'] = res_procs
-    metrics['# Result Dataflows'] = res_flows
+    # results.csv metrics (optional)
+    proc_count = flow_count = np.nan
+    results_path = os.path.join(repo_path, 'results.csv')
+    if os.path.exists(results_path):
+        proc_count, flow_count = parse_results_csv(results_path)
+    metrics['# Result Processes'] = proc_count
+    metrics['# Result Dataflows'] = flow_count
 
     # Repo name
     metrics['Repo'] = os.path.basename(repo_path)
     return metrics
+
 
 def main(top_dir, output_file):
     rows = []
@@ -115,5 +133,3 @@ if __name__ == "__main__":
                         help="Output CSV file name (default: aggregated_metrics.csv)")
     args = parser.parse_args()
     main(args.top_directory, args.output)
-
-
