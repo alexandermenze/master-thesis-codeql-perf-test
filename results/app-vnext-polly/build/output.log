@@ -1,0 +1,73 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Polly.Core.Tests/Polly.Core.Tests.csproj (in 3.23 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Polly.RateLimiting.Tests/Polly.RateLimiting.Tests.csproj (in 3.23 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Polly.Extensions.Tests/Polly.Extensions.Tests.csproj (in 3.23 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj (in 3.73 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj (in 479 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Polly.Testing.Tests/Polly.Testing.Tests.csproj (in 23 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Polly.TestUtils/Polly.TestUtils.csproj (in 8 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Polly.Specs/Polly.Specs.csproj (in 17 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/bench/Polly.Benchmarks/Polly.Benchmarks.csproj (in 1.88 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/bench/Polly.Core.Benchmarks/Polly.Core.Benchmarks.csproj (in 1.88 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj (in 168 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj (in 351 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj (in 842 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Snippets/Snippets.csproj (in 2.46 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/test/Polly.AotTest/Polly.AotTest.csproj (in 2.9 sec).
+-> Schritt 0: dotnet restore gestartet bei +2 ms, Dauer: 10615 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_netstandard2.0/Polly.Core.dll
+  Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_net6.0/Polly.Core.dll
+  Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_net472/Polly.Core.dll
+  Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_net8.0/Polly.Core.dll
+  Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_net462/Polly.Core.dll
+  Polly.Testing -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Testing/debug_netstandard2.0/Polly.Testing.dll
+  Polly.Testing -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Testing/debug_net8.0/Polly.Testing.dll
+  Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_netstandard2.0/Polly.RateLimiting.dll
+  Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_net8.0/Polly.RateLimiting.dll
+  Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_net462/Polly.RateLimiting.dll
+  Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_net462/Polly.Extensions.dll
+  Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_net8.0/Polly.Extensions.dll
+  Polly.TestUtils -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.TestUtils/debug_net8.0/Polly.TestUtils.dll
+  Polly.TestUtils -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.TestUtils/debug_net9.0/Polly.TestUtils.dll
+  Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_netstandard2.0/Polly.Extensions.dll
+  Polly -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly/debug_net462/Polly.dll
+  Polly -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly/debug_net472/Polly.dll
+  Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_net472/Polly.Extensions.dll
+  Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_net472/Polly.RateLimiting.dll
+  Polly -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly/debug_netstandard2.0/Polly.dll
+  Polly.Core.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core.Tests/debug_net9.0/Polly.Core.Tests.dll
+  Polly -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly/debug_net6.0/Polly.dll
+  Polly.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Benchmarks/debug_net9.0/Polly.Benchmarks.dll
+  Polly.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Benchmarks/debug_net8.0/Polly.Benchmarks.dll
+  Polly.AotTest -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.AotTest/debug/Polly.AotTest.dll
+  Polly.Core.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core.Benchmarks/debug_net8.0/Polly.Core.Benchmarks.dll
+  Polly.Core.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core.Tests/debug_net8.0/Polly.Core.Tests.dll
+  Polly.Core.Benchmarks -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core.Benchmarks/debug_net9.0/Polly.Core.Benchmarks.dll
+  Polly.Extensions.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions.Tests/debug_net8.0/Polly.Extensions.Tests.dll
+  Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_net6.0/Polly.RateLimiting.dll
+  Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_net6.0/Polly.Extensions.dll
+  Polly.Testing.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Testing.Tests/debug_net8.0/Polly.Testing.Tests.dll
+  Polly.RateLimiting.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting.Tests/debug_net8.0/Polly.RateLimiting.Tests.dll
+  Polly.Specs -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Specs/debug_net8.0/Polly.Specs.dll
+  Polly.Specs -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Specs/debug_net9.0/Polly.Specs.dll
+  Snippets -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Snippets/debug/Snippets.dll
+  Polly.Testing.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Testing.Tests/debug_net9.0/Polly.Testing.Tests.dll
+  Polly.RateLimiting.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting.Tests/debug_net9.0/Polly.RateLimiting.Tests.dll
+  Polly.Extensions.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions.Tests/debug_net9.0/Polly.Extensions.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:02:39.65
+-> Schritt 1: dotnet build gestartet bei +10619 ms, Dauer: 159983 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 170605 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (170.60 seconds)
