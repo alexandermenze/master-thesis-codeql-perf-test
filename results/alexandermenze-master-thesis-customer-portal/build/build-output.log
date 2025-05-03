@@ -1,0 +1,46 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Extensions/CustomerPortal.Extensions.csproj (in 2.02 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Postgres/CustomerPortal.UserAuthService.Postgres.csproj (in 2.02 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.CustomerWebsite/CustomerPortal.CustomerWebsite.csproj (in 2.03 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Messages/CustomerPortal.Messages.csproj (in 4 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.InternalWebsite/CustomerPortal.InternalWebsite.csproj (in 4 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Domain/CustomerPortal.UserAuthService.Domain.csproj (in 2 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj (in 5 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService/CustomerPortal.UserAuthService.csproj (in 2.78 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.PriceListGenerationService/CustomerPortal.PriceListGenerationService.csproj (in 1.3 sec).
+-> Schritt 0: dotnet restore gestartet bei +1 ms, Dauer: 6091 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  CustomerPortal.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Extensions/bin/Debug/net9.0/CustomerPortal.Extensions.dll
+  CustomerPortal.Messages -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.Messages/bin/Debug/net9.0/CustomerPortal.Messages.dll
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/OutboundDataPushCallPointAttribute.cs(4,56): warning CS9113: Parameter 'DataflowName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/OutboundDataPushCallPointAttribute.cs(4,77): warning CS9113: Parameter 'CallName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/InboundProgramCallPointAttribute.cs(4,54): warning CS9113: Parameter 'ProcessName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/InboundFrameworkCallPointAttribute.cs(4,56): warning CS9113: Parameter 'ProcessName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+  ThreatModel -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/bin/Debug/net9.0/ThreatModel.dll
+  CustomerPortal.UserAuthService.Domain -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Domain/bin/Debug/net9.0/CustomerPortal.UserAuthService.Domain.dll
+  CustomerPortal.UserAuthService.Postgres -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService.Postgres/bin/Debug/net9.0/CustomerPortal.UserAuthService.Postgres.dll
+  CustomerPortal.PriceListGenerationService -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.PriceListGenerationService/bin/Debug/net9.0/CustomerPortal.PriceListGenerationService.dll
+  CustomerPortal.CustomerWebsite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.CustomerWebsite/bin/Debug/net9.0/CustomerPortal.CustomerWebsite.dll
+  CustomerPortal.InternalWebsite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.InternalWebsite/bin/Debug/net9.0/CustomerPortal.InternalWebsite.dll
+  CustomerPortal.UserAuthService -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/CustomerPortal.UserAuthService/bin/Debug/net9.0/CustomerPortal.UserAuthService.dll
+
+Build succeeded.
+
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/OutboundDataPushCallPointAttribute.cs(4,56): warning CS9113: Parameter 'DataflowName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/OutboundDataPushCallPointAttribute.cs(4,77): warning CS9113: Parameter 'CallName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/InboundProgramCallPointAttribute.cs(4,54): warning CS9113: Parameter 'ProcessName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/Attributes/InboundFrameworkCallPointAttribute.cs(4,56): warning CS9113: Parameter 'ProcessName' is unread. [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/ThreatModel/ThreatModel.csproj]
+    4 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:13.48
+-> Schritt 1: dotnet build gestartet bei +6094 ms, Dauer: 13813 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 19908 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/src' and attaching to process
+Process finished (19.90 seconds)

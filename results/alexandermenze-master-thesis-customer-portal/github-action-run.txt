@@ -1,1 +1,1 @@
-https://github.com/alexandermenze/master-thesis-codeql-perf-test/actions/runs/14808515000
+https://github.com/alexandermenze/master-thesis-codeql-perf-test/actions/runs/14808925423
