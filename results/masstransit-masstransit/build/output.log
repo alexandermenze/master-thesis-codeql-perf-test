@@ -1,0 +1,188 @@
+Schritt 0: dotnet restore
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.DynamoDbIntegration.Tests/MassTransit.DynamoDbIntegration.Tests.csproj (in 3.66 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj (in 3.66 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj (in 3.67 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Azure.Table.Tests/MassTransit.Azure.Table.Tests.csproj (in 570 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.DapperIntegration.Tests/MassTransit.DapperIntegration.Tests.csproj (in 4.49 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Azure.ServiceBus.Core.Tests/MassTransit.Azure.ServiceBus.Core.Tests.csproj (in 1 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.AmazonSqsTransport.Tests/MassTransit.AmazonSqsTransport.Tests.csproj (in 1.13 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Abstractions.Tests/MassTransit.Abstractions.Tests.csproj (in 6 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.ActiveMqTransport.Tests/MassTransit.ActiveMqTransport.Tests.csproj (in 830 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Azure.Cosmos.Tests/MassTransit.Azure.Cosmos.Tests.csproj (in 2.3 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj (in 579 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Analyzers.Tests/MassTransit.Analyzers.Tests.csproj (in 2.42 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Tests/MassTransit.Tests.csproj (in 34 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj (in 266 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.SignalR.Tests/MassTransit.SignalR.Tests.csproj (in 1.56 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.RedisIntegration.Tests/MassTransit.RedisIntegration.Tests.csproj (in 816 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/MassTransit.WebJobs.ServiceBusIntegration.csproj (in 4.45 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj (in 4.12 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.RabbitMqTransport.Tests/MassTransit.RabbitMqTransport.Tests.csproj (in 26 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.QuartzIntegration.Tests/MassTransit.QuartzIntegration.Tests.csproj (in 20 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.SqlTransport.Tests/MassTransit.SqlTransport.Tests.csproj (in 3.73 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.MongoDbIntegration.Tests/MassTransit.MongoDbIntegration.Tests.csproj (in 770 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.HangfireIntegration.Tests/MassTransit.HangfireIntegration.Tests.csproj (in 2.15 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.NHibernateIntegration.Tests/MassTransit.NHibernateIntegration.Tests.csproj (in 3.07 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.MartenIntegration.Tests/MassTransit.MartenIntegration.Tests.csproj (in 3.09 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.EntityFrameworkCoreIntegration.Tests/MassTransit.EntityFrameworkCoreIntegration.Tests.csproj (in 16 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.EventHubIntegration.Tests/MassTransit.EventHubIntegration.Tests.csproj (in 318 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.EntityFrameworkIntegration.Tests/MassTransit.EntityFrameworkIntegration.Tests.csproj (in 433 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj (in 151 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/MassTransit.Azure.ServiceBus.Core.csproj (in 25 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj (in 26 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj (in 56 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj (in 72 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj (in 67 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj (in 524 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.KafkaIntegration.Tests/MassTransit.KafkaIntegration.Tests.csproj (in 3.06 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/MassTransit.MartenIntegration.csproj (in 38 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj (in 198 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj (in 59 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/MassTransit.EntityFrameworkIntegration.csproj (in 263 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj (in 213 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj (in 334 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj (in 24 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj (in 5 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj (in 10 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/MassTransit.csproj (in 40 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj (in 60 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Analyzers/MassTransit.Analyzers.csproj (in 38 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj (in 44 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/MassTransit.Abstractions.csproj (in 3 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj (in 230 ms).
+-> Schritt 0: dotnet restore gestartet bei +1 ms, Dauer: 23768 ms
+
+Schritt 1: dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MassTransit.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/bin/Debug/netstandard2.0/MassTransit.Abstractions.dll
+  MassTransit.Analyzers -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Analyzers/bin/Debug/netstandard2.0/MassTransit.Analyzers.dll
+  MassTransit.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/bin/Debug/net8.0/MassTransit.Abstractions.dll
+  MassTransit.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/bin/Debug/net9.0/MassTransit.Abstractions.dll
+  MassTransit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/bin/Debug/net9.0/MassTransit.dll
+  MassTransit.Abstractions.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Abstractions.Tests/bin/Debug/net9.0/MassTransit.Abstractions.Tests.dll
+  MassTransit.EventHubIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/bin/Debug/net9.0/MassTransit.EventHubIntegration.dll
+  MassTransit.SqlTransport.SqlServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/bin/Debug/net9.0/MassTransit.SqlTransport.SqlServer.dll
+  MassTransit.Azure.ServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/bin/Debug/net9.0/MassTransit.Azure.ServiceBus.Core.dll
+  MassTransit.Azure.Table -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/bin/Debug/net9.0/MassTransit.Azure.Table.dll
+  MassTransit.DapperIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/bin/Debug/net9.0/MassTransit.DapperIntegration.dll
+  MassTransit.MessagePack -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/bin/Debug/net9.0/MassTransit.MessagePack.dll
+  MassTransit.SqlTransport.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/bin/Debug/net9.0/MassTransit.SqlTransport.PostgreSql.dll
+  MassTransit.KafkaIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/bin/Debug/net9.0/MassTransit.KafkaIntegration.dll
+  MassTransit.ActiveMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/bin/Debug/net9.0/MassTransit.ActiveMqTransport.dll
+  MassTransit.DynamoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/bin/Debug/net9.0/MassTransit.DynamoDbIntegration.dll
+  MassTransit.Azure.Storage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/bin/Debug/net9.0/MassTransit.Azure.Storage.dll
+  MassTransit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/bin/Debug/net8.0/MassTransit.dll
+  MassTransit.EntityFrameworkCoreIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/bin/Debug/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll
+  MassTransit.SignalR -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/bin/Debug/net9.0/MassTransit.SignalR.dll
+  MassTransit.Azure.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/bin/Debug/net9.0/MassTransit.Azure.Cosmos.dll
+  MassTransit.RedisIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/bin/Debug/net9.0/MassTransit.RedisIntegration.dll
+  MassTransit.AmazonSqsTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/bin/Debug/net9.0/MassTransit.AmazonSqsTransport.dll
+  MassTransit.MongoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/bin/Debug/net9.0/MassTransit.MongoDbIntegration.dll
+  MassTransit.Azure.Storage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/bin/Debug/net8.0/MassTransit.Azure.Storage.dll
+  MassTransit.EventHubIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/bin/Debug/net8.0/MassTransit.EventHubIntegration.dll
+  MassTransit.Azure.Table -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/bin/Debug/net8.0/MassTransit.Azure.Table.dll
+  MassTransit.KafkaIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/bin/Debug/net8.0/MassTransit.KafkaIntegration.dll
+  MassTransit.SignalR -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/bin/Debug/net8.0/MassTransit.SignalR.dll
+  MassTransit.AmazonSqsTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/bin/Debug/net8.0/MassTransit.AmazonSqsTransport.dll
+  MassTransit.DapperIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/bin/Debug/net8.0/MassTransit.DapperIntegration.dll
+  MassTransit.DynamoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/bin/Debug/net8.0/MassTransit.DynamoDbIntegration.dll
+  MassTransit.TestFramework -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/bin/Debug/net8.0/MassTransit.TestFramework.dll
+  MassTransit.SqlTransport.SqlServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/bin/Debug/net8.0/MassTransit.SqlTransport.SqlServer.dll
+  MassTransit.RedisIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/bin/Debug/net8.0/MassTransit.RedisIntegration.dll
+  MassTransit.MessagePack -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/bin/Debug/net8.0/MassTransit.MessagePack.dll
+  MassTransit.Azure.ServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/bin/Debug/net8.0/MassTransit.Azure.ServiceBus.Core.dll
+  MassTransit.SqlTransport.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/bin/Debug/net8.0/MassTransit.SqlTransport.PostgreSql.dll
+  MassTransit.ActiveMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/bin/Debug/net8.0/MassTransit.ActiveMqTransport.dll
+  MassTransit.EntityFrameworkCoreIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/bin/Debug/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll
+  MassTransit.Azure.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/bin/Debug/net8.0/MassTransit.Azure.Cosmos.dll
+  MassTransit.MartenIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/bin/Debug/net8.0/MassTransit.MartenIntegration.dll
+  MassTransit.Newtonsoft -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/bin/Debug/net9.0/MassTransit.Newtonsoft.dll
+  MassTransit.MongoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/bin/Debug/net8.0/MassTransit.MongoDbIntegration.dll
+  MassTransit.HangfireIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/bin/Debug/net9.0/MassTransit.HangfireIntegration.dll
+  MassTransit.Interop.NServiceBus -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/bin/Debug/net9.0/MassTransit.Interop.NServiceBus.dll
+  MassTransit.QuartzIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/bin/Debug/net9.0/MassTransit.QuartzIntegration.dll
+  MassTransit.AmazonS3 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/bin/Debug/net9.0/MassTransit.AmazonS3.dll
+  MassTransit.QuartzIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/bin/Debug/net8.0/MassTransit.QuartzIntegration.dll
+  MassTransit.Newtonsoft -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/bin/Debug/net8.0/MassTransit.Newtonsoft.dll
+  MassTransit.Interop.NServiceBus -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/bin/Debug/net8.0/MassTransit.Interop.NServiceBus.dll
+  MassTransit.RabbitMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/bin/Debug/net9.0/MassTransit.RabbitMqTransport.dll
+  MassTransit.HangfireIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/bin/Debug/net8.0/MassTransit.HangfireIntegration.dll
+  MassTransit.AmazonS3 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/bin/Debug/net8.0/MassTransit.AmazonS3.dll
+  MassTransit.RabbitMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/bin/Debug/net8.0/MassTransit.RabbitMqTransport.dll
+  MassTransit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/bin/Debug/netstandard2.0/MassTransit.dll
+  MassTransit.NHibernateIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/bin/Debug/net9.0/MassTransit.NHibernateIntegration.dll
+  MassTransit.NHibernateIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/bin/Debug/net8.0/MassTransit.NHibernateIntegration.dll
+  MassTransit.StateMachineVisualizer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/bin/Debug/net9.0/MassTransit.StateMachineVisualizer.dll
+  MassTransit.TestFramework -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/bin/Debug/net9.0/MassTransit.TestFramework.dll
+  MassTransit.DynamoDbIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.DynamoDbIntegration.Tests/bin/Debug/net9.0/MassTransit.DynamoDbIntegration.Tests.dll
+  MassTransit.WebJobs.ServiceBusIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/bin/Debug/net9.0/MassTransit.WebJobs.ServiceBusIntegration.dll
+  MassTransit.SignalR.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.SignalR.Tests/bin/Debug/net9.0/MassTransit.SignalR.Tests.dll
+  MassTransit.MongoDbIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.MongoDbIntegration.Tests/bin/Debug/net9.0/MassTransit.MongoDbIntegration.Tests.dll
+  MassTransit.RedisIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.RedisIntegration.Tests/bin/Debug/net9.0/MassTransit.RedisIntegration.Tests.dll
+  MassTransit.ActiveMqTransport.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.ActiveMqTransport.Tests/bin/Debug/net9.0/MassTransit.ActiveMqTransport.Tests.dll
+  MassTransit.Azure.ServiceBus.Core.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Azure.ServiceBus.Core.Tests/bin/Debug/net9.0/MassTransit.Azure.ServiceBus.Core.Tests.dll
+  MassTransit.Newtonsoft -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/bin/Debug/netstandard2.0/MassTransit.Newtonsoft.dll
+  MassTransit.MessagePack -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/bin/Debug/netstandard2.0/MassTransit.MessagePack.dll
+  MassTransit.Azure.ServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/bin/Debug/netstandard2.0/MassTransit.Azure.ServiceBus.Core.dll
+  MassTransit.AmazonSqsTransport.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.AmazonSqsTransport.Tests/bin/Debug/net9.0/MassTransit.AmazonSqsTransport.Tests.dll
+  MassTransit.AmazonS3 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/bin/Debug/netstandard2.0/MassTransit.AmazonS3.dll
+  MassTransit.DapperIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/bin/Debug/netstandard2.0/MassTransit.DapperIntegration.dll
+  MassTransit.SqlTransport.SqlServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/bin/Debug/netstandard2.0/MassTransit.SqlTransport.SqlServer.dll
+  MassTransit.Azure.Table -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/bin/Debug/netstandard2.0/MassTransit.Azure.Table.dll
+  MassTransit.NHibernateIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/bin/Debug/netstandard2.0/MassTransit.NHibernateIntegration.dll
+  MassTransit.SqlTransport.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/bin/Debug/netstandard2.0/MassTransit.SqlTransport.PostgreSql.dll
+  MassTransit.ActiveMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/bin/Debug/netstandard2.0/MassTransit.ActiveMqTransport.dll
+  MassTransit.DynamoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/bin/Debug/netstandard2.0/MassTransit.DynamoDbIntegration.dll
+  MassTransit.Interop.NServiceBus -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/bin/Debug/netstandard2.0/MassTransit.Interop.NServiceBus.dll
+  MassTransit.Azure.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/bin/Debug/netstandard2.0/MassTransit.Azure.Cosmos.dll
+  MassTransit.EventHubIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/bin/Debug/netstandard2.0/MassTransit.EventHubIntegration.dll
+  MassTransit.RedisIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/bin/Debug/netstandard2.0/MassTransit.RedisIntegration.dll
+  MassTransit.MongoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/bin/Debug/netstandard2.1/MassTransit.MongoDbIntegration.dll
+  MassTransit.KafkaIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/bin/Debug/netstandard2.0/MassTransit.KafkaIntegration.dll
+  MassTransit.HangfireIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/bin/Debug/netstandard2.0/MassTransit.HangfireIntegration.dll
+  MassTransit.EntityFrameworkIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/bin/Debug/netstandard2.1/MassTransit.EntityFrameworkIntegration.dll
+  MassTransit.Azure.Storage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/bin/Debug/netstandard2.0/MassTransit.Azure.Storage.dll
+  MassTransit.QuartzIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/bin/Debug/netstandard2.0/MassTransit.QuartzIntegration.dll
+  MassTransit.AmazonSqsTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/bin/Debug/netstandard2.0/MassTransit.AmazonSqsTransport.dll
+  MassTransit.StateMachineVisualizer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/bin/Debug/netstandard2.0/MassTransit.StateMachineVisualizer.dll
+  MassTransit.RabbitMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/bin/Debug/netstandard2.0/MassTransit.RabbitMqTransport.dll
+  MassTransit.WebJobs.ServiceBusIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/bin/Debug/netstandard2.0/MassTransit.WebJobs.ServiceBusIntegration.dll
+  MassTransit.Analyzers.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Analyzers.Tests/bin/Debug/net6.0/MassTransit.Analyzers.Tests.dll
+  MassTransit.StateMachineVisualizer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/bin/Debug/net8.0/MassTransit.StateMachineVisualizer.dll
+  MassTransit.WebJobs.EventHubsIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/bin/Debug/net9.0/MassTransit.WebJobs.EventHubsIntegration.dll
+  MassTransit.WebJobs.ServiceBusIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/bin/Debug/net8.0/MassTransit.WebJobs.ServiceBusIntegration.dll
+  MassTransit.WebJobs.EventHubsIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/bin/Debug/netstandard2.0/MassTransit.WebJobs.EventHubsIntegration.dll
+  MassTransit.WebJobs.EventHubsIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/bin/Debug/net8.0/MassTransit.WebJobs.EventHubsIntegration.dll
+  MassTransit.KafkaIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.KafkaIntegration.Tests/bin/Debug/net9.0/MassTransit.KafkaIntegration.Tests.dll
+  MassTransit.EventHubIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.EventHubIntegration.Tests/bin/Debug/net9.0/MassTransit.EventHubIntegration.Tests.dll
+  MassTransit.RabbitMqTransport.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.RabbitMqTransport.Tests/bin/Debug/net9.0/MassTransit.RabbitMqTransport.Tests.dll
+  MassTransit.MartenIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.MartenIntegration.Tests/bin/Debug/net8.0/MassTransit.MartenIntegration.Tests.dll
+  MassTransit.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Tests/bin/Debug/net9.0/MassTransit.Tests.dll
+  MassTransit.Azure.Table.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Azure.Table.Tests/bin/Debug/net9.0/MassTransit.Azure.Table.Tests.dll
+  MassTransit.SqlTransport.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.SqlTransport.Tests/bin/Debug/net9.0/MassTransit.SqlTransport.Tests.dll
+  MassTransit.EntityFrameworkIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.EntityFrameworkIntegration.Tests/bin/Debug/net9.0/MassTransit.EntityFrameworkIntegration.Tests.dll
+  MassTransit.NHibernateIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.NHibernateIntegration.Tests/bin/Debug/net9.0/MassTransit.NHibernateIntegration.Tests.dll
+  MassTransit.HangfireIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.HangfireIntegration.Tests/bin/Debug/net9.0/MassTransit.HangfireIntegration.Tests.dll
+  MassTransit.DapperIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.DapperIntegration.Tests/bin/Debug/net9.0/MassTransit.DapperIntegration.Tests.dll
+  MassTransit.EntityFrameworkCoreIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.EntityFrameworkCoreIntegration.Tests/bin/Debug/net9.0/MassTransit.EntityFrameworkCoreIntegration.Tests.dll
+  MassTransit.Azure.Cosmos.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.Azure.Cosmos.Tests/bin/Debug/net9.0/MassTransit.Azure.Cosmos.Tests.dll
+  MassTransit.QuartzIntegration.Tests -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/tests/MassTransit.QuartzIntegration.Tests/bin/Debug/net9.0/MassTransit.QuartzIntegration.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:45.80
+-> Schritt 1: dotnet build gestartet bei +23771 ms, Dauer: 106166 ms
+
+-> Gesamtskript gestartet bei +0 ms, Dauer: 129938 ms
+
+Starting up command './run-analysis-build.sh -s target-repo/.' and attaching to process
+Process finished (129.94 seconds)
