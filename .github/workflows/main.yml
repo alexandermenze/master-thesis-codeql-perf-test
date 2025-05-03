@@ -86,11 +86,10 @@ jobs:
           RESULTS_FILE="${REPO_NAME}.results.csv"
           LOG_FILE="${REPO_NAME}.psrecord.log"
           OUTPUT_FILE="${REPO_NAME}.output.log"
-          SLN_PATH="target-repo/${{ github.event.inputs.sln-folder }}"
 
           chmod +x $SCRIPT
 
-          psrecord "$SCRIPT -s $SLN_PATH -d db -q identify-call-paths.ql -c $RESULTS_FILE" \
+          psrecord "$SCRIPT -s target-repo -d db -q identify-call-paths.ql -c $RESULTS_FILE" \
             --include-children \
             --log "$LOG_FILE" \
             2>&1 | tee $OUTPUT_FILE
