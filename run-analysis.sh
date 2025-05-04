@@ -5,15 +5,17 @@ set -euo pipefail
 RESULT_SET="#select"
 OUT_BQRS="out.bqrs"
 OUT_CSV="out.csv"
+SLN_FILE=""
 
 # Usage-Funktion
 usage() {
   cat <<EOF
-Usage: $0 -s <source-root> -d <database> -q <query-file> [-r <result-set>] [-b <bqrs-output>] [-c <csv-output>]
+Usage: $0 -s <source-root> -d <database> -q <query-file> -l <solution-file> [-r <result-set>] [-b <bqrs-output>] [-c <csv-output>]
 
   -s  Pfad zum Quellcode (source-root)
   -d  Pfad zur CodeQL-Datenbank
   -q  Pfad zur CodeQL-Query (.ql)
+  -l  Pfad zur Solution-Datei (.sln)
   -r  Name des Result-Sets (default: "#select")
   -b  Name der BQRS-Ausgabedatei (default: "out.bqrs")
   -c  Name der CSV-Ausgabedatei (default: "out.csv")
@@ -23,21 +25,22 @@ EOF
 }
 
 # Parameter parsen
-while getopts ":s:d:q:r:b:c:h" opt; do
+while getopts ":s:d:q:l:r:b:c:h" opt; do
   case ${opt} in
-    s) SOURCE_ROOT="$OPTARG" ;;
-    d) DB_PATH="$OPTARG"     ;;
-    q) QUERY_FILE="$OPTARG"  ;;
-    r) RESULT_SET="$OPTARG"  ;;
-    b) OUT_BQRS="$OPTARG"    ;;
-    c) OUT_CSV="$OPTARG"     ;;
+    s) SOURCE_ROOT="$OPTARG" ;;  # Quellcode-Pfad
+    d) DB_PATH="$OPTARG"     ;;  # Datenbank-Pfad
+    q) QUERY_FILE="$OPTARG"  ;;  # Query-Datei
+    l) SLN_FILE="$OPTARG"    ;;  # Solution-Datei (.sln)
+    r) RESULT_SET="$OPTARG"  ;;  # Result-Set-Name
+    b) OUT_BQRS="$OPTARG"    ;;  # BQRS-Ausgabe
+    c) OUT_CSV="$OPTARG"     ;;  # CSV-Ausgabe
     h|*) usage ;;
   esac
 done
 
 # Pflichtparameter prüfen
-if [ -z "${SOURCE_ROOT:-}" ] || [ -z "${DB_PATH:-}" ] || [ -z "${QUERY_FILE:-}" ]; then
-  echo "Fehler: source-root, database und query-file müssen angegeben werden." >&2
+if [ -z "${SOURCE_ROOT:-}" ] || [ -z "${DB_PATH:-}" ] || [ -z "${QUERY_FILE:-}" ] || [ -z "${SLN_FILE:-}" ]; then
+  echo "Fehler: source-root, database, query-file und solution-file müssen angegeben werden." >&2
   usage
 fi
 
@@ -55,10 +58,11 @@ print_timing() {
          "$step_name" "$offset" "$duration"
 }
 
-# Schritt 0: dotnet restore. Verhindert Abhängigkeit von Netzwerk während 'database create', das implizit dotnet build aufruft.
-STEP="Schritt 0: dotnet restore"
+# Schritt 0: dotnet restore. Verhindert Abhängigkeit von Netzwerk während 'database create'.
+STEP="Schritt 0: dotnet clean & restore"
 echo "$STEP"
 STEP0_START=$(date +%s%3N)
+dotnet clean "$SLN_FILE"
 dotnet restore "$SOURCE_ROOT"
 STEP0_END=$(date +%s%3N)
 print_timing "$STEP" "$STEP0_START" "$STEP0_END"
@@ -67,7 +71,8 @@ print_timing "$STEP" "$STEP0_START" "$STEP0_END"
 STEP="Schritt 1: Erstelle CodeQL-Datenbank"
 echo "$STEP"
 STEP1_START=$(date +%s%3N)
-codeql database create --language csharp --source-root "$SOURCE_ROOT" -- "$DB_PATH"
+codeql database create --language csharp --source-root "$SOURCE_ROOT" \
+  --command "dotnet build --no-incremental $SLN_FILE" -- "$DB_PATH"
 STEP1_END=$(date +%s%3N)
 print_timing "$STEP" "$STEP1_START" "$STEP1_END"
 
@@ -83,7 +88,8 @@ print_timing "$STEP" "$STEP2_START" "$STEP2_END"
 STEP="Schritt 3: Dekodiere Ergebnisse nach CSV"
 echo "$STEP"
 STEP3_START=$(date +%s%3N)
-codeql bqrs decode --output "$OUT_CSV" --result-set "$RESULT_SET" --format csv "$OUT_BQRS"
+codeql bqrs decode --output "$OUT_CSV" --result-set "$RESULT_SET" \
+  --format csv "$OUT_BQRS"
 STEP3_END=$(date +%s%3N)
 print_timing "$STEP" "$STEP3_START" "$STEP3_END"
 
