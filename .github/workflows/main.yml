@@ -74,7 +74,7 @@ jobs:
       - name: Install cloc
         run: |
           sudo apt-get update
-          sudo apt-get install -y cloc tree
+          sudo apt-get install -y cloc
 
       - name: Prepare repository name
         run: |
@@ -96,7 +96,6 @@ jobs:
           chmod +x ./filter-sln.sh
 
           ./filter-sln.sh -s "$SLN_PATH" -f "$FILTER_PATHS"
-          tree
 
       - name: Run CodeQL script under psrecord
         run: |
