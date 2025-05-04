@@ -95,6 +95,8 @@ jobs:
           # Array mit '|' joinen
           IFS='|'; EXCLUDE_RE="(${parts[*]})"
           unset IFS
+
+          echo "Exclude Regex: $EXCLUDE_RE"
           
           cloc target-repo --include-lang="C#" --exclude-dir=bin,obj --fullpath --not-match-d="$EXCLUDE_RE" --json --out="${REPO_NAME}.cloc.json"
 
