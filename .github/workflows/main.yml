@@ -98,7 +98,7 @@ jobs:
       - name: Filter projects in solution file
         run: |
           SLN_PATH="target-repo/${{ github.event.inputs.sln-file }}"
-          chmod +x $SCRIPT
+          chmod +x ./filter-sln.sh
 
           ./filter-sln.sh -s "$SLN_PATH" -e "$FILTER_PATHS" -f "$FILTER_PROJECTS"
 
