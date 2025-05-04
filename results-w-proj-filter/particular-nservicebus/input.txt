@@ -1,4 +1,4 @@
 project (github id): Particular/NServiceBus
 ref (branch / tag / commit hash): 9.2.7
 sln-file (default './App.sln'): src/NServiceBus.sln
-filter-paths (default ''): src/NServiceBus.TransportTests;src/NServiceBus.Testing.Fakes;src/NServiceBus.PersistenceTests;src/NServiceBus.Learning.AcceptanceTests;src/NServiceBus.Core.Tests;src/NServiceBus.Core.Analyzer.Tests.Roslyn4;src/NServiceBus.Core.Analyzer;src/NServiceBus.Core.Analyzer.Tests.Common;src/NServiceBus.ContainerTests;src/NServiceBus.AcceptanceTests;src/NServiceBus.AcceptanceTesting
+filter-paths (default ''): NServiceBus.TransportTests;NServiceBus.Testing.Fakes;NServiceBus.PersistenceTests;NServiceBus.Learning.AcceptanceTests;NServiceBus.Core.Tests;NServiceBus.Core.Analyzer.Tests.Roslyn4;NServiceBus.Core.Analyzer;NServiceBus.Core.Analyzer.Tests.Common;NServiceBus.ContainerTests;NServiceBus.AcceptanceTests;NServiceBus.AcceptanceTesting
