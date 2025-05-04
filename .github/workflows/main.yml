@@ -105,7 +105,7 @@ jobs:
           RESULTS_FILE="${REPO_NAME}.results.csv"
           LOG_FILE="${REPO_NAME}.psrecord.log"
           OUTPUT_FILE="${REPO_NAME}.output.log"
-          SLN_PATH="target-repo/${{ github.event.inputs.sln-file }}"
+          SLN_PATH="${{ github.event.inputs.sln-file }}"
 
           chmod +x $SCRIPT
 
