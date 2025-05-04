@@ -82,7 +82,9 @@ jobs:
 
       - name: Run cloc for C# files
         run: |
-          cloc target-repo --include-lang="C#" --exclude-dir=bin,obj --json --out="${REPO_NAME}.cloc.json"
+          COMMA_PATHS="${FILTER_PATHS//;/,}"
+          EXCLUDE_DIRS="bin,obj,${COMMA_PATHS}"
+          cloc target-repo --include-lang="C#" --exclude-dir="$EXCLUDE_DIRS" --json --out="${REPO_NAME}.cloc.json"
 
       - name: Upload cloc results
         uses: actions/upload-artifact@v4
