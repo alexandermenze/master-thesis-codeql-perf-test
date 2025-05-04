@@ -19,10 +19,6 @@ on:
         description: 'Orderpfade unter denen alle Projekte ausgefiltert werden. Mit Semikolon getrennt.'
         required: false
         default: ''
-      filter-projects:
-        description: 'Projektpfade, die ausgefiltert werden. Mit Semikolon getrennt.'
-        required: false
-        default: ''
 
 jobs:
   monitor:
@@ -30,7 +26,6 @@ jobs:
     env:
       REPO_INPUT: ${{ github.event.inputs.repository }}
       FILTER_PATHS: ${{ github.event.inputs.filter-paths }}
-      FILTER_PROJECTS: ${{ github.event.inputs.filter-projects }}
     steps:
       - name: Checkout workflow repository
         uses: actions/checkout@v4
@@ -100,7 +95,7 @@ jobs:
           SLN_PATH="target-repo/${{ github.event.inputs.sln-file }}"
           chmod +x ./filter-sln.sh
 
-          ./filter-sln.sh -s "$SLN_PATH" -e "$FILTER_PATHS" -f "$FILTER_PROJECTS"
+          ./filter-sln.sh -s "$SLN_PATH" -f "$FILTER_PATHS"
 
       - name: Run CodeQL script under psrecord
         run: |
