@@ -2,7 +2,6 @@
 set -euo pipefail
 
 # Default-Werte
-EXCLUDE_PROJECTS=""
 EXCLUDE_FOLDERS=""
 
 usage() {
@@ -10,7 +9,6 @@ usage() {
 Usage: $0 -s <solution.sln> [-e <proj1;proj2>] [-f <folder1;folder2>]
 
   -s  Pfad zur Solution-Datei
-  -e  Semikolon-getrennte Liste von Projektdateipfaden oder Ordnernamen zum Ausschließen
   -f  Semikolon-getrennte Liste von Ordnerpfaden (relativ zur Solution), aus denen alle .csproj entfernt werden
   -h  Diese Hilfe anzeigen
 EOF
@@ -21,7 +19,6 @@ EOF
 while getopts ":s:e:f:h" opt; do
   case ${opt} in
     s) SOLUTION="$OPTARG" ;; 
-    e) EXCLUDE_PROJECTS="$OPTARG" ;; 
     f) EXCLUDE_FOLDERS="$OPTARG" ;; 
     h|*) usage ;;
   esac
@@ -38,24 +35,11 @@ SOLUTION_DIR=$(dirname "$SOLUTION")
 SOLUTION_NAME=$(basename "$SOLUTION")
 
 echo "Solution:           $SOLUTION_NAME"
-[ -n "$EXCLUDE_PROJECTS" ] && echo "Einträge ausschließen: $EXCLUDE_PROJECTS"
 [ -n "$EXCLUDE_FOLDERS" ]  && echo "Ordner ausschließen:   $EXCLUDE_FOLDERS"
 echo
 
 # ins Solution-Verzeichnis wechseln
 cd "$SOLUTION_DIR"
-
-# --- einzelne Projekte oder Ordner entfernen (über -e) ---
-if [ -n "$EXCLUDE_PROJECTS" ]; then
-  IFS=';' read -r -a ENTRIES <<< "$EXCLUDE_PROJECTS"
-  for entry in "${ENTRIES[@]}"; do
-    echo "→ Entferne Eintrag: $entry"
-    # dotnet sln remove akzeptiert sowohl Projektdateien als auch Ordnernamen
-    dotnet sln "$SOLUTION_NAME" remove "$entry" >/dev/null 2>&1 || \
-      echo "Warnung: '$entry' konnte nicht aus der Solution entfernt werden." >&2
-  done
-  echo
-fi
 
 # --- Ordner ausschließen (über -f) ---
 if [ -n "$EXCLUDE_FOLDERS" ]; then
