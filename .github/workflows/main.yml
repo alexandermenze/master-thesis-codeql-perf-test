@@ -82,9 +82,21 @@ jobs:
 
       - name: Run cloc for C# files
         run: |
-          COMMA_PATHS="${FILTER_PATHS//;/,}"
-          EXCLUDE_DIRS="bin,obj,${COMMA_PATHS}"
-          cloc target-repo --include-lang="C#" --exclude-dir="$EXCLUDE_DIRS" --json --out="${REPO_NAME}.cloc.json"
+          # Array auf Semikolon splitten
+          IFS=';' read -r -a parts <<< "$FILTER_PATHS"
+          
+          # Regex-Metazeichen in den Pfaden escapen
+          for i in "${!parts[@]}"; do
+            # escapes: . ^ $ * + ? ( ) [ ] \ | /
+            parts[$i]=$(printf '%s' "${parts[$i]}" |
+                        sed -e 's/[.[\*^$+?()|\/\\]/\\&/g')
+          done
+          
+          # Array mit '|' joinen
+          IFS='|'; EXCLUDE_RE="(${parts[*]})"
+          unset IFS
+          
+          cloc target-repo --include-lang="C#" --exclude-dir=bin,obj --fullpath --not-match-d="$EXCLUDE_RE" --json --out="${REPO_NAME}.cloc.json"
 
       - name: Upload cloc results
         uses: actions/upload-artifact@v4
