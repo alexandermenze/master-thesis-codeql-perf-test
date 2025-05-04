@@ -4,23 +4,33 @@ on:
   workflow_dispatch:
     inputs:
       repository:
-        description: 'GitHub repo to analyze (owner/repo)'
+        description: 'Zu analysierende GitHub Repository (owner/repo)'
         required: true
         default: 'octocat/Hello-World'
       ref:
-        description: 'Branch, Tag or SHA to checkout'
-        required: false
+        description: 'Branch, Tag oder SHA für Checkout'
+        required: true
         default: 'main'
-      sln-folder:
-        description: 'Ordnerpfad, in dem sich die .sln-Datei befindet'
+      sln-file:
+        description: 'Pfad der .sln-Datei'
+        required: true
+        default: './App.sln'
+      filter-paths:
+        description: 'Orderpfade unter denen alle Projekte ausgefiltert werden. Mit Semikolon getrennt.'
         required: false
-        default: '.'
+        default: ''
+      filter-projects:
+        description: 'Projektpfade, die ausgefiltert werden. Mit Semikolon getrennt.'
+        required: false
+        default: ''
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
     env:
       REPO_INPUT: ${{ github.event.inputs.repository }}
+      FILTER_PATHS: ${{ github.event.inputs.filter-paths }}
+      FILTER_PROJECTS: ${{ github.event.inputs.filter-projects }}
     steps:
       - name: Checkout workflow repository
         uses: actions/checkout@v4
@@ -85,6 +95,13 @@ jobs:
           name: results-cloc-${{ env.REPO_NAME }}
           path: ${{ env.REPO_NAME }}.cloc.json
 
+      - name: Filter projects in solution file
+        run: |
+          SLN_PATH="target-repo/${{ github.event.inputs.sln-file }}"
+          chmod +x $SCRIPT
+
+          ./filter-sln.sh -s "$SLN_PATH" -e "$FILTER_PATHS" -f "$FILTER_PROJECTS"
+
       - name: Run CodeQL script under psrecord
         run: |
           SCRIPT=./run-analysis.sh
@@ -92,11 +109,11 @@ jobs:
           RESULTS_FILE="${REPO_NAME}.results.csv"
           LOG_FILE="${REPO_NAME}.psrecord.log"
           OUTPUT_FILE="${REPO_NAME}.output.log"
-          SLN_PATH="target-repo/${{ github.event.inputs.sln-folder }}"
+          SLN_PATH="target-repo/${{ github.event.inputs.sln-file }}"
 
           chmod +x $SCRIPT
 
-          psrecord "$SCRIPT -s $SLN_PATH -d db -q identify-call-paths.ql -c $RESULTS_FILE" \
+          psrecord "$SCRIPT -s target-repo -l $SLN_PATH -d db -q identify-call-paths.ql -c $RESULTS_FILE" \
             --include-children \
             --log "$LOG_FILE" \
             2>&1 | tee $OUTPUT_FILE
@@ -120,6 +137,7 @@ jobs:
           path: ${{ env.REPO_NAME }}.output.log
 
   build-monitor:
+    if: false
     runs-on: ubuntu-latest
     env:
       REPO_INPUT: ${{ github.event.inputs.repository }}
@@ -163,11 +181,11 @@ jobs:
           SCRIPT=./run-analysis-build.sh
           BUILD_LOG_FILE="${REPO_NAME}.build-psrecord.log"
           BUILD_OUTPUT="${REPO_NAME}.build-output.log"
-          SLN_PATH="target-repo/${{ github.event.inputs.sln-folder }}"
+          SLN_PATH="target-repo/${{ github.event.inputs.sln-file }}"
 
           chmod +x $SCRIPT
 
-          psrecord "$SCRIPT -s $SLN_PATH" \
+          psrecord "$SCRIPT -s target-repo -l $SLN_PATH" \
             --include-children \
             --log "$BUILD_LOG_FILE" \
             2>&1 | tee $BUILD_OUTPUT
