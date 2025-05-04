@@ -62,8 +62,8 @@ print_timing() {
 STEP="Schritt 0: dotnet clean & restore"
 echo "$STEP"
 STEP0_START=$(date +%s%3N)
-dotnet clean "$SLN_FILE"
-dotnet restore "$SOURCE_ROOT"
+dotnet clean "$SOURCE_ROOT/$SLN_FILE"
+dotnet restore "$SOURCE_ROOT/$SLN_FILE"
 STEP0_END=$(date +%s%3N)
 print_timing "$STEP" "$STEP0_START" "$STEP0_END"
 
