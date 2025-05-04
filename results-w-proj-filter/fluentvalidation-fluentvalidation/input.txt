@@ -1,0 +1,4 @@
+project (github id): FluentValidation/FluentValidation
+ref (branch / tag / commit hash): 11.11.0
+sln-file (default './App.sln'): FluentValidation.sln
+filter-paths (default ''): src/FluentValidation.Tests;src/FluentValidation.Tests.Benchmarks

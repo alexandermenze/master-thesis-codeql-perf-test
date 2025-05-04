@@ -1,0 +1,4 @@
+project (github id): App-vNext/Polly
+ref (branch / tag / commit hash): 8.5.2
+sln-file (default './App.sln'): Polly.sln
+filter-paths (default ''): bench;test;samples

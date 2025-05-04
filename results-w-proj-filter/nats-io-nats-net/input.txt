@@ -1,0 +1,4 @@
+project (github id): nats-io/nats.net
+ref (branch / tag / commit hash): v2.6.0
+sln-file (default './App.sln'): NATS.Net.sln
+filter-paths (default ''): examples;sandbox;tests;tools

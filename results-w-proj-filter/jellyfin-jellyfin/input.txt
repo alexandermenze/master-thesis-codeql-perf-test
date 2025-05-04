@@ -1,0 +1,4 @@
+project (github id): jellyfin/jellyfin
+ref (branch / tag / commit hash): v10.10.7
+sln-file (default './App.sln'): Jellyfin.sln
+filter-paths (default ''): tests

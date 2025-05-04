@@ -1,0 +1,4 @@
+project (github id): grandnode/grandnode2
+ref (branch / tag / commit hash): 2.3.0
+sln-file (default './App.sln'): GrandNode.sln
+filter-paths (default ''): src/Tests

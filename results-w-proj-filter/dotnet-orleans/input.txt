@@ -1,0 +1,4 @@
+project (github id): dotnet/orleans
+ref (branch / tag / commit hash): v9.1.2
+sln-file (default './App.sln'): Orleans.sln
+filter-paths (default ''): test;playground;samples

@@ -1,0 +1,4 @@
+project (github id): 
+ref (branch / tag / commit hash): 
+sln-file (default './App.sln'): 
+filter-paths (default ''): 

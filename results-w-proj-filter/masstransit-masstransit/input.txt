@@ -1,0 +1,4 @@
+project (github id): MassTransit/MassTransit
+ref (branch / tag / commit hash): v8.4.0
+sln-file (default './App.sln'): MassTransit.sln
+filter-paths (default ''): tests

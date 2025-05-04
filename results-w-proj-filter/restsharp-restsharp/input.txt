@@ -1,0 +1,4 @@
+project (github id): restsharp/RestSharp
+ref (branch / tag / commit hash): 112.1.0
+sln-file (default './App.sln'): RestSharp.sln
+filter-paths (default ''): benchmarks;test

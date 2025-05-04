@@ -1,0 +1,4 @@
+project (github id): simplcommerce/SimplCommerce
+ref (branch / tag / commit hash): a9531d5bfd94afa95712bc06619f24004e44d38d
+sln-file (default './App.sln'): SimplCommerce.sln
+filter-paths (default ''): build;test

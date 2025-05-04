@@ -1,0 +1,4 @@
+project (github id): npgsql/npgsql
+ref (branch / tag / commit hash): v9.0.3
+sln-file (default './App.sln'): Npgsql.sln
+filter-paths (default ''): test

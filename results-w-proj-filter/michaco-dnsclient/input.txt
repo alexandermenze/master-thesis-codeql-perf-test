@@ -1,0 +1,4 @@
+project (github id): MichaCo/DnsClient.NET
+ref (branch / tag / commit hash): 1.8.0
+sln-file (default './App.sln'): DnsClientDotNet.sln
+filter-paths (default ''): samples/MiniDig;test;test-other

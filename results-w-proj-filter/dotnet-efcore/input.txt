@@ -1,0 +1,4 @@
+project (github id): dotnet/efcore
+ref (branch / tag / commit hash): release/9.0
+sln-file (default './App.sln'): EFCore.sln
+filter-paths (default ''): benchmark;test

@@ -1,0 +1,4 @@
+project (github id): PiranhaCMS/piranha.core
+ref (branch / tag / commit hash): v12.0
+sln-file (default './App.sln'): Piranha.sln
+filter-paths (default ''): examples;test
