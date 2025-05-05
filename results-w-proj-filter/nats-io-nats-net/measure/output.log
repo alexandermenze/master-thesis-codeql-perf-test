@@ -1,0 +1,274 @@
+Schritt 0: dotnet clean & restore
+Build started 05/04/2025 14:19:34.
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/NATS.Net.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/NATS.Net.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (2) on node 1 (Clean target(s)).
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (2:2) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/NATS.Net.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3) on node 3 (Clean target(s)).
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3:2) on node 1 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3:3) on node 3 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/NATS.Net.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5) on node 2 (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:2) on node 1 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/NATS.Net.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6) on node 4 (Clean target(s)).
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6:2) on node 3 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:3) on node 2 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6:3) on node 4 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6:7) on node 3 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6:8) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:6) on node 4 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3:5) on node 1 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (3:4) on node 3 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:10) on node 2 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (2:11) on node 2 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/NATS.Net.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (9:9) on node 2 (Clean target(s)).
+   9:9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (9:9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (9:10) on node 2 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+   9:9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (9:9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (9:11) on node 4 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+   6:8>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6:8) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj" (4:15) on node 1 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (Clean target(s)).
+  5:10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (11:9) on node 2 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+   6:7>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6:7) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj" (4:16) on node 3 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+   6:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj" (4:19) on node 1 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj" (Clean target(s)).
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj" (Clean target(s)).
+   5:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj" (8:11) on node 2 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+   5:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (9:12) on node 3 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+   5:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (11:10) on node 4 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj" (Clean target(s)).
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (Clean target(s)).
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (Clean target(s)).
+   5:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj" (7:9) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+   5:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj" (10:9) on node 2 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (Clean target(s)).
+   5:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj" (8:14) on node 3 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj" (Clean target(s)).
+   5:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj" (7:10) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+   5:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (2:13) on node 4 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj" (Clean target(s)).
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (Clean target(s)).
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (Clean target(s)).
+  5:10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj" (7:11) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (Clean target(s)).
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj" (Clean target(s)).
+   5:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (11:11) on node 3 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+  5:10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj" (8:18) on node 1 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (Clean target(s)).
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj" (Clean target(s)).
+   6:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (6:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj" (4:39) on node 4 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+  5:10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (9:15) on node 1 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj" (Clean target(s)).
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (Clean target(s)).
+   5:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj" (7:12) on node 3 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+   5:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj" (10:10) on node 4 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+  5:10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj" (10:11) on node 1 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (Clean target(s)).
+   5:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj" (10:12) on node 1 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (Clean target(s)).
+  9:11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (9:11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj" (8:25) on node 4 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj" (Clean target(s)).
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj" (Clean target(s)).
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/NATS.Net.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (11:12) on node 3 (Clean target(s)).
+ 11:12>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (11:12) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (11:16) on node 1 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj" (Clean target(s)).
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj" (Clean target(s)).
+   5:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (5:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (2:16) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj" (Clean target(s)).
+     1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/NATS.Net.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.89
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/NATS.Client.ObjectStore.csproj (in 3.02 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/NATS.Net.csproj (in 3.02 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/NATS.Client.Services.csproj (in 3.02 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/NATS.Client.JetStream.csproj (in 3.03 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/NATS.Client.Serializers.Json.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/NATS.Client.Simplified.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/NATS.Client.KeyValueStore.csproj (in 12 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/NATS.Extensions.Microsoft.DependencyInjection.csproj (in 20 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/NATS.Client.Hosting.csproj (in 14 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/NATS.Client.Core.csproj (in 222 ms).
+-> Schritt 0: dotnet clean & restore gestartet bei +1 ms, Dauer: 9769 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [dotnet, build, --no-incremental, NATS.Net.sln]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [dotnet, build, --no-incremental, NATS.Net.sln]
+[2025-05-04 14:19:49] [build-stdout]   Determining projects to restore...
+[2025-05-04 14:19:51] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-04 14:20:32] [build-stdout]   NATS.Client.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/bin/Debug/netstandard2.0/NATS.Client.Core.dll
+[2025-05-04 14:20:33] [build-stdout]   NATS.Client.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/bin/Debug/netstandard2.1/NATS.Client.Core.dll
+[2025-05-04 14:20:38] [build-stdout]   NATS.Client.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/bin/Debug/net6.0/NATS.Client.Core.dll
+[2025-05-04 14:20:45] [build-stdout]   NATS.Client.Serializers.Json -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/bin/Debug/netstandard2.0/NATS.Client.Serializers.Json.dll
+[2025-05-04 14:20:49] [build-stdout]   NATS.Client.Simplified -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/bin/Debug/netstandard2.0/NATS.Client.Simplified.dll
+[2025-05-04 14:20:56] [build-stdout]   NATS.Client.Serializers.Json -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/bin/Debug/net6.0/NATS.Client.Serializers.Json.dll
+[2025-05-04 14:21:02] [build-stdout]   NATS.Client.Simplified -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/bin/Debug/net6.0/NATS.Client.Simplified.dll
+[2025-05-04 14:21:05] [build-stdout]   NATS.Client.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Core/bin/Debug/net8.0/NATS.Client.Core.dll
+[2025-05-04 14:21:11] [build-stdout]   NATS.Client.Services -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/bin/Debug/netstandard2.0/NATS.Client.Services.dll
+[2025-05-04 14:21:12] [build-stdout]   NATS.Client.Hosting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/bin/Debug/netstandard2.0/NATS.Client.Hosting.dll
+[2025-05-04 14:21:50] [build-stdout]   NATS.Client.JetStream -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/bin/Debug/net6.0/NATS.Client.JetStream.dll
+[2025-05-04 14:21:56] [build-stdout]   NATS.Client.JetStream -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/bin/Debug/netstandard2.0/NATS.Client.JetStream.dll
+[2025-05-04 14:22:02] [build-stdout]   NATS.Client.JetStream -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/bin/Debug/net8.0/NATS.Client.JetStream.dll
+[2025-05-04 14:22:03] [build-stdout]   NATS.Client.KeyValueStore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/bin/Debug/net6.0/NATS.Client.KeyValueStore.dll
+[2025-05-04 14:22:06] [build-stdout]   NATS.Client.Hosting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/bin/Debug/netstandard2.1/NATS.Client.Hosting.dll
+[2025-05-04 14:22:09] [build-stdout]   NATS.Client.Serializers.Json -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/bin/Debug/net8.0/NATS.Client.Serializers.Json.dll
+[2025-05-04 14:22:14] [build-stdout]   NATS.Client.Hosting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/bin/Debug/net8.0/NATS.Client.Hosting.dll
+[2025-05-04 14:22:15] [build-stdout]   NATS.Client.Simplified -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/bin/Debug/net8.0/NATS.Client.Simplified.dll
+[2025-05-04 14:22:15] [build-stdout]   NATS.Client.Serializers.Json -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Serializers.Json/bin/Debug/netstandard2.1/NATS.Client.Serializers.Json.dll
+[2025-05-04 14:22:16] [build-stdout]   NATS.Client.KeyValueStore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/bin/Debug/net8.0/NATS.Client.KeyValueStore.dll
+[2025-05-04 14:22:18] [build-stdout]   NATS.Client.Simplified -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Simplified/bin/Debug/netstandard2.1/NATS.Client.Simplified.dll
+[2025-05-04 14:22:41] [build-stdout]   NATS.Client.JetStream -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.JetStream/bin/Debug/netstandard2.1/NATS.Client.JetStream.dll
+[2025-05-04 14:22:41] [build-stdout]   NATS.Client.KeyValueStore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/bin/Debug/netstandard2.0/NATS.Client.KeyValueStore.dll
+[2025-05-04 14:22:45] [build-stdout]   NATS.Client.ObjectStore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/bin/Debug/netstandard2.0/NATS.Client.ObjectStore.dll
+[2025-05-04 14:22:49] [build-stdout]   NATS.Client.ObjectStore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/bin/Debug/netstandard2.1/NATS.Client.ObjectStore.dll
+[2025-05-04 14:23:00] [build-stdout]   NATS.Client.ObjectStore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/bin/Debug/net8.0/NATS.Client.ObjectStore.dll
+[2025-05-04 14:23:00] [build-stdout]   NATS.Client.ObjectStore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.ObjectStore/bin/Debug/net6.0/NATS.Client.ObjectStore.dll
+[2025-05-04 14:23:03] [build-stdout]   NATS.Client.Hosting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Hosting/bin/Debug/net6.0/NATS.Client.Hosting.dll
+[2025-05-04 14:23:07] [build-stdout]   NATS.Client.KeyValueStore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.KeyValueStore/bin/Debug/netstandard2.1/NATS.Client.KeyValueStore.dll
+[2025-05-04 14:23:12] [build-stdout]   NATS.Client.Services -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/bin/Debug/netstandard2.1/NATS.Client.Services.dll
+[2025-05-04 14:23:17] [build-stdout]   NATS.Client.Services -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/bin/Debug/net6.0/NATS.Client.Services.dll
+[2025-05-04 14:23:23] [build-stdout]   NATS.Client.Services -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Client.Services/bin/Debug/net8.0/NATS.Client.Services.dll
+[2025-05-04 14:23:25] [build-stdout]   NATS.Net -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/bin/Debug/netstandard2.0/NATS.Net.dll
+[2025-05-04 14:23:27] [build-stdout]   NATS.Extensions.Microsoft.DependencyInjection -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/bin/Debug/netstandard2.0/NATS.Extensions.Microsoft.DependencyInjection.dll
+[2025-05-04 14:23:29] [build-stdout]   NATS.Net -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/bin/Debug/netstandard2.1/NATS.Net.dll
+[2025-05-04 14:23:32] [build-stdout]   NATS.Extensions.Microsoft.DependencyInjection -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/bin/Debug/netstandard2.1/NATS.Extensions.Microsoft.DependencyInjection.dll
+[2025-05-04 14:23:34] [build-stdout]   NATS.Net -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/bin/Debug/net6.0/NATS.Net.dll
+[2025-05-04 14:23:38] [build-stdout]   NATS.Extensions.Microsoft.DependencyInjection -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/bin/Debug/net6.0/NATS.Extensions.Microsoft.DependencyInjection.dll
+[2025-05-04 14:23:41] [build-stdout]   NATS.Net -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Net/bin/Debug/net8.0/NATS.Net.dll
+[2025-05-04 14:23:45] [build-stdout]   NATS.Extensions.Microsoft.DependencyInjection -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NATS.Extensions.Microsoft.DependencyInjection/bin/Debug/net8.0/NATS.Extensions.Microsoft.DependencyInjection.dll
+[2025-05-04 14:23:45] [build-stdout] Build succeeded.
+[2025-05-04 14:23:45] [build-stdout]     0 Warning(s)
+[2025-05-04 14:23:45] [build-stdout]     0 Error(s)
+[2025-05-04 14:23:45] [build-stdout] Time Elapsed 00:03:56.38
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 18.53 MiB; string pool: 5.53 MiB).
+TRAP import complete (17.8s).
+Finished zipping source archive (3.16 MiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +9772 ms, Dauer: 265512 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 53.8s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 39.3s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +275285 ms, Dauer: 99177 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +374463 ms, Dauer: 690 ms
+
+CSV-Ausgabe: nats-io-nats.net.results.csv
+Starting up command './run-analysis.sh -s target-repo -l NATS.Net.sln -d db -q identify-call-paths.ql -c nats-io-nats.net.results.csv' and attaching to process
+Process finished (375.15 seconds)

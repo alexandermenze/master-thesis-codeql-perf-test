@@ -1,0 +1,69 @@
+Schritt 0: dotnet clean & restore
+Build started 05/05/2025 17:56:08.
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/NServiceBus.Core.Analyzer.csproj" (3) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/NServiceBus.Core.Analyzer.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj.metaproj" (2) on node 1 (Clean target(s)).
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj.metaproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj" (4) on node 1 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj.metaproj" (Clean target(s)).
+     1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.05
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/NServiceBus.Core.csproj (in 2.59 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/NServiceBus.Core.Analyzer.csproj (in 2.7 sec).
+-> Schritt 0: dotnet clean & restore gestartet bei +1 ms, Dauer: 5063 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [dotnet, build, --no-incremental, src/NServiceBus.sln]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [dotnet, build, --no-incremental, src/NServiceBus.sln]
+[2025-05-05 17:56:19] [build-stdout]   Determining projects to restore...
+[2025-05-05 17:56:19] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-05 17:56:31] [build-stdout]   NServiceBus.Core.Analyzer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core.Analyzer/bin/Debug/netstandard2.0/NServiceBus.Core.Analyzer.dll
+[2025-05-05 17:56:31] [build-stdout]   2024-08-05T15:37:59+02:00
+[2025-05-05 17:56:31] [build-stdout]   2025-04-10T08:26:11+02:00
+[2025-05-05 17:57:07] [build-stdout]   NServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/NServiceBus.Core/bin/Debug/net8.0/NServiceBus.Core.dll
+[2025-05-05 17:57:08] [build-stdout]   Successfully created package '/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/nugets/NServiceBus.9.2.7.nupkg'.
+[2025-05-05 17:57:08] [build-stdout] Build succeeded.
+[2025-05-05 17:57:08] [build-stdout]     0 Warning(s)
+[2025-05-05 17:57:08] [build-stdout]     0 Error(s)
+[2025-05-05 17:57:08] [build-stdout] Time Elapsed 00:00:49.47
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 7.52 MiB; string pool: 5.53 MiB).
+TRAP import complete (7s).
+Finished zipping source archive (845.96 KiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +5066 ms, Dauer: 64390 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 56.5s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 25.9s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +69458 ms, Dauer: 88593 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +158052 ms, Dauer: 658 ms
+
+CSV-Ausgabe: Particular-NServiceBus.results.csv
+Starting up command './run-analysis.sh -s target-repo -l src/NServiceBus.sln -d db -q identify-call-paths.ql -c Particular-NServiceBus.results.csv' and attaching to process
+Process finished (158.70 seconds)

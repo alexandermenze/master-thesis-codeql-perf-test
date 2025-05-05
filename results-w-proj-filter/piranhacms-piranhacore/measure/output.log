@@ -1,0 +1,328 @@
+Schritt 0: dotnet clean & restore
+Build started 05/04/2025 14:25:30.
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (2) on node 1 (Clean target(s)).
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (2:2) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (6) on node 4 (Clean target(s)).
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (6:2) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj" (3) on node 2 (Clean target(s)).
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj" (3:2) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj" (4) on node 3 (Clean target(s)).
+     4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj" (4:2) on node 3 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+   6:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (6:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj" (7:5) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (6:3) on node 4 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj" (3:3) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj" (4:3) on node 2 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (2:3) on node 3 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+   2:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (2:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/Piranha.csproj" (5:7) on node 1 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/Piranha.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (Clean target(s)).
+   6:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (6:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj" (7:8) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (10) on node 4 (Clean target(s)).
+    10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (10:2) on node 4 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (10:3) on node 3 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+   7:5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj" (7:5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/Piranha.Manager.Localization.csproj" (9:5) on node 1 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/Piranha.Manager.Localization.csproj" (Clean target(s)).
+   7:5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj" (7:5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/Piranha.Manager.csproj" (8:7) on node 3 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj" (11) on node 1 (Clean target(s)).
+    11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj" (11:2) on node 2 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+   7:8>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj" (7:8) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/Piranha.Manager.Localization.csproj" (9:6) on node 1 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/Piranha.Manager.Localization.csproj" (Clean target(s)).
+   7:8>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj" (7:8) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/Piranha.Manager.csproj" (8:8) on node 2 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj" (11:3) on node 3 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+  10:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (10:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/Piranha.Data.EF.csproj" (12:7) on node 4 (Clean target(s)).
+    12>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/Piranha.Data.EF.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj" (14) on node 3 (Clean target(s)).
+    14>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj" (14) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj" (14:2) on node 3 (Clean target(s)).
+    14>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj" (13) on node 2 (Clean target(s)).
+    13>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj" (13) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj" (13:2) on node 2 (Clean target(s)).
+    13>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj" (15) on node 1 (Clean target(s)).
+    15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj" (15:2) on node 1 (Clean target(s)).
+    15>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj" (Clean target(s)).
+  10:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (10:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/Piranha.Data.EF.csproj" (12:13) on node 1 (Clean target(s)).
+    12>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    14>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj" (14) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj" (14:3) on node 3 (Clean target(s)).
+    14>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    13>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj" (13) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj" (13:3) on node 2 (Clean target(s)).
+    13>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj" (16) on node 1 (Clean target(s)).
+    16>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj" (16) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj" (16:3) on node 3 (Clean target(s)).
+    16>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    16>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj" (16) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj" (16:2) on node 1 (Clean target(s)).
+    16>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    16>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj" (Clean target(s)).
+    15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj" (15:3) on node 4 (Clean target(s)).
+    15>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj" (17) on node 2 (Clean target(s)).
+    17>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj" (17) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj" (17:2) on node 3 (Clean target(s)).
+    17>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    17>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj" (17) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj" (17:3) on node 2 (Clean target(s)).
+    17>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj" (18) on node 1 (Clean target(s)).
+    18>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj" (18) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj" (18:2) on node 1 (Clean target(s)).
+    18>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/Piranha.Manager.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj" (Clean target(s)).
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj" (Clean target(s)).
+    18>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj" (Clean target(s)).
+    15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj" (Clean target(s)).
+    17>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj" (Clean target(s)).
+    18>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj" (18) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj" (18:3) on node 4 (Clean target(s)).
+    18>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj" (19) on node 1 (Clean target(s)).
+    19>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj" (19) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj" (19:2) on node 1 (Clean target(s)).
+    19>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    19>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (21) on node 2 (Clean target(s)).
+    21>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (21) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (21:2) on node 2 (Clean target(s)).
+    21>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj" (20) on node 3 (Clean target(s)).
+    20>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj" (20) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj" (20:2) on node 3 (Clean target(s)).
+    20>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    21>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (Clean target(s)).
+    20>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj" (Clean target(s)).
+    20>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj" (20) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj" (20:3) on node 1 (Clean target(s)).
+    20>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    19>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj" (19) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj" (19:3) on node 2 (Clean target(s)).
+    19>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    21>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (21) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (21:3) on node 4 (Clean target(s)).
+    21>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj" (22) on node 3 (Clean target(s)).
+    22>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj" (22) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj" (22:2) on node 3 (Clean target(s)).
+    22>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    22>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj" (22) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj" (22:3) on node 1 (Clean target(s)).
+    22>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    22>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj" (Clean target(s)).
+  21:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (21:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/Piranha.csproj" (5:42) on node 4 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/Piranha.csproj" (Clean target(s)).
+    22>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj" (Clean target(s)).
+    12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/Piranha.Data.EF.csproj" (Clean target(s)).
+    21>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (Clean target(s)).
+    20>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj" (Clean target(s)).
+    22>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj" (Clean target(s)).
+    16>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (Clean target(s)).
+    13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj" (Clean target(s)).
+    14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj" (Clean target(s)).
+    13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj" (Clean target(s)).
+    21>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj" (Clean target(s)).
+    14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj" (Clean target(s)).
+    19>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj" (Clean target(s)).
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj" (Clean target(s)).
+    20>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj" (Clean target(s)).
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/Piranha.Manager.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj" (23) on node 2 (Clean target(s)).
+    23>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj" (23) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj" (23:3) on node 4 (Clean target(s)).
+    23>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    23>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj" (23) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj" (23:2) on node 1 (Clean target(s)).
+    23>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    23>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj" (Clean target(s)).
+    23>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj" (Clean target(s)).
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj" (Clean target(s)).
+    15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj" (Clean target(s)).
+    15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj" (Clean target(s)).
+    23>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj" (Clean target(s)).
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj" (Clean target(s)).
+    19>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj" (Clean target(s)).
+    18>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj" (Clean target(s)).
+    16>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj" (Clean target(s)).
+    17>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj" (Clean target(s)).
+    18>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj" (Clean target(s)).
+    17>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj" (Clean target(s)).
+     1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Piranha.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.09
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/Piranha.WebApi.csproj (in 3.56 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/Piranha.Data.EF.SQLite.csproj (in 3.98 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/Piranha.AspNetCore.Identity.PostgreSQL.csproj (in 4.55 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/Piranha.Manager.csproj (in 9 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/Piranha.Manager.TinyMCE.csproj (in 13 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/Piranha.Manager.Localization.csproj (in 4 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/Piranha.Manager.LocalAuth.csproj (in 7 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/Piranha.Local.FileStorage.csproj (in 4 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/Piranha.AspNetCore.Identity.MySQL.csproj (in 963 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/Piranha.AspNetCore.Identity.SQLite.csproj (in 258 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/Piranha.Data.EF.SQLServer.csproj (in 1.32 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/Piranha.AspNetCore.Identity.SQLServer.csproj (in 6.67 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/Piranha.Data.EF.MySql.csproj (in 6 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/Piranha.Data.EF.PostgreSql.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/Piranha.csproj (in 7 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/Piranha.Data.EF.csproj (in 4.01 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/Piranha.AspNetCore.Identity.csproj (in 3.42 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/Piranha.ImageSharp.csproj (in 1.49 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/Piranha.AttributeBuilder.csproj (in 4 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/Piranha.AspNetCore.Hosting.csproj (in 6 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/Piranha.Azure.BlobStorage.csproj (in 1.08 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/Piranha.AspNetCore.csproj (in 1.09 sec).
+-> Schritt 0: dotnet clean & restore gestartet bei +2 ms, Dauer: 16362 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [dotnet, build, --no-incremental, Piranha.sln]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [dotnet, build, --no-incremental, Piranha.sln]
+[2025-05-04 14:25:52] [build-stdout]   Determining projects to restore...
+[2025-05-04 14:25:54] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-04 14:26:29] [build-stdout]   Piranha -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/bin/Debug/net8.0/Piranha.dll
+[2025-05-04 14:26:57] [build-stdout]   Piranha -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha/bin/Debug/net9.0/Piranha.dll
+[2025-05-04 14:27:11] [build-stdout]   Piranha.Data.EF -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/bin/Debug/net8.0/Piranha.Data.EF.dll
+[2025-05-04 14:27:11] [build-stdout]   Piranha.WebApi -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/bin/Debug/net8.0/Piranha.WebApi.dll
+[2025-05-04 14:27:22] [build-stdout]   Piranha.WebApi -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.WebApi/bin/Debug/net9.0/Piranha.WebApi.dll
+[2025-05-04 14:27:37] [build-stdout]   Piranha.Manager.Localization -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/bin/Debug/net8.0/Piranha.Manager.Localization.dll
+[2025-05-04 14:27:38] [build-stdout]   Piranha.Manager.Localization -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.Localization/bin/Debug/net9.0/Piranha.Manager.Localization.dll
+[2025-05-04 14:27:43] [build-stdout]   Piranha.ImageSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/bin/Debug/net8.0/Piranha.ImageSharp.dll
+[2025-05-04 14:27:43] [build-stdout]   Piranha.AttributeBuilder -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/bin/Debug/net8.0/Piranha.AttributeBuilder.dll
+[2025-05-04 14:27:48] [build-stdout]   Piranha.Local.FileStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/bin/Debug/net8.0/Piranha.Local.FileStorage.dll
+[2025-05-04 14:27:49] [build-stdout]   Piranha.Azure.BlobStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/bin/Debug/net8.0/Piranha.Azure.BlobStorage.dll
+[2025-05-04 14:27:54] [build-stdout]   Piranha.AspNetCore.Hosting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/bin/Debug/net9.0/Piranha.AspNetCore.Hosting.dll
+[2025-05-04 14:27:54] [build-stdout]   Piranha.Azure.BlobStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Azure.BlobStorage/bin/Debug/net9.0/Piranha.Azure.BlobStorage.dll
+[2025-05-04 14:27:55] [build-stdout]   Piranha.AspNetCore.Hosting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore.Hosting/bin/Debug/net8.0/Piranha.AspNetCore.Hosting.dll
+[2025-05-04 14:28:00] [build-stdout]   Piranha.ImageSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.ImageSharp/bin/Debug/net9.0/Piranha.ImageSharp.dll
+[2025-05-04 14:28:08] [build-stdout]   Piranha.AttributeBuilder -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AttributeBuilder/bin/Debug/net9.0/Piranha.AttributeBuilder.dll
+[2025-05-04 14:28:16] [build-stdout]   Piranha.Local.FileStorage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Local.FileStorage/bin/Debug/net9.0/Piranha.Local.FileStorage.dll
+[2025-05-04 14:28:30] [build-stdout]   Piranha.Data.EF.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/bin/Debug/net8.0/Piranha.Data.EF.PostgreSql.dll
+[2025-05-04 14:28:33] [build-stdout]   Piranha.Data.EF -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF/bin/Debug/net9.0/Piranha.Data.EF.dll
+[2025-05-04 14:28:51] [build-stdout]   Piranha.Data.EF.MySql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/bin/Debug/net8.0/Piranha.Data.EF.MySql.dll
+[2025-05-04 14:28:58] [build-stdout]   Piranha.AspNetCore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/bin/Debug/net9.0/Piranha.AspNetCore.dll
+[2025-05-04 14:28:58] [build-stdout]   Piranha.Manager -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/bin/Debug/net8.0/Piranha.Manager.dll
+[2025-05-04 14:29:09] [build-stdout]   Piranha.Data.EF.SQLServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/bin/Debug/net8.0/Piranha.Data.EF.SQLServer.dll
+[2025-05-04 14:29:09] [build-stdout]   Piranha.AspNetCore -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.AspNetCore/bin/Debug/net8.0/Piranha.AspNetCore.dll
+[2025-05-04 14:29:24] [build-stdout]   Piranha.Manager -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager/bin/Debug/net9.0/Piranha.Manager.dll
+[2025-05-04 14:29:34] [build-stdout]   Piranha.Manager.LocalAuth -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/bin/Debug/net9.0/Piranha.Manager.LocalAuth.dll
+[2025-05-04 14:29:35] [build-stdout]   Piranha.Data.EF.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.PostgreSql/bin/Debug/net9.0/Piranha.Data.EF.PostgreSql.dll
+[2025-05-04 14:29:36] [build-stdout]   Piranha.Manager.TinyMCE -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/bin/Debug/net9.0/Piranha.Manager.TinyMCE.dll
+[2025-05-04 14:29:44] [build-stdout]   Piranha.AspNetCore.Identity -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/bin/Debug/net9.0/Piranha.AspNetCore.Identity.dll
+[2025-05-04 14:29:54] [build-stdout]   Piranha.AspNetCore.Identity.PostgreSQL -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/bin/Debug/net9.0/Piranha.AspNetCore.Identity.PostgreSQL.dll
+[2025-05-04 14:29:57] [build-stdout]   Piranha.AspNetCore.Identity.SQLite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/bin/Debug/net9.0/Piranha.AspNetCore.Identity.SQLite.dll
+[2025-05-04 14:29:57] [build-stdout]   Piranha.AspNetCore.Identity.SQLServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/bin/Debug/net9.0/Piranha.AspNetCore.Identity.SQLServer.dll
+[2025-05-04 14:29:59] [build-stdout]   Piranha.AspNetCore.Identity.MySQL -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/bin/Debug/net9.0/Piranha.AspNetCore.Identity.MySQL.dll
+[2025-05-04 14:30:10] [build-stdout]   Piranha.Data.EF.MySql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.MySql/bin/Debug/net9.0/Piranha.Data.EF.MySql.dll
+[2025-05-04 14:30:11] [build-stdout]   Piranha.Manager.LocalAuth -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.LocalAuth/bin/Debug/net8.0/Piranha.Manager.LocalAuth.dll
+[2025-05-04 14:30:11] [build-stdout]   Piranha.Manager.TinyMCE -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/core/Piranha.Manager.TinyMCE/bin/Debug/net8.0/Piranha.Manager.TinyMCE.dll
+[2025-05-04 14:30:25] [build-stdout]   Piranha.Data.EF.SQLServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLServer/bin/Debug/net9.0/Piranha.Data.EF.SQLServer.dll
+[2025-05-04 14:30:37] [build-stdout]   Piranha.Data.EF.SQLite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/bin/Debug/net8.0/Piranha.Data.EF.SQLite.dll
+[2025-05-04 14:30:37] [build-stdout]   Piranha.AspNetCore.Identity -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity/bin/Debug/net8.0/Piranha.AspNetCore.Identity.dll
+[2025-05-04 14:30:43] [build-stdout]   Piranha.AspNetCore.Identity.SQLServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLServer/bin/Debug/net8.0/Piranha.AspNetCore.Identity.SQLServer.dll
+[2025-05-04 14:30:50] [build-stdout]   Piranha.Data.EF.SQLite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/data/Piranha.Data.EF.SQLite/bin/Debug/net9.0/Piranha.Data.EF.SQLite.dll
+[2025-05-04 14:30:54] [build-stdout]   Piranha.AspNetCore.Identity.PostgreSQL -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.PostgreSQL/bin/Debug/net8.0/Piranha.AspNetCore.Identity.PostgreSQL.dll
+[2025-05-04 14:30:58] [build-stdout]   Piranha.AspNetCore.Identity.MySQL -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.MySQL/bin/Debug/net8.0/Piranha.AspNetCore.Identity.MySQL.dll
+[2025-05-04 14:31:02] [build-stdout]   Piranha.AspNetCore.Identity.SQLite -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/identity/Piranha.AspNetCore.Identity.SQLite/bin/Debug/net8.0/Piranha.AspNetCore.Identity.SQLite.dll
+[2025-05-04 14:31:02] [build-stdout] Build succeeded.
+[2025-05-04 14:31:02] [build-stdout]     0 Warning(s)
+[2025-05-04 14:31:02] [build-stdout]     0 Error(s)
+[2025-05-04 14:31:02] [build-stdout] Time Elapsed 00:05:10.19
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 31.11 MiB; string pool: 11.03 MiB).
+TRAP import complete (22.2s).
+Finished zipping source archive (3.20 MiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +16366 ms, Dauer: 345579 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 53.7s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 52.7s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +361947 ms, Dauer: 112200 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +474149 ms, Dauer: 645 ms
+
+CSV-Ausgabe: PiranhaCMS-piranha.core.results.csv
+Starting up command './run-analysis.sh -s target-repo -l Piranha.sln -d db -q identify-call-paths.ql -c PiranhaCMS-piranha.core.results.csv' and attaching to process
+Process finished (474.79 seconds)

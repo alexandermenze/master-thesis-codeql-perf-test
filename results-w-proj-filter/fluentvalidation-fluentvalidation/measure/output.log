@@ -1,5 +1,5 @@
 Schritt 0: dotnet clean & restore
-Build started 05/04/2025 13:04:28.
+Build started 05/04/2025 13:42:19.
      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/FluentValidation.sln" on node 1 (Clean target(s)).
      1>ValidateSolutionConfiguration:
          Building solution configuration "Release|Any CPU".
@@ -8,32 +8,32 @@ Build started 05/04/2025 13:04:28.
      2>CoreClean:
          Creating directory "obj/Release/netstandard2.0/".
      1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/FluentValidation.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) on node 2 (Clean target(s)).
+   3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:6) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Release/netstandard2.0/".
    3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:5) on node 1 (Clean target(s)).
      3>CoreClean:
          Creating directory "obj/Release/netstandard2.1/".
      2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/FluentValidation.DependencyInjectionExtensions.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/FluentValidation.DependencyInjectionExtensions.csproj" (2:3) on node 3 (Clean target(s)).
      2>CoreClean:
          Creating directory "obj/Release/netstandard2.1/".
-   3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:6) on node 2 (Clean target(s)).
-     3>CoreClean:
-         Creating directory "obj/Release/netstandard2.0/".
      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
    3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:7) on node 3 (Clean target(s)).
      3>CoreClean:
-         Creating directory "obj/Release/net5.0/".
-   3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:9) on node 1 (Clean target(s)).
-     3>CoreClean:
          Creating directory "obj/Release/net6.0/".
-     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
-     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
-   3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:10) on node 4 (Clean target(s)).
-     3>CoreClean:
-         Creating directory "obj/Release/net8.0/".
-   3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:11) on node 2 (Clean target(s)).
+   3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:8) on node 1 (Clean target(s)).
      3>CoreClean:
          Creating directory "obj/Release/net7.0/".
      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
+   3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:9) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Release/net5.0/".
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
+   3:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:10) on node 1 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Release/net8.0/".
      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
      3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (Clean target(s)).
    2:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/FluentValidation.DependencyInjectionExtensions.csproj" (2:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj" (3:16) on node 1 (Clean target(s)).
@@ -57,57 +57,57 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.60
+Time Elapsed 00:00:01.67
   Determining projects to restore...
-  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/FluentValidation.DependencyInjectionExtensions.csproj (in 1.5 sec).
-  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj (in 1.63 sec).
--> Schritt 0: dotnet clean & restore gestartet bei +2 ms, Dauer: 4891 ms
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/FluentValidation.DependencyInjectionExtensions.csproj (in 1.76 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj (in 1.81 sec).
+-> Schritt 0: dotnet clean & restore gestartet bei +1 ms, Dauer: 5194 ms
 
 Schritt 1: Erstelle CodeQL-Datenbank
 Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
 Running build command: [dotnet, build, --no-incremental, FluentValidation.sln]
 Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [dotnet, build, --no-incremental, FluentValidation.sln]
-[2025-05-04 13:04:38] [build-stdout]   Determining projects to restore...
-[2025-05-04 13:04:39] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/FluentValidation.DependencyInjectionExtensions.csproj (in 276 ms).
-[2025-05-04 13:04:39] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj (in 285 ms).
-[2025-05-04 13:04:57] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Debug/netstandard2.0/FluentValidation.dll
-[2025-05-04 13:04:58] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Debug/netstandard2.1/FluentValidation.dll
-[2025-05-04 13:05:04] [build-stdout]   FluentValidation.DependencyInjectionExtensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/bin/Release/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll
-[2025-05-04 13:05:05] [build-stdout]   FluentValidation.DependencyInjectionExtensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/bin/Release/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll
-[2025-05-04 13:05:18] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/netstandard2.1/FluentValidation.dll
-[2025-05-04 13:05:26] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/netstandard2.0/FluentValidation.dll
-[2025-05-04 13:05:27] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/net5.0/FluentValidation.dll
-[2025-05-04 13:05:35] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/net6.0/FluentValidation.dll
-[2025-05-04 13:05:48] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/net7.0/FluentValidation.dll
-[2025-05-04 13:05:55] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/net8.0/FluentValidation.dll
-[2025-05-04 13:05:55] [build-stdout] Build succeeded.
-[2025-05-04 13:05:55] [build-stdout]     0 Warning(s)
-[2025-05-04 13:05:55] [build-stdout]     0 Error(s)
-[2025-05-04 13:05:55] [build-stdout] Time Elapsed 00:01:17.56
+[2025-05-04 13:42:30] [build-stdout]   Determining projects to restore...
+[2025-05-04 13:42:31] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/FluentValidation.DependencyInjectionExtensions.csproj (in 272 ms).
+[2025-05-04 13:42:31] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/FluentValidation.csproj (in 283 ms).
+[2025-05-04 13:43:02] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Debug/netstandard2.0/FluentValidation.dll
+[2025-05-04 13:43:04] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/netstandard2.1/FluentValidation.dll
+[2025-05-04 13:43:04] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/net5.0/FluentValidation.dll
+[2025-05-04 13:43:04] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/netstandard2.0/FluentValidation.dll
+[2025-05-04 13:43:08] [build-stdout]   FluentValidation.DependencyInjectionExtensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/bin/Release/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll
+[2025-05-04 13:43:32] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/net6.0/FluentValidation.dll
+[2025-05-04 13:43:35] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/net8.0/FluentValidation.dll
+[2025-05-04 13:43:36] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Release/net7.0/FluentValidation.dll
+[2025-05-04 13:43:43] [build-stdout]   FluentValidation -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation/bin/Debug/netstandard2.1/FluentValidation.dll
+[2025-05-04 13:43:45] [build-stdout]   FluentValidation.DependencyInjectionExtensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/FluentValidation.DependencyInjectionExtensions/bin/Release/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll
+[2025-05-04 13:43:45] [build-stdout] Build succeeded.
+[2025-05-04 13:43:45] [build-stdout]     0 Warning(s)
+[2025-05-04 13:43:45] [build-stdout]     0 Error(s)
+[2025-05-04 13:43:45] [build-stdout] Time Elapsed 00:01:15.90
 Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
 Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
 Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
 Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
 Importing TRAP files
 Merging relations
-Finished writing database (relations: 8.76 MiB; string pool: 4.78 MiB).
-TRAP import complete (12s).
+Finished writing database (relations: 8.77 MiB; string pool: 4.78 MiB).
+TRAP import complete (12.3s).
 Finished zipping source archive (488.51 KiB).
 Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
--> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +4895 ms, Dauer: 97414 ms
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +5197 ms, Dauer: 96037 ms
 
 Schritt 2: Führe Query aus
 Error retrieving qlpack commit hash from Git repository
 Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
 [1/1 comp 53.9s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
 Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
-[1/1 eval 18.7s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+[1/1 eval 18.3s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
 Shutting down query evaluator.
--> Schritt 2: Führe Query aus gestartet bei +102311 ms, Dauer: 78503 ms
+-> Schritt 2: Führe Query aus gestartet bei +101236 ms, Dauer: 78484 ms
 
 Schritt 3: Dekodiere Ergebnisse nach CSV
--> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +180815 ms, Dauer: 590 ms
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +179722 ms, Dauer: 584 ms
 
 CSV-Ausgabe: FluentValidation-FluentValidation.results.csv
 Starting up command './run-analysis.sh -s target-repo -l FluentValidation.sln -d db -q identify-call-paths.ql -c FluentValidation-FluentValidation.results.csv' and attaching to process
-Process finished (181.40 seconds)
+Process finished (180.30 seconds)

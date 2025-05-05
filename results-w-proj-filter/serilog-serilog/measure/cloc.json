@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.0742228031158447,
+  "n_files"            : 106,
+  "n_lines"            : 13485,
+  "files_per_second"   : 1428.13253542255,
+  "lines_per_second"   : 181682.709812954,
+  "report_file"        : "serilog-serilog.cloc.json"},
+"C#" :{
+  "nFiles": 106,
+  "blank": 1486,
+  "comment": 5273,
+  "code": 6726},
+"SUM": {
+  "blank": 1486,
+  "comment": 5273,
+  "code": 6726,
+  "nFiles": 106} }

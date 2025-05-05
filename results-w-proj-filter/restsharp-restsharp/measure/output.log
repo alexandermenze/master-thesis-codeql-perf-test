@@ -1,0 +1,205 @@
+Schritt 0: dotnet clean & restore
+Build started 05/04/2025 14:26:52.
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Mixed Platforms".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/gen/SourceGenerator/SourceGenerator.csproj" (2) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/gen/SourceGenerator/SourceGenerator.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (6) on node 1 (Clean target(s)).
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (6:2) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5) on node 2 (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5:2) on node 2 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3) on node 3 (Clean target(s)).
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:2) on node 3 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4) on node 4 (Clean target(s)).
+     4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4:2) on node 1 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net471/".
+     4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4:3) on node 2 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net48/".
+     4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4:5) on node 4 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4:4) on node 3 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4:6) on node 3 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net7.0/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:3) on node 1 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net471/".
+     4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4:7) on node 4 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:4) on node 3 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net48/".
+   3:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (6:18) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net471/".
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (Clean target(s)).
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:5) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (Clean target(s)).
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:6) on node 1 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net7.0/".
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (Clean target(s)).
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:7) on node 4 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+   3:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (6:26) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net7.0/".
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (Clean target(s)).
+   4:4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4:4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (6:28) on node 4 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5:3) on node 3 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net471/".
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5:4) on node 1 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net48/".
+   4:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (4:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (6:34) on node 2 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net48/".
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5:6) on node 4 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net7.0/".
+   3:7>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (3:7) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (6:41) on node 2 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5:7) on node 1 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj" (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (5:5) on node 3 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj" (Clean target(s)).
+     1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.09
+  Determining projects to restore...
+/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj : warning NU1903: Package 'System.Text.Json' 8.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln]
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/RestSharp.Serializers.Xml.csproj (in 3.05 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/RestSharp.Serializers.NewtonsoftJson.csproj (in 3.05 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj (in 3.05 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/RestSharp.Serializers.CsvHelper.csproj (in 3.05 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/gen/SourceGenerator/SourceGenerator.csproj (in 910 ms).
+-> Schritt 0: dotnet clean & restore gestartet bei +1 ms, Dauer: 8791 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [dotnet, build, --no-incremental, RestSharp.sln]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [dotnet, build, --no-incremental, RestSharp.sln]
+[2025-05-04 14:27:06] [build-stdout]   Determining projects to restore...
+[2025-05-04 14:27:08] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj : warning NU1903: Package 'System.Text.Json' 8.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln]
+[2025-05-04 14:27:08] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-04 14:27:18] [build-stdout]   SourceGenerator -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/gen/SourceGenerator/bin/Debug/netstandard2.0/SourceGenerator.dll
+[2025-05-04 14:27:22] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/netstandard2.0/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(32,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=netstandard2.0]
+[2025-05-04 14:27:24] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net6.0/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(33,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net6.0]
+[2025-05-04 14:27:25] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net7.0/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(33,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net7.0]
+[2025-05-04 14:27:33] [build-stdout]   RestSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/bin/Debug/netstandard2.0/RestSharp.dll
+[2025-05-04 14:27:44] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net8.0/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(33,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net8.0]
+[2025-05-04 14:27:49] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net48/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(32,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net48]
+[2025-05-04 14:28:00] [build-stdout]   RestSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/bin/Debug/net8.0/RestSharp.dll
+[2025-05-04 14:28:04] [build-stdout]   RestSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/bin/Debug/net48/RestSharp.dll
+[2025-05-04 14:28:04] [build-stdout]   RestSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/bin/Debug/net7.0/RestSharp.dll
+[2025-05-04 14:28:05] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net471/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(32,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net471]
+[2025-05-04 14:28:08] [build-stdout]   RestSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/bin/Debug/net6.0/RestSharp.dll
+[2025-05-04 14:28:19] [build-stdout]   RestSharp -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/bin/Debug/net471/RestSharp.dll
+[2025-05-04 14:28:20] [build-stdout]   RestSharp.Serializers.CsvHelper -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/bin/Debug/net8.0/RestSharp.Serializers.CsvHelper.dll
+[2025-05-04 14:28:20] [build-stdout]   RestSharp.Serializers.CsvHelper -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/bin/Debug/netstandard2.0/RestSharp.Serializers.CsvHelper.dll
+[2025-05-04 14:28:24] [build-stdout]   RestSharp.Serializers.NewtonsoftJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/bin/Debug/net48/RestSharp.Serializers.NewtonsoftJson.dll
+[2025-05-04 14:28:24] [build-stdout]   RestSharp.Serializers.NewtonsoftJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/bin/Debug/netstandard2.0/RestSharp.Serializers.NewtonsoftJson.dll
+[2025-05-04 14:28:24] [build-stdout]   RestSharp.Serializers.NewtonsoftJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/bin/Debug/net8.0/RestSharp.Serializers.NewtonsoftJson.dll
+[2025-05-04 14:28:24] [build-stdout]   RestSharp.Serializers.NewtonsoftJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/bin/Debug/net471/RestSharp.Serializers.NewtonsoftJson.dll
+[2025-05-04 14:28:25] [build-stdout]   RestSharp.Serializers.Xml -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/bin/Debug/netstandard2.0/RestSharp.Serializers.Xml.dll
+[2025-05-04 14:28:30] [build-stdout]   RestSharp.Serializers.Xml -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/bin/Debug/net8.0/RestSharp.Serializers.Xml.dll
+[2025-05-04 14:28:33] [build-stdout]   RestSharp.Serializers.Xml -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/bin/Debug/net48/RestSharp.Serializers.Xml.dll
+[2025-05-04 14:28:36] [build-stdout]   RestSharp.Serializers.CsvHelper -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/bin/Debug/net48/RestSharp.Serializers.CsvHelper.dll
+[2025-05-04 14:28:40] [build-stdout]   RestSharp.Serializers.CsvHelper -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/bin/Debug/net6.0/RestSharp.Serializers.CsvHelper.dll
+[2025-05-04 14:28:40] [build-stdout]   RestSharp.Serializers.NewtonsoftJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/bin/Debug/net6.0/RestSharp.Serializers.NewtonsoftJson.dll
+[2025-05-04 14:28:43] [build-stdout]   RestSharp.Serializers.CsvHelper -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/bin/Debug/net7.0/RestSharp.Serializers.CsvHelper.dll
+[2025-05-04 14:28:45] [build-stdout]   RestSharp.Serializers.Xml -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/bin/Debug/net6.0/RestSharp.Serializers.Xml.dll
+[2025-05-04 14:28:45] [build-stdout]   RestSharp.Serializers.CsvHelper -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.CsvHelper/bin/Debug/net471/RestSharp.Serializers.CsvHelper.dll
+[2025-05-04 14:28:45] [build-stdout]   RestSharp.Serializers.Xml -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/bin/Debug/net471/RestSharp.Serializers.Xml.dll
+[2025-05-04 14:28:47] [build-stdout]   RestSharp.Serializers.Xml -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.Xml/bin/Debug/net7.0/RestSharp.Serializers.Xml.dll
+[2025-05-04 14:28:47] [build-stdout]   RestSharp.Serializers.NewtonsoftJson -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp.Serializers.NewtonsoftJson/bin/Debug/net7.0/RestSharp.Serializers.NewtonsoftJson.dll
+[2025-05-04 14:28:47] [build-stdout] Build succeeded.
+[2025-05-04 14:28:47] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj : warning NU1903: Package 'System.Text.Json' 8.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4 [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/RestSharp.sln]
+[2025-05-04 14:28:47] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/netstandard2.0/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(32,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=netstandard2.0]
+[2025-05-04 14:28:47] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net6.0/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(33,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net6.0]
+[2025-05-04 14:28:47] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net7.0/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(33,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net7.0]
+[2025-05-04 14:28:47] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net8.0/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(33,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net8.0]
+[2025-05-04 14:28:47] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net48/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(32,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net48]
+[2025-05-04 14:28:47] [build-stdout] /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/obj/Debug/net471/generated/SourceGenerator/SourceGenerator.ImmutableGenerator/ReadOnlyRestClientOptions.cs(32,22): warning CS0618: 'RestClientOptions.MaxTimeout' is obsolete: 'Use Timeout instead.' [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/RestSharp/RestSharp.csproj::TargetFramework=net471]
+[2025-05-04 14:28:47] [build-stdout]     7 Warning(s)
+[2025-05-04 14:28:47] [build-stdout]     0 Error(s)
+[2025-05-04 14:28:47] [build-stdout] Time Elapsed 00:01:41.24
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 11.57 MiB; string pool: 5.53 MiB).
+TRAP import complete (11.9s).
+Finished zipping source archive (883.11 KiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +8794 ms, Dauer: 122215 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 54.7s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 23.6s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +131011 ms, Dauer: 84345 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +215358 ms, Dauer: 570 ms
+
+CSV-Ausgabe: restsharp-RestSharp.results.csv
+Starting up command './run-analysis.sh -s target-repo -l RestSharp.sln -d db -q identify-call-paths.ql -c restsharp-RestSharp.results.csv' and attaching to process
+Process finished (215.92 seconds)

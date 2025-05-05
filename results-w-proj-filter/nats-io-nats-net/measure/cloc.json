@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.166369915008545,
+  "n_files"            : 299,
+  "n_lines"            : 33858,
+  "files_per_second"   : 1797.19993235942,
+  "lines_per_second"   : 203510.352206774,
+  "report_file"        : "nats-io-nats.net.cloc.json"},
+"C#" :{
+  "nFiles": 299,
+  "blank": 4318,
+  "comment": 7503,
+  "code": 22037},
+"SUM": {
+  "blank": 4318,
+  "comment": 7503,
+  "code": 22037,
+  "nFiles": 299} }

@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.239863157272339,
+  "n_files"            : 631,
+  "n_lines"            : 36971,
+  "files_per_second"   : 2630.66661497984,
+  "lines_per_second"   : 154133.716992741,
+  "report_file"        : "Particular-NServiceBus.cloc.json"},
+"C#" :{
+  "nFiles": 631,
+  "blank": 5848,
+  "comment": 6000,
+  "code": 25123},
+"SUM": {
+  "blank": 5848,
+  "comment": 6000,
+  "code": 25123,
+  "nFiles": 631} }

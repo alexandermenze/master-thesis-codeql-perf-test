@@ -1,0 +1,176 @@
+Schritt 0: dotnet clean & restore
+Build started 05/04/2025 14:05:59.
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Polly.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Polly.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Snippets/Snippets.csproj" (2) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Snippets/debug/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Polly.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj" (3) on node 3 (Clean target(s)).
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj" (3:2) on node 1 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Testing/debug_netstandard2.0/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj" (3:3) on node 3 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Testing/debug_net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Polly.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5) on node 2 (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5:2) on node 2 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.RateLimiting/debug_net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Polly.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6) on node 4 (Clean target(s)).
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6:2) on node 4 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Extensions/debug_net8.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6:3) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Extensions/debug_netstandard2.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6:4) on node 3 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Extensions/debug_net6.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6:5) on node 4 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Extensions/debug_net472/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6:6) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Extensions/debug_net462/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5:3) on node 3 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.RateLimiting/debug_netstandard2.0/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5:5) on node 4 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.RateLimiting/debug_net472/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5:4) on node 2 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.RateLimiting/debug_net6.0/".
+   5:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (7:16) on node 3 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Core/debug_netstandard2.0/".
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (Clean target(s)).
+   6:4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6:4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (7:20) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Core/debug_net6.0/".
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5:6) on node 3 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.RateLimiting/debug_net462/".
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (Clean target(s)).
+   5:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (5:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (7:24) on node 2 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Core/debug_net462/".
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (Clean target(s)).
+   6:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (7:23) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Core/debug_net8.0/".
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (Clean target(s)).
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj" (Clean target(s)).
+   6:5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (6:5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (7:28) on node 1 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly.Core/debug_net472/".
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Polly.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:6) on node 1 (Clean target(s)).
+   4:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:7) on node 3 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly/debug_net472/".
+   4:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:9) on node 4 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly/debug_net462/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (Clean target(s)).
+   4:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:8) on node 1 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly/debug_net6.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Snippets/Snippets.csproj" (Clean target(s)).
+   4:6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (4:11) on node 1 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/obj/Polly/debug_netstandard2.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (Clean target(s)).
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj" (Clean target(s)).
+     1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Polly.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.02
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Testing/Polly.Testing.csproj (in 3.03 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Snippets/Snippets.csproj (in 3.18 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly/Polly.csproj (in 330 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Core/Polly.Core.csproj (in 331 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.Extensions/Polly.Extensions.csproj (in 3.7 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Polly.RateLimiting/Polly.RateLimiting.csproj (in 3.7 sec).
+-> Schritt 0: dotnet clean & restore gestartet bei +1 ms, Dauer: 8152 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [dotnet, build, --no-incremental, Polly.sln]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [dotnet, build, --no-incremental, Polly.sln]
+[2025-05-04 14:06:13] [build-stdout]   Determining projects to restore...
+[2025-05-04 14:06:15] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-04 14:07:07] [build-stdout]   Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_net472/Polly.Core.dll
+[2025-05-04 14:07:07] [build-stdout]   Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_netstandard2.0/Polly.Core.dll
+[2025-05-04 14:07:13] [build-stdout]   Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_net8.0/Polly.Core.dll
+[2025-05-04 14:07:32] [build-stdout]   Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_netstandard2.0/Polly.Extensions.dll
+[2025-05-04 14:07:33] [build-stdout]   Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_net472/Polly.Extensions.dll
+[2025-05-04 14:07:45] [build-stdout]   Polly.Testing -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Testing/debug_netstandard2.0/Polly.Testing.dll
+[2025-05-04 14:07:45] [build-stdout]   Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_netstandard2.0/Polly.RateLimiting.dll
+[2025-05-04 14:07:55] [build-stdout]   Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_net462/Polly.Core.dll
+[2025-05-04 14:09:03] [build-stdout]   Polly.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Core/debug_net6.0/Polly.Core.dll
+[2025-05-04 14:09:08] [build-stdout]   Polly -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly/debug_net472/Polly.dll
+[2025-05-04 14:09:20] [build-stdout]   Polly -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly/debug_net462/Polly.dll
+[2025-05-04 14:09:25] [build-stdout]   Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_net462/Polly.RateLimiting.dll
+[2025-05-04 14:09:43] [build-stdout]   Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_net8.0/Polly.Extensions.dll
+[2025-05-04 14:09:43] [build-stdout]   Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_net472/Polly.RateLimiting.dll
+[2025-05-04 14:10:13] [build-stdout]   Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_net8.0/Polly.RateLimiting.dll
+[2025-05-04 14:10:16] [build-stdout]   Polly.Testing -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Testing/debug_net8.0/Polly.Testing.dll
+[2025-05-04 14:10:16] [build-stdout]   Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_net462/Polly.Extensions.dll
+[2025-05-04 14:10:27] [build-stdout]   Polly -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly/debug_netstandard2.0/Polly.dll
+[2025-05-04 14:10:27] [build-stdout]   Polly -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly/debug_net6.0/Polly.dll
+[2025-05-04 14:10:27] [build-stdout]   Polly.Extensions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.Extensions/debug_net6.0/Polly.Extensions.dll
+[2025-05-04 14:10:27] [build-stdout]   Polly.RateLimiting -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Polly.RateLimiting/debug_net6.0/Polly.RateLimiting.dll
+[2025-05-04 14:10:46] [build-stdout]   Snippets -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/artifacts/bin/Snippets/debug/Snippets.dll
+[2025-05-04 14:10:46] [build-stdout] Build succeeded.
+[2025-05-04 14:10:46] [build-stdout]     0 Warning(s)
+[2025-05-04 14:10:46] [build-stdout]     0 Error(s)
+[2025-05-04 14:10:46] [build-stdout] Time Elapsed 00:04:33.89
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 17.73 MiB; string pool: 5.53 MiB).
+TRAP import complete (16.6s).
+Finished zipping source archive (1.57 MiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +8154 ms, Dauer: 302816 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 52.9s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 30.4s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +310972 ms, Dauer: 89386 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +400360 ms, Dauer: 618 ms
+
+CSV-Ausgabe: App-vNext-Polly.results.csv
+Starting up command './run-analysis.sh -s target-repo -l Polly.sln -d db -q identify-call-paths.ql -c App-vNext-Polly.results.csv' and attaching to process
+Process finished (400.97 seconds)

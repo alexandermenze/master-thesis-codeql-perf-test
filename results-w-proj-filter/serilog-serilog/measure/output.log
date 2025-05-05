@@ -1,0 +1,70 @@
+Schritt 0: dotnet clean & restore
+Build started 05/04/2025 14:28:16.
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (2) on node 1 (Clean target(s)).
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (2:2) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (Clean target(s)).
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (2:3) on node 2 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/net6.0/".
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (Clean target(s)).
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (2:4) on node 3 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj" (Clean target(s)).
+     1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/Serilog.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.08
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj (in 1.44 sec).
+-> Schritt 0: dotnet clean & restore gestartet bei +2 ms, Dauer: 3907 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [dotnet, build, --no-incremental, Serilog.sln]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [dotnet, build, --no-incremental, Serilog.sln]
+[2025-05-04 14:28:25] [build-stdout]   Determining projects to restore...
+[2025-05-04 14:28:27] [build-stdout]   Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/Serilog.csproj (in 499 ms).
+[2025-05-04 14:28:52] [build-stdout]   Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/netstandard2.0/Serilog.dll
+[2025-05-04 14:28:54] [build-stdout]   Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/net6.0/Serilog.dll
+[2025-05-04 14:28:56] [build-stdout]   Serilog -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Serilog/bin/Debug/net8.0/Serilog.dll
+[2025-05-04 14:28:56] [build-stdout] Build succeeded.
+[2025-05-04 14:28:56] [build-stdout]     0 Warning(s)
+[2025-05-04 14:28:56] [build-stdout]     0 Error(s)
+[2025-05-04 14:28:56] [build-stdout] Time Elapsed 00:00:30.52
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 5.87 MiB; string pool: 4.78 MiB).
+TRAP import complete (6.3s).
+Finished zipping source archive (445.04 KiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +3911 ms, Dauer: 44518 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 52.8s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 21.2s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +48430 ms, Dauer: 79918 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +128349 ms, Dauer: 576 ms
+
+CSV-Ausgabe: serilog-serilog.results.csv
+Starting up command './run-analysis.sh -s target-repo -l Serilog.sln -d db -q identify-call-paths.ql -c serilog-serilog.results.csv' and attaching to process
+Process finished (128.92 seconds)

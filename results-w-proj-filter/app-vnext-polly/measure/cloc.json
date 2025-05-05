@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 0.220928192138672,
+  "n_files"            : 416,
+  "n_lines"            : 39303,
+  "files_per_second"   : 1882.96475869809,
+  "lines_per_second"   : 177899.432478632,
+  "report_file"        : "App-vNext-Polly.cloc.json"},
+"C#" :{
+  "nFiles": 416,
+  "blank": 4844,
+  "comment": 13573,
+  "code": 20886},
+"SUM": {
+  "blank": 4844,
+  "comment": 13573,
+  "code": 20886,
+  "nFiles": 416} }

@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 1.57752084732056,
+  "n_files"            : 3057,
+  "n_lines"            : 229947,
+  "files_per_second"   : 1937.8507771814,
+  "lines_per_second"   : 145764.793150321,
+  "report_file"        : "grandnode-grandnode2.cloc.json"},
+"C#" :{
+  "nFiles": 3057,
+  "blank": 35916,
+  "comment": 28919,
+  "code": 165112},
+"SUM": {
+  "blank": 35916,
+  "comment": 28919,
+  "code": 165112,
+  "nFiles": 3057} }

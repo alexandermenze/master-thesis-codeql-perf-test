@@ -1,0 +1,591 @@
+Schritt 0: dotnet clean & restore
+Build started 05/04/2025 14:15:32.
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2) on node 1 (Clean target(s)).
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2:2) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (6) on node 2 (Clean target(s)).
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (6:2) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (5) on node 3 (Clean target(s)).
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (5:2) on node 3 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (3) on node 4 (Clean target(s)).
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (3:2) on node 4 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (6:3) on node 2 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     6>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (6) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (6:4) on node 1 (Clean target(s)).
+     6>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (5:3) on node 1 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     5>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (5) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (5:4) on node 1 (Clean target(s)).
+     5>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (3:3) on node 1 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (3:4) on node 4 (Clean target(s)).
+     3>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2:3) on node 4 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2:4) on node 2 (Clean target(s)).
+     2>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+   3:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (3:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/MassTransit.csproj" (7:16) on node 4 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (8) on node 2 (Clean target(s)).
+     8>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (8) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (8:2) on node 3 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+   2:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/MassTransit.Abstractions.csproj" (4:8) on node 1 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/MassTransit.Abstractions.csproj" (Clean target(s)).
+   8:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (8:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/MassTransit.csproj" (7:19) on node 3 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+   2:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/MassTransit.csproj" (7:17) on node 2 (Clean target(s)).
+     7>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     8>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (8) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (8:3) on node 4 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+   2:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/MassTransit.Abstractions.csproj" (4:9) on node 1 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/MassTransit.Abstractions.csproj" (Clean target(s)).
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/MassTransit.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (Clean target(s)).
+     8>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (8) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (8:4) on node 1 (Clean target(s)).
+     8>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (Clean target(s)).
+   2:4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (2:4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/MassTransit.Abstractions.csproj" (4:13) on node 3 (Clean target(s)).
+     4>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     4>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/MassTransit.Abstractions.csproj" (Clean target(s)).
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/MassTransit.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (Clean target(s)).
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (9) on node 4 (Clean target(s)).
+     9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (9:2) on node 4 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (Clean target(s)).
+     7>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/MassTransit.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (10) on node 2 (Clean target(s)).
+    10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (10:2) on node 1 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (Clean target(s)).
+    10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (10:3) on node 2 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (Clean target(s)).
+     6>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (Clean target(s)).
+     8>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj" (Clean target(s)).
+    10>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (10) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (10:4) on node 3 (Clean target(s)).
+    10>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (Clean target(s)).
+     5>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj" (Clean target(s)).
+     9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (9:4) on node 1 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+     9>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (9) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (9:3) on node 4 (Clean target(s)).
+     9>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (Clean target(s)).
+     2>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj" (Clean target(s)).
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (Clean target(s)).
+     9>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj" (Clean target(s)).
+     3>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (11) on node 2 (Clean target(s)).
+    11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (11:2) on node 2 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (Clean target(s)).
+    11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (11:3) on node 3 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (Clean target(s)).
+    10>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (12) on node 4 (Clean target(s)).
+    12>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (12) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (12:2) on node 4 (Clean target(s)).
+    12>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    11>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (11) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (11:4) on node 1 (Clean target(s)).
+    11>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (Clean target(s)).
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (Clean target(s)).
+    12>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (12) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (12:3) on node 3 (Clean target(s)).
+    12>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (Clean target(s)).
+    12>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (12) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (12:4) on node 2 (Clean target(s)).
+    12>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (Clean target(s)).
+    11>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (13) on node 4 (Clean target(s)).
+    13>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (13) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (13:2) on node 4 (Clean target(s)).
+    13>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (14) on node 1 (Clean target(s)).
+    14>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (14) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (14:2) on node 1 (Clean target(s)).
+    14>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (15) on node 3 (Clean target(s)).
+    15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (15:2) on node 3 (Clean target(s)).
+    15>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    12>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj" (Clean target(s)).
+    15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (15:3) on node 2 (Clean target(s)).
+    15>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    15>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (15) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (15:4) on node 4 (Clean target(s)).
+    15>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    14>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (14) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (14:3) on node 3 (Clean target(s)).
+    14>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    14>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (14) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (14:4) on node 1 (Clean target(s)).
+    14>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Analyzers/MassTransit.Analyzers.csproj" (16) on node 3 (Clean target(s)).
+    16>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    16>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Analyzers/MassTransit.Analyzers.csproj" (Clean target(s)).
+    13>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (13) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (13:3) on node 2 (Clean target(s)).
+    13>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (Clean target(s)).
+    13>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (13) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (13:4) on node 4 (Clean target(s)).
+    13>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (17) on node 1 (Clean target(s)).
+    17>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (17) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (17:2) on node 1 (Clean target(s)).
+    17>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    13>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj" (Clean target(s)).
+    17>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (Clean target(s)).
+    15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (Clean target(s)).
+    14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (Clean target(s)).
+    15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (Clean target(s)).
+    14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18) on node 3 (Clean target(s)).
+    18>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:2) on node 3 (Clean target(s)).
+    18>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (Clean target(s)).
+    15>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj" (Clean target(s)).
+    14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj" (19) on node 2 (Clean target(s)).
+    19>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj" (19) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj" (19:2) on node 2 (Clean target(s)).
+    19>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    19>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj" (19) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj" (19:3) on node 4 (Clean target(s)).
+    19>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    19>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj" (Clean target(s)).
+    19>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj" (Clean target(s)).
+    18>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:3) on node 1 (Clean target(s)).
+    18>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    14>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj" (Clean target(s)).
+    19>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj" (Clean target(s)).
+    18>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:4) on node 4 (Clean target(s)).
+    18>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    17>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (17) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (17:3) on node 1 (Clean target(s)).
+    17>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    17>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (Clean target(s)).
+    17>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (17) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (17:4) on node 3 (Clean target(s)).
+    17>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    17>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (Clean target(s)).
+  18:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/MassTransit.Azure.ServiceBus.Core.csproj" (21:7) on node 3 (Clean target(s)).
+    21>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (22) on node 1 (Clean target(s)).
+    22>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (22) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (22:2) on node 4 (Clean target(s)).
+    22>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    22>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (22) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (22:3) on node 1 (Clean target(s)).
+    22>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    22>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (Clean target(s)).
+    21>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/MassTransit.Azure.ServiceBus.Core.csproj" (Clean target(s)).
+    22>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (Clean target(s)).
+    17>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (23) on node 2 (Clean target(s)).
+    23>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (23) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (23:2) on node 2 (Clean target(s)).
+    23>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+  18:4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/MassTransit.Azure.ServiceBus.Core.csproj" (21:8) on node 4 (Clean target(s)).
+    21>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    23>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (Clean target(s)).
+  18:2>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:2) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/MassTransit.WebJobs.ServiceBusIntegration.csproj" (20:7) on node 1 (Clean target(s)).
+    20>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+  18:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/MassTransit.Azure.ServiceBus.Core.csproj" (21:9) on node 2 (Clean target(s)).
+    21>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    21>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/MassTransit.Azure.ServiceBus.Core.csproj" (Clean target(s)).
+    20>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/MassTransit.WebJobs.ServiceBusIntegration.csproj" (Clean target(s)).
+    23>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (23) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (23:3) on node 3 (Clean target(s)).
+    23>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    21>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/MassTransit.Azure.ServiceBus.Core.csproj" (Clean target(s)).
+    23>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (Clean target(s)).
+    18>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (Clean target(s)).
+  18:3>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:3) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/MassTransit.WebJobs.ServiceBusIntegration.csproj" (20:8) on node 2 (Clean target(s)).
+    20>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    20>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/MassTransit.WebJobs.ServiceBusIntegration.csproj" (Clean target(s)).
+  18:4>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (18:4) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/MassTransit.WebJobs.ServiceBusIntegration.csproj" (20:9) on node 3 (Clean target(s)).
+    20>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    20>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/MassTransit.WebJobs.ServiceBusIntegration.csproj" (Clean target(s)).
+    23>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (23) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (23:4) on node 4 (Clean target(s)).
+    23>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    23>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (Clean target(s)).
+    18>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (Clean target(s)).
+    23>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj" (Clean target(s)).
+    22>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (22) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (22:4) on node 1 (Clean target(s)).
+    22>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    22>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (Clean target(s)).
+    22>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj" (Clean target(s)).
+    18>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj" (25) on node 3 (Clean target(s)).
+    25>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj" (25) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj" (25:3) on node 3 (Clean target(s)).
+    25>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    25>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj" (25) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj" (25:2) on node 2 (Clean target(s)).
+    25>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    25>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj" (Clean target(s)).
+    25>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj" (Clean target(s)).
+    18>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj" (Clean target(s)).
+    25>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (26) on node 4 (Clean target(s)).
+    26>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (26) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (26:2) on node 4 (Clean target(s)).
+    26>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    26>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (Clean target(s)).
+    26>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (26) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (26:3) on node 1 (Clean target(s)).
+    26>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    26>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (Clean target(s)).
+    26>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (26) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (26:4) on node 2 (Clean target(s)).
+    26>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    26>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (24) on node 2 (Clean target(s)).
+    24>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (24) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (24:2) on node 3 (Clean target(s)).
+    24>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    24>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (Clean target(s)).
+    24>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (24) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (24:3) on node 4 (Clean target(s)).
+    24>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    24>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (Clean target(s)).
+    26>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj" (Clean target(s)).
+    24>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (24) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (24:4) on node 1 (Clean target(s)).
+    24>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    24>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/MassTransit.MartenIntegration.csproj" (27) on node 2 (Clean target(s)).
+    27>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/MassTransit.MartenIntegration.csproj" (27) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/MassTransit.MartenIntegration.csproj" (27:2) on node 2 (Clean target(s)).
+    27>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    27>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/MassTransit.MartenIntegration.csproj" (Clean target(s)).
+    27>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/MassTransit.MartenIntegration.csproj" (Clean target(s)).
+    24>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (28) on node 3 (Clean target(s)).
+    28>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (28) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (28:2) on node 3 (Clean target(s)).
+    28>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    28>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (29) on node 4 (Clean target(s)).
+    29>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (29) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (29:2) on node 4 (Clean target(s)).
+    29>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+    29>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (Clean target(s)).
+    29>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (29) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (29:3) on node 1 (Clean target(s)).
+    29>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    29>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (29) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (29:4) on node 2 (Clean target(s)).
+    29>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    29>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (Clean target(s)).
+    29>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (Clean target(s)).
+    28>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (28) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (28:3) on node 3 (Clean target(s)).
+    28>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    28>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (Clean target(s)).
+    28>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (28) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (28:4) on node 4 (Clean target(s)).
+    28>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    28>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (Clean target(s)).
+    29>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj" (Clean target(s)).
+    28>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (30) on node 2 (Clean target(s)).
+    30>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (30) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (30:2) on node 2 (Clean target(s)).
+    30>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    30>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/MassTransit.EntityFrameworkIntegration.csproj" (31) on node 1 (Clean target(s)).
+    31>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/MassTransit.EntityFrameworkIntegration.csproj" (31) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/MassTransit.EntityFrameworkIntegration.csproj" (31:2) on node 1 (Clean target(s)).
+    31>CoreClean:
+         Creating directory "obj/Debug/netstandard2.1/".
+    31>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/MassTransit.EntityFrameworkIntegration.csproj" (Clean target(s)).
+    30>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (30) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (30:3) on node 4 (Clean target(s)).
+    30>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    31>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/MassTransit.EntityFrameworkIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (32) on node 3 (Clean target(s)).
+    32>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (32) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (32:2) on node 3 (Clean target(s)).
+    32>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    30>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (Clean target(s)).
+    32>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (Clean target(s)).
+    32>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (32) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (32:3) on node 2 (Clean target(s)).
+    32>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    32>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (Clean target(s)).
+    30>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (30) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (30:4) on node 4 (Clean target(s)).
+    30>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    32>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (32) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (32:4) on node 1 (Clean target(s)).
+    32>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    32>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (Clean target(s)).
+    30>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj" (33) on node 3 (Clean target(s)).
+    33>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj" (33) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj" (33:2) on node 2 (Clean target(s)).
+    33>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    33>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj" (33) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj" (33:3) on node 3 (Clean target(s)).
+    33>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    33>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj" (Clean target(s)).
+    30>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj" (Clean target(s)).
+    33>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj" (Clean target(s)).
+    33>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj" (Clean target(s)).
+    32>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj" (Clean target(s)).
+     1>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (1) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (34) on node 1 (Clean target(s)).
+    34>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (34) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (34:3) on node 4 (Clean target(s)).
+    34>CoreClean:
+         Creating directory "obj/Debug/netstandard2.0/".
+    34>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (34) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (34:2) on node 1 (Clean target(s)).
+    34>CoreClean:
+         Creating directory "obj/Debug/net8.0/".
+    34>Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (34) is building "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (34:4) on node 2 (Clean target(s)).
+    34>CoreClean:
+         Creating directory "obj/Debug/net9.0/".
+    34>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (Clean target(s)).
+    34>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (Clean target(s)).
+    34>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (Clean target(s)).
+    34>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj" (Clean target(s)).
+     1>Done Building Project "/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/MassTransit.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.36
+  Determining projects to restore...
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/MassTransit.csproj (in 3.23 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/MassTransit.EntityFrameworkIntegration.csproj (in 3.23 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/MassTransit.QuartzIntegration.csproj (in 3.24 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/MassTransit.ActiveMqTransport.csproj (in 3.24 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/MassTransit.RedisIntegration.csproj (in 513 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/MassTransit.HangfireIntegration.csproj (in 563 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/MassTransit.MongoDbIntegration.csproj (in 934 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/MassTransit.DynamoDbIntegration.csproj (in 471 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/MassTransit.MartenIntegration.csproj (in 2.94 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/MassTransit.EntityFrameworkCoreIntegration.csproj (in 3.73 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/MassTransit.NHibernateIntegration.csproj (in 4.83 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/MassTransit.Azure.Table.csproj (in 1.91 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/MassTransit.Azure.Storage.csproj (in 1.56 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/MassTransit.Abstractions.csproj (in 5 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/MassTransit.DapperIntegration.csproj (in 4.96 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/MassTransit.TestFramework.csproj (in 483 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/MassTransit.AmazonS3.csproj (in 588 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/MassTransit.SignalR.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/MassTransit.Newtonsoft.csproj (in 18 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/MassTransit.Interop.NServiceBus.csproj (in 11 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Analyzers/MassTransit.Analyzers.csproj (in 15 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/MassTransit.StateMachineVisualizer.csproj (in 567 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/MassTransit.Azure.Cosmos.csproj (in 2.23 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/MassTransit.SqlTransport.SqlServer.csproj (in 36 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/MassTransit.MessagePack.csproj (in 312 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/MassTransit.SqlTransport.PostgreSql.csproj (in 237 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/MassTransit.RabbitMqTransport.csproj (in 151 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/MassTransit.EventHubIntegration.csproj (in 305 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/MassTransit.Azure.ServiceBus.Core.csproj (in 183 ms).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/MassTransit.KafkaIntegration.csproj (in 1.43 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/MassTransit.AmazonSqsTransport.csproj (in 1.02 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/MassTransit.WebJobs.ServiceBusIntegration.csproj (in 2.86 sec).
+  Restored /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/MassTransit.WebJobs.EventHubsIntegration.csproj (in 2.85 sec).
+-> Schritt 0: dotnet clean & restore gestartet bei +2 ms, Dauer: 26580 ms
+
+Schritt 1: Erstelle CodeQL-Datenbank
+Initializing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running build command: [dotnet, build, --no-incremental, MassTransit.sln]
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [dotnet, build, --no-incremental, MassTransit.sln]
+[2025-05-04 14:16:05] [build-stdout]   Determining projects to restore...
+[2025-05-04 14:16:09] [build-stdout]   All projects are up-to-date for restore.
+[2025-05-04 14:16:29] [build-stdout]   MassTransit.Analyzers -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Analyzers/bin/Debug/netstandard2.0/MassTransit.Analyzers.dll
+[2025-05-04 14:16:36] [build-stdout]   MassTransit.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/bin/Debug/netstandard2.0/MassTransit.Abstractions.dll
+[2025-05-04 14:17:18] [build-stdout]   MassTransit.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/bin/Debug/net9.0/MassTransit.Abstractions.dll
+[2025-05-04 14:17:58] [build-stdout]   MassTransit.Abstractions -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Abstractions/bin/Debug/net8.0/MassTransit.Abstractions.dll
+[2025-05-04 14:20:02] [build-stdout]   MassTransit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/bin/Debug/net8.0/MassTransit.dll
+[2025-05-04 14:20:05] [build-stdout]   MassTransit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/bin/Debug/netstandard2.0/MassTransit.dll
+[2025-05-04 14:20:25] [build-stdout]   MassTransit.SqlTransport.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/bin/Debug/net8.0/MassTransit.SqlTransport.PostgreSql.dll
+[2025-05-04 14:20:27] [build-stdout]   MassTransit.EntityFrameworkIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkIntegration/bin/Debug/netstandard2.1/MassTransit.EntityFrameworkIntegration.dll
+[2025-05-04 14:20:33] [build-stdout]   MassTransit.RedisIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/bin/Debug/netstandard2.0/MassTransit.RedisIntegration.dll
+[2025-05-04 14:20:33] [build-stdout]   MassTransit.Newtonsoft -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/bin/Debug/netstandard2.0/MassTransit.Newtonsoft.dll
+[2025-05-04 14:20:34] [build-stdout]   MassTransit.Azure.ServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/bin/Debug/netstandard2.0/MassTransit.Azure.ServiceBus.Core.dll
+[2025-05-04 14:20:44] [build-stdout]   MassTransit.RabbitMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/bin/Debug/netstandard2.0/MassTransit.RabbitMqTransport.dll
+[2025-05-04 14:20:45] [build-stdout]   MassTransit.Azure.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/bin/Debug/netstandard2.0/MassTransit.Azure.Cosmos.dll
+[2025-05-04 14:20:49] [build-stdout]   MassTransit.NHibernateIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/bin/Debug/netstandard2.0/MassTransit.NHibernateIntegration.dll
+[2025-05-04 14:20:51] [build-stdout]   MassTransit.TestFramework -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/bin/Debug/net8.0/MassTransit.TestFramework.dll
+[2025-05-04 14:20:52] [build-stdout]   MassTransit.WebJobs.ServiceBusIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/bin/Debug/netstandard2.0/MassTransit.WebJobs.ServiceBusIntegration.dll
+[2025-05-04 14:20:56] [build-stdout]   MassTransit.SqlTransport.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/bin/Debug/netstandard2.0/MassTransit.SqlTransport.PostgreSql.dll
+[2025-05-04 14:20:58] [build-stdout]   MassTransit.Azure.Table -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/bin/Debug/net8.0/MassTransit.Azure.Table.dll
+[2025-05-04 14:21:00] [build-stdout]   MassTransit.Azure.Table -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/bin/Debug/netstandard2.0/MassTransit.Azure.Table.dll
+[2025-05-04 14:21:03] [build-stdout]   MassTransit.Azure.Storage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/bin/Debug/net8.0/MassTransit.Azure.Storage.dll
+[2025-05-04 14:21:04] [build-stdout]   MassTransit.WebJobs.EventHubsIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/bin/Debug/netstandard2.0/MassTransit.WebJobs.EventHubsIntegration.dll
+[2025-05-04 14:21:09] [build-stdout]   MassTransit.MessagePack -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/bin/Debug/netstandard2.0/MassTransit.MessagePack.dll
+[2025-05-04 14:21:13] [build-stdout]   MassTransit.SignalR -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/bin/Debug/net8.0/MassTransit.SignalR.dll
+[2025-05-04 14:21:20] [build-stdout]   MassTransit.AmazonSqsTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/bin/Debug/netstandard2.0/MassTransit.AmazonSqsTransport.dll
+[2025-05-04 14:21:26] [build-stdout]   MassTransit.MongoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/bin/Debug/net8.0/MassTransit.MongoDbIntegration.dll
+[2025-05-04 14:21:26] [build-stdout]   MassTransit.DynamoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/bin/Debug/netstandard2.0/MassTransit.DynamoDbIntegration.dll
+[2025-05-04 14:21:32] [build-stdout]   MassTransit.QuartzIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/bin/Debug/netstandard2.0/MassTransit.QuartzIntegration.dll
+[2025-05-04 14:21:35] [build-stdout]   MassTransit.EventHubIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/bin/Debug/net8.0/MassTransit.EventHubIntegration.dll
+[2025-05-04 14:21:41] [build-stdout]   MassTransit.ActiveMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/bin/Debug/netstandard2.0/MassTransit.ActiveMqTransport.dll
+[2025-05-04 14:21:48] [build-stdout]   MassTransit.Azure.ServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/bin/Debug/net8.0/MassTransit.Azure.ServiceBus.Core.dll
+[2025-05-04 14:21:55] [build-stdout]   MassTransit.Azure.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/bin/Debug/net8.0/MassTransit.Azure.Cosmos.dll
+[2025-05-04 14:22:07] [build-stdout]   MassTransit.RabbitMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/bin/Debug/net8.0/MassTransit.RabbitMqTransport.dll
+[2025-05-04 14:22:21] [build-stdout]   MassTransit.EntityFrameworkCoreIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/bin/Debug/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll
+[2025-05-04 14:22:28] [build-stdout]   MassTransit.DapperIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/bin/Debug/net8.0/MassTransit.DapperIntegration.dll
+[2025-05-04 14:22:35] [build-stdout]   MassTransit.Newtonsoft -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/bin/Debug/net8.0/MassTransit.Newtonsoft.dll
+[2025-05-04 14:22:46] [build-stdout]   MassTransit.NHibernateIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/bin/Debug/net8.0/MassTransit.NHibernateIntegration.dll
+[2025-05-04 14:22:46] [build-stdout]   MassTransit.Interop.NServiceBus -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/bin/Debug/netstandard2.0/MassTransit.Interop.NServiceBus.dll
+[2025-05-04 14:22:46] [build-stdout]   MassTransit -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit/bin/Debug/net9.0/MassTransit.dll
+[2025-05-04 14:23:10] [build-stdout]   MassTransit.QuartzIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/bin/Debug/net9.0/MassTransit.QuartzIntegration.dll
+[2025-05-04 14:23:12] [build-stdout]   MassTransit.ActiveMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/bin/Debug/net9.0/MassTransit.ActiveMqTransport.dll
+[2025-05-04 14:23:16] [build-stdout]   MassTransit.Newtonsoft -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Newtonsoft/bin/Debug/net9.0/MassTransit.Newtonsoft.dll
+[2025-05-04 14:23:19] [build-stdout]   MassTransit.RedisIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/bin/Debug/net9.0/MassTransit.RedisIntegration.dll
+[2025-05-04 14:23:19] [build-stdout]   MassTransit.NHibernateIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.NHibernateIntegration/bin/Debug/net9.0/MassTransit.NHibernateIntegration.dll
+[2025-05-04 14:23:19] [build-stdout]   MassTransit.MongoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/bin/Debug/net9.0/MassTransit.MongoDbIntegration.dll
+[2025-05-04 14:23:27] [build-stdout]   MassTransit.DapperIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/bin/Debug/net9.0/MassTransit.DapperIntegration.dll
+[2025-05-04 14:23:31] [build-stdout]   MassTransit.TestFramework -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.TestFramework/bin/Debug/net9.0/MassTransit.TestFramework.dll
+[2025-05-04 14:23:34] [build-stdout]   MassTransit.SignalR -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.SignalR/bin/Debug/net9.0/MassTransit.SignalR.dll
+[2025-05-04 14:23:40] [build-stdout]   MassTransit.SqlTransport.SqlServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/bin/Debug/net9.0/MassTransit.SqlTransport.SqlServer.dll
+[2025-05-04 14:23:44] [build-stdout]   MassTransit.EntityFrameworkCoreIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.EntityFrameworkCoreIntegration/bin/Debug/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll
+[2025-05-04 14:23:47] [build-stdout]   MassTransit.MessagePack -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/bin/Debug/net9.0/MassTransit.MessagePack.dll
+[2025-05-04 14:23:56] [build-stdout]   MassTransit.RabbitMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.RabbitMqTransport/bin/Debug/net9.0/MassTransit.RabbitMqTransport.dll
+[2025-05-04 14:23:59] [build-stdout]   MassTransit.AmazonSqsTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/bin/Debug/net9.0/MassTransit.AmazonSqsTransport.dll
+[2025-05-04 14:24:03] [build-stdout]   MassTransit.Azure.Cosmos -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Cosmos/bin/Debug/net9.0/MassTransit.Azure.Cosmos.dll
+[2025-05-04 14:24:04] [build-stdout]   MassTransit.DynamoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/bin/Debug/net9.0/MassTransit.DynamoDbIntegration.dll
+[2025-05-04 14:24:11] [build-stdout]   MassTransit.AmazonS3 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/bin/Debug/net8.0/MassTransit.AmazonS3.dll
+[2025-05-04 14:24:14] [build-stdout]   MassTransit.Azure.ServiceBus.Core -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.Azure.ServiceBus.Core/bin/Debug/net9.0/MassTransit.Azure.ServiceBus.Core.dll
+[2025-05-04 14:24:19] [build-stdout]   MassTransit.AmazonS3 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/bin/Debug/net9.0/MassTransit.AmazonS3.dll
+[2025-05-04 14:24:23] [build-stdout]   MassTransit.MartenIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MartenIntegration/bin/Debug/net8.0/MassTransit.MartenIntegration.dll
+[2025-05-04 14:24:25] [build-stdout]   MassTransit.StateMachineVisualizer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/bin/Debug/net9.0/MassTransit.StateMachineVisualizer.dll
+[2025-05-04 14:24:26] [build-stdout]   MassTransit.Azure.Storage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/bin/Debug/netstandard2.0/MassTransit.Azure.Storage.dll
+[2025-05-04 14:24:36] [build-stdout]   MassTransit.EventHubIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/bin/Debug/net9.0/MassTransit.EventHubIntegration.dll
+[2025-05-04 14:24:36] [build-stdout]   MassTransit.KafkaIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/bin/Debug/netstandard2.0/MassTransit.KafkaIntegration.dll
+[2025-05-04 14:24:41] [build-stdout]   MassTransit.SqlTransport.SqlServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/bin/Debug/netstandard2.0/MassTransit.SqlTransport.SqlServer.dll
+[2025-05-04 14:24:43] [build-stdout]   MassTransit.SqlTransport.PostgreSql -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.PostgreSql/bin/Debug/net9.0/MassTransit.SqlTransport.PostgreSql.dll
+[2025-05-04 14:24:49] [build-stdout]   MassTransit.Azure.Table -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Table/bin/Debug/net9.0/MassTransit.Azure.Table.dll
+[2025-05-04 14:24:49] [build-stdout]   MassTransit.EventHubIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.EventHubIntegration/bin/Debug/netstandard2.0/MassTransit.EventHubIntegration.dll
+[2025-05-04 14:24:53] [build-stdout]   MassTransit.StateMachineVisualizer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/bin/Debug/netstandard2.0/MassTransit.StateMachineVisualizer.dll
+[2025-05-04 14:25:02] [build-stdout]   MassTransit.KafkaIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/bin/Debug/net9.0/MassTransit.KafkaIntegration.dll
+[2025-05-04 14:25:03] [build-stdout]   MassTransit.MongoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.MongoDbIntegration/bin/Debug/netstandard2.1/MassTransit.MongoDbIntegration.dll
+[2025-05-04 14:25:07] [build-stdout]   MassTransit.DapperIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DapperIntegration/bin/Debug/netstandard2.0/MassTransit.DapperIntegration.dll
+[2025-05-04 14:25:07] [build-stdout]   MassTransit.Azure.Storage -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.Azure.Storage/bin/Debug/net9.0/MassTransit.Azure.Storage.dll
+[2025-05-04 14:25:11] [build-stdout]   MassTransit.AmazonS3 -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.AmazonS3/bin/Debug/netstandard2.0/MassTransit.AmazonS3.dll
+[2025-05-04 14:25:13] [build-stdout]   MassTransit.WebJobs.ServiceBusIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/bin/Debug/net9.0/MassTransit.WebJobs.ServiceBusIntegration.dll
+[2025-05-04 14:25:16] [build-stdout]   MassTransit.Interop.NServiceBus -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/bin/Debug/net8.0/MassTransit.Interop.NServiceBus.dll
+[2025-05-04 14:25:20] [build-stdout]   MassTransit.StateMachineVisualizer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.StateMachineVisualizer/bin/Debug/net8.0/MassTransit.StateMachineVisualizer.dll
+[2025-05-04 14:25:20] [build-stdout]   MassTransit.SqlTransport.SqlServer -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.SqlTransport.SqlServer/bin/Debug/net8.0/MassTransit.SqlTransport.SqlServer.dll
+[2025-05-04 14:25:20] [build-stdout]   MassTransit.MessagePack -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.MessagePack/bin/Debug/net8.0/MassTransit.MessagePack.dll
+[2025-05-04 14:25:20] [build-stdout]   MassTransit.AmazonSqsTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.AmazonSqsTransport/bin/Debug/net8.0/MassTransit.AmazonSqsTransport.dll
+[2025-05-04 14:25:20] [build-stdout]   MassTransit.DynamoDbIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.DynamoDbIntegration/bin/Debug/net8.0/MassTransit.DynamoDbIntegration.dll
+[2025-05-04 14:25:20] [build-stdout]   MassTransit.KafkaIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.KafkaIntegration/bin/Debug/net8.0/MassTransit.KafkaIntegration.dll
+[2025-05-04 14:25:20] [build-stdout]   MassTransit.QuartzIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.QuartzIntegration/bin/Debug/net8.0/MassTransit.QuartzIntegration.dll
+[2025-05-04 14:25:20] [build-stdout]   MassTransit.RedisIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Persistence/MassTransit.RedisIntegration/bin/Debug/net8.0/MassTransit.RedisIntegration.dll
+[2025-05-04 14:25:22] [build-stdout]   MassTransit.WebJobs.ServiceBusIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.ServiceBusIntegration/bin/Debug/net8.0/MassTransit.WebJobs.ServiceBusIntegration.dll
+[2025-05-04 14:25:28] [build-stdout]   MassTransit.WebJobs.EventHubsIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/bin/Debug/net8.0/MassTransit.WebJobs.EventHubsIntegration.dll
+[2025-05-04 14:25:32] [build-stdout]   MassTransit.Interop.NServiceBus -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/MassTransit.Interop.NServiceBus/bin/Debug/net9.0/MassTransit.Interop.NServiceBus.dll
+[2025-05-04 14:25:32] [build-stdout]   MassTransit.HangfireIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/bin/Debug/net8.0/MassTransit.HangfireIntegration.dll
+[2025-05-04 14:25:32] [build-stdout]   MassTransit.HangfireIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/bin/Debug/net9.0/MassTransit.HangfireIntegration.dll
+[2025-05-04 14:25:38] [build-stdout]   MassTransit.ActiveMqTransport -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.ActiveMqTransport/bin/Debug/net8.0/MassTransit.ActiveMqTransport.dll
+[2025-05-04 14:25:38] [build-stdout]   MassTransit.WebJobs.EventHubsIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Transports/MassTransit.WebJobs.EventHubsIntegration/bin/Debug/net9.0/MassTransit.WebJobs.EventHubsIntegration.dll
+[2025-05-04 14:25:38] [build-stdout]   MassTransit.HangfireIntegration -> /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo/src/Scheduling/MassTransit.HangfireIntegration/bin/Debug/netstandard2.0/MassTransit.HangfireIntegration.dll
+[2025-05-04 14:25:38] [build-stdout] Build succeeded.
+[2025-05-04 14:25:38] [build-stdout]     0 Warning(s)
+[2025-05-04 14:25:38] [build-stdout]     0 Error(s)
+[2025-05-04 14:25:38] [build-stdout] Time Elapsed 00:09:34.05
+Finalizing database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+Running pre-finalize script /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo.
+Running command in /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/target-repo: [/home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/codeql/csharp/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 98.10 MiB; string pool: 14.03 MiB).
+TRAP import complete (1m15s).
+Finished zipping source archive (17.35 MiB).
+Successfully created database at /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/db.
+-> Schritt 1: Erstelle CodeQL-Datenbank gestartet bei +26584 ms, Dauer: 688767 ms
+
+Schritt 2: Führe Query aus
+Error retrieving qlpack commit hash from Git repository
+Compiling query plan for /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+[1/1 comp 53.6s] Compiled /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/identify-call-paths.ql.
+Starting evaluation of getting-started/codeql-extra-queries-csharp/identify-call-paths.ql.
+[1/1 eval 44m59s] Evaluation done; writing results to /home/runner/work/master-thesis-codeql-perf-test/master-thesis-codeql-perf-test/out.bqrs.
+Shutting down query evaluator.
+-> Schritt 2: Führe Query aus gestartet bei +715352 ms, Dauer: 2760321 ms
+
+Schritt 3: Dekodiere Ergebnisse nach CSV
+-> Schritt 3: Dekodiere Ergebnisse nach CSV gestartet bei +3475674 ms, Dauer: 933 ms
+
+CSV-Ausgabe: MassTransit-MassTransit.results.csv
+Starting up command './run-analysis.sh -s target-repo -l MassTransit.sln -d db -q identify-call-paths.ql -c MassTransit-MassTransit.results.csv' and attaching to process
+Process finished (3476.60 seconds)

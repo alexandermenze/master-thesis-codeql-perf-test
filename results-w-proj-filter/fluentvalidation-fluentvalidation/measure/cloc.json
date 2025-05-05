@@ -1,19 +1,19 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 0.134393930435181,
-  "n_files"            : 216,
-  "n_lines"            : 27124,
-  "files_per_second"   : 1607.21543971942,
-  "lines_per_second"   : 201824.590680322,
+  "elapsed_seconds"    : 0.0806899070739746,
+  "n_files"            : 140,
+  "n_lines"            : 13564,
+  "files_per_second"   : 1735.03731850442,
+  "lines_per_second"   : 168100.329915671,
   "report_file"        : "FluentValidation-FluentValidation.cloc.json"},
 "C#" :{
-  "nFiles": 216,
-  "blank": 4184,
-  "comment": 6229,
-  "code": 16711},
+  "nFiles": 140,
+  "blank": 1802,
+  "comment": 5053,
+  "code": 6709},
 "SUM": {
-  "blank": 4184,
-  "comment": 6229,
-  "code": 16711,
-  "nFiles": 216} }
+  "blank": 1802,
+  "comment": 5053,
+  "code": 6709,
+  "nFiles": 140} }
