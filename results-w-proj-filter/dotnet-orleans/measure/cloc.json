@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 1.35772299766541,
+  "n_files"            : 1561,
+  "n_lines"            : 187353,
+  "files_per_second"   : 1149.7190536539,
+  "lines_per_second"   : 137990.591838064,
+  "report_file"        : "dotnet-orleans.cloc.json"},
+"C#" :{
+  "nFiles": 1561,
+  "blank": 22945,
+  "comment": 34916,
+  "code": 129492},
+"SUM": {
+  "blank": 22945,
+  "comment": 34916,
+  "code": 129492,
+  "nFiles": 1561} }
