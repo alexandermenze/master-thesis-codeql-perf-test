@@ -26,8 +26,20 @@ query predicate isClosestMethod(Method caller, Callable callee) {
   not exists(Method between | edges+(caller, between) and edges+(between, callee))
 }
 
+external predicate methodFilter(string namespace, string type, string name);
+
+predicate isFilteredMethod(Method m) {
+  exists(string namespace, string type, string name |
+    methodFilter(namespace, type, name) and
+    m.getDeclaringType().getNamespace().getFullName().matches(namespace) and
+    m.getDeclaringType().getName().matches(type) and
+    m.getName().matches(name)
+  )
+}
+
 from Callable source, Method sinkCaller, Method sink
 where
+  not isFilteredMethod(sink) and
   not exists(Method m | sink = m |
     m.getOverridee*().hasFullyQualifiedName("System.Object", "ToString") or
     m.getOverridee*().hasFullyQualifiedName("System.Object", "GetHashCode") or
