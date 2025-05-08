@@ -1,0 +1,15 @@
+	Microsoft.AspNetCore.Authentication.AuthenticationHttpContextExtensions.SignInAsync
+	Microsoft.AspNetCore.Authentication.AuthenticationHttpContextExtensions.SignInAsync
+Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging
+	Minio.MinioClientExtensions.WithCredentials
+	Minio.MinioClientExtensions.WithCredentials
+	Minio.MinioClientExtensions.WithEndpoint
+	Minio.MinioClientExtensions.WithEndpoint
+	Minio.MinioClientExtensions.WithSSL
+	Minio.MinioClientExtensions.WithSSL
+	Minio.ServiceCollectionExtensions.AddMinio
+	Minio.ServiceCollectionExtensions.AddMinio
+	StackExchange.Redis.ConnectionMultiplexer.GetDatabase
+	StackExchange.Redis.IConnectionMultiplexer.GetDatabase
+	System.IO.Stream.CopyTo
+	System.IO.Stream.CopyTo
