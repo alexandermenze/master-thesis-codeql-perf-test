@@ -1,0 +1,5 @@
+codeql database create -l csharp -s app-customer-portal -- codeql-db
+
+codeql query run --database codeql-db --output out.bqrs --external methodFilter=filter-sample.csv -- identify-call-paths-with-tags.ql
+
+codeql bqrs decode -r "#select" -o out.csv --format csv -- out.bqrs
