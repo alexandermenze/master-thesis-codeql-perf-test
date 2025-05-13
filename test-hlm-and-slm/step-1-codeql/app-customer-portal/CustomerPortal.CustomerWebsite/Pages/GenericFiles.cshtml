@@ -1,0 +1,43 @@
+@page
+@model CustomerPortal.CustomerWebsite.Pages.GenericFiles
+@{
+    ViewData["Title"] = "Ihre Dateien";
+}
+
+<h1>Ihre Dateien</h1>
+
+@if (Model.Files == null)
+{
+    <p>Lade Dateien…</p>
+}
+else if (!Model.Files.Any())
+{
+    <p>Keine Dateien gefunden.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Dateiname</th>
+                <th>Aktion</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var f in Model.Files)
+        {
+            <tr>
+                <td>@f</td>
+                <td>
+                    <form method="post" asp-page-handler="Download">
+                        <input type="hidden" name="fileName" value="@f" />
+                        <button type="submit" class="btn btn-sm btn-outline-primary">
+                            Download
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

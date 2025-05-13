@@ -1,0 +1,25 @@
+@page
+@model CustomerPortal.CustomerWebsite.Pages.GeneratePriceList
+@{
+    ViewData["Title"] = "Preisliste generieren";
+}
+
+<h1>Neue Preisliste anlegen</h1>
+
+<form method="post" class="form-horizontal">
+    <div class="form-group mb-3">
+        <label asp-for="SalesOrg" class="form-label">Sales Org</label>
+        <input asp-for="SalesOrg" class="form-control"/>
+        <span asp-validation-for="SalesOrg" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="PriceDate" class="form-label">Price Date</label>
+        <input asp-for="PriceDate" type="date" class="form-control"/>
+        <span asp-validation-for="PriceDate" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Absenden</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}

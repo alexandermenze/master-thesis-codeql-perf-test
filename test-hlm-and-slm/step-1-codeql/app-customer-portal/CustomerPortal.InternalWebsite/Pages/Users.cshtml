@@ -1,0 +1,63 @@
+@page
+@model CustomerPortal.InternalWebsite.Pages.Users
+@{
+    ViewData["Title"] = "Nutzerverwaltung";
+}
+
+<h1>Nutzerverwaltung</h1>
+
+@if (Model.AllUsers.IsEmpty)
+{
+    <p>Keine Nutzer vorhanden.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>E-Mail</th>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Rolle</th>
+            <th>CustomerNo</th>
+            <th>Status</th>
+            <th>Aktion</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var user in Model.AllUsers)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Email</td>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@user.Role</td>
+                <td>@user.CustomerNo</td>
+                <td>@user.State</td>
+                <td>
+                    @if (user.State is "Approved")
+                    {
+                        <form method="post" asp-page-handler="Deactivate">
+                            <input type="hidden" name="id" value="@user.Id"/>
+                            <button type="submit" class="btn btn-sm btn-warning">
+                                Deaktivieren
+                            </button>
+                        </form>
+                    }
+                    @if (user.State is "Deactivated")
+                    {
+                        <form method="post" asp-page-handler="Approve">
+                            <input type="hidden" name="id" value="@user.Id"/>
+                            <button type="submit" class="btn btn-sm btn-warning">
+                                Aktivieren
+                            </button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

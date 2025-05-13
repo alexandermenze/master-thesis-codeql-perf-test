@@ -1,0 +1,43 @@
+@page
+@model CustomerPortal.CustomerWebsite.Pages.PriceLists
+@{
+    ViewData["Title"] = "Preislisten";
+}
+
+<head>
+    <meta http-equiv="refresh" content="2" />
+</head>
+
+<h1>Aufgabenübersicht</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Task ID</th>
+            <th>Erstellt am</th>
+            <th>Beschreibung</th>
+            <th>Aktion</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var task in Model.TaskViewModels)
+    {
+        <tr>
+            <td>@task.Id</td>
+            <td>@task.FirstCreatedAt.ToLocalTime().ToString("dd.MM.yyyy HH:mm")</td>
+            <td>@task.LastDescription</td>
+            <td>
+                @if (task.HasDownload)
+                {
+                    <form method="post" asp-page-handler="Download">
+                        <input type="hidden" name="id" value="@task.Id" />
+                        <button type="submit" class="btn btn-sm btn-primary">
+                            Download
+                        </button>
+                    </form>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+@page
+@model RegisterModel
+@{
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <div>@successMessage</div>
+}
+<form method="post">
+    <div asp-validation-summary="All" class="validation-summary-errors"></div>
+    <div>
+        <label asp-for="Input.Email"></label>
+        <input asp-for="Input.Email"/>
+    </div>
+    <div>
+        <label asp-for="Input.FirstName"></label>
+        <input asp-for="Input.FirstName"/>
+    </div>
+    <div>
+        <label asp-for="Input.LastName"></label>
+        <input asp-for="Input.LastName"/>
+    </div>
+    <div>
+        <label asp-for="Input.Password"></label>
+        <input asp-for="Input.Password" type="password"/>
+    </div>
+    <div>
+        <label asp-for="Input.Role"></label>
+        <input asp-for="Input.Role"/>
+    </div>
+    <button type="submit">Register</button>
+</form>
