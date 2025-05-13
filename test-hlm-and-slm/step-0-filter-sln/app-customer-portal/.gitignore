@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,csharp,dotnetcore,rider,visualstudio
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,csharp,dotnetcore,rider,visualstudio
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,rider,dotnetcore,csharp
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,visualstudiocode,rider,dotnetcore,csharp
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -681,4 +681,4 @@ fabric.properties
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,csharp,dotnetcore,rider,visualstudio
+# End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,rider,dotnetcore,csharp

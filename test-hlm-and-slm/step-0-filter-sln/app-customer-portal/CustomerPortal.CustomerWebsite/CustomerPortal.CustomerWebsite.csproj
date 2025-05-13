@@ -14,12 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="StackExchange.Redis">
-      <HintPath>..\..\..\..\..\..\.nuget\packages\stackexchange.redis\2.8.31\lib\net8.0\StackExchange.Redis.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Minio" Version="6.0.4" />
     <PackageReference Include="StackExchange.Redis" Version="2.8.31" />
     <PackageReference Include="System.Linq.Async" Version="6.0.1" />

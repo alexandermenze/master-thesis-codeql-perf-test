@@ -13,9 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Minio">
-      <HintPath>..\..\..\..\..\..\.nuget\packages\minio\6.0.4\lib\net8.0\Minio.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Minio" Version="6.0.4" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.31" />
   </ItemGroup>
 
 </Project>
