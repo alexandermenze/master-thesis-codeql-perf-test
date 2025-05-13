@@ -1,0 +1,32 @@
+@page
+@model CustomerPortal.InternalWebsite.Pages.UploadCustomerFile
+@{
+    ViewData["Title"] = "Kundendatei hochladen";
+}
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div class="alert alert-success" role="alert">
+        @Model.Message
+    </div>
+}
+
+<h1>Kundendatei hochladen</h1>
+
+<form method="post" enctype="multipart/form-data" class="form-horizontal">
+    <div class="mb-3">
+        <label asp-for="CustomerNo" class="form-label">Kundennummer</label>
+        <input asp-for="CustomerNo" class="form-control"/>
+        <span asp-validation-for="CustomerNo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Upload" class="form-label">Datei</label>
+        <input asp-for="Upload" type="file" class="form-control"/>
+        <span asp-validation-for="Upload" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Hochladen</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}
