@@ -1,0 +1,4 @@
+name: getting-started/codeql-extra-queries-csharp
+version: 0.0.0
+dependencies:
+  codeql/csharp-all: "*"
