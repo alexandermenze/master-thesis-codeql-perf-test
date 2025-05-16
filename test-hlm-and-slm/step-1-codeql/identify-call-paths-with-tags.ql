@@ -68,5 +68,5 @@ where
   processName = Mappings::getProcessNameOrEmpty(source) and
   dataflowName = findDataflowName(source, sink) and
   dataflowMethodName = findDataflowMethodNameOrEmpty(source, sink)
-select source.getFullyQualifiedNameDebug(), sinkCaller.getFullyQualifiedNameDebug(),
-  sink.getFullyQualifiedNameDebug(), processName, dataflowName, dataflowMethodName
+select source.getFullyQualifiedNameDebug() as entrypoint, sinkCaller.getFullyQualifiedNameDebug() as internalcall,
+  sink.getFullyQualifiedNameDebug() as externalcall, processName, dataflowName, dataflowMethodName
