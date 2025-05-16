@@ -1,3 +1,9 @@
+rm -rf app-customer-portal
+
+mkdir app-customer-portal
+
+cp -r ~/repos/master-thesis/research/app-customer-portal/src/* app-customer-portal
+
 codeql database create -l csharp -s app-customer-portal -- codeql-db
 
 codeql query run --database codeql-db --output out.bqrs --external methodFilter=filter-sample.csv -- identify-call-paths-with-tags.ql
