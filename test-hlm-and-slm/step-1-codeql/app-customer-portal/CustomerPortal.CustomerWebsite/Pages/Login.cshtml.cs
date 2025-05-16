@@ -28,7 +28,6 @@ public class Login(IHttpClientFactory httpClientFactory) : PageModel
     }
 
     [ThreatModelProcess("customer-website-auth")]
-    [InboundFlow("login-customer")]
     public async Task<IActionResult> OnPostAsync()
     {
         if (!ModelState.IsValid)

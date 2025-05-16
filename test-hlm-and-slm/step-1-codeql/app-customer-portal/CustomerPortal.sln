@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThreatModel", "ThreatModel"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerPortal.ThreatModel", "CustomerPortal.ThreatModel\CustomerPortal.ThreatModel.csproj", "{02AD97B3-7E7A-4D0A-8E90-EDDBCD57F690}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerPortal.UserAuthService.Domain.Test", "CustomerPortal.UserAuthService.Domain.Test\CustomerPortal.UserAuthService.Domain.Test.csproj", "{7AE5371E-C80A-4AA8-9175-7CC43E20F180}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,18 @@ Global
 		{02AD97B3-7E7A-4D0A-8E90-EDDBCD57F690}.Release|x64.Build.0 = Release|Any CPU
 		{02AD97B3-7E7A-4D0A-8E90-EDDBCD57F690}.Release|x86.ActiveCfg = Release|Any CPU
 		{02AD97B3-7E7A-4D0A-8E90-EDDBCD57F690}.Release|x86.Build.0 = Release|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Debug|x64.Build.0 = Debug|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Debug|x86.Build.0 = Debug|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Release|x64.ActiveCfg = Release|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Release|x64.Build.0 = Release|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Release|x86.ActiveCfg = Release|Any CPU
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -178,5 +192,6 @@ Global
 		{966BCBB3-D222-4C63-B506-933A0C30BF91} = {19F12CBC-F5AB-4A09-A253-75D3EB125992}
 		{D042E569-6CED-4328-AF00-273F591841E8} = {A555F0AA-9896-4C21-87E5-06B877D1A7B6}
 		{02AD97B3-7E7A-4D0A-8E90-EDDBCD57F690} = {A555F0AA-9896-4C21-87E5-06B877D1A7B6}
+		{7AE5371E-C80A-4AA8-9175-7CC43E20F180} = {5BC5E40E-E38D-4DF6-9D29-0B74FC98FAD4}
 	EndGlobalSection
 EndGlobal

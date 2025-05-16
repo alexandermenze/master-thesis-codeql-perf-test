@@ -48,7 +48,7 @@ public class UploadCustomerFile(
         await using var stream = Upload.OpenReadStream();
 
         await Push(
-            "upload-to-minio",
+            "store-customer-file",
             async () =>
             {
                 var putArgs = new PutObjectArgs()
@@ -62,11 +62,17 @@ public class UploadCustomerFile(
             }
         );
 
-        logger.LogInformation(
-            "File {FilePath} was uploaded by {UserId} for customer {CustomerNo}",
-            filePath,
-            currentUser.Id,
-            CustomerNo
+        Push(
+            "log-customer-file-upload",
+            () =>
+            {
+                logger.LogInformation(
+                    "File {FilePath} was uploaded by {UserId} for customer {CustomerNo}",
+                    filePath,
+                    currentUser.Id,
+                    CustomerNo
+                );
+            }
         );
 
         Message = $"Datei {fileName} wurde erfolgreich für Nutzer {CustomerNo} hochgeladen.";
