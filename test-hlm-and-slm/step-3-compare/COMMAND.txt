@@ -1,0 +1,1 @@
+~/repos/master-thesis/research/tm-reflexion-modeling/src/TMReflexionModeling.App/bin/Debug/net9.0/TMReflexionModeling.App --hlm ../step-2-td-extractor/td-out.csv --slm ../step-1-codeql/out.csv -o rm-out.csv
