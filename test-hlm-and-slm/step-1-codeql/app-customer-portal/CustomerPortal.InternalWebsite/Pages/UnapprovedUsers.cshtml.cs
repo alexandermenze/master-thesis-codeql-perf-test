@@ -4,6 +4,7 @@ using System.Text.Json;
 using CustomerPortal.InternalWebsite.Models;
 using CustomerPortal.Messages.Dtos;
 using Microsoft.AspNetCore.Mvc;
+using ThreatModel.Attributes;
 
 namespace CustomerPortal.InternalWebsite.Pages;
 
@@ -18,6 +19,7 @@ public class UnapprovedUsers(ILogger<UnapprovedUsers> logger, IHttpClientFactory
     [BindProperty(Name = "ApproveCustomerNo")]
     public int ApproveCustomerNo { get; set; }
 
+    [ThreatModelProcess("sales-dept-website")]
     public async Task<IActionResult> OnGetAsync()
     {
         var bearerToken = User.FindFirst("BearerToken")?.Value;
@@ -63,6 +65,7 @@ public class UnapprovedUsers(ILogger<UnapprovedUsers> logger, IHttpClientFactory
         return Page();
     }
 
+    [ThreatModelProcess("sales-dept-website")]
     public async Task<IActionResult> OnPostApproveAsync(Guid id)
     {
         var bearerToken = User.FindFirst("BearerToken")?.Value;
@@ -74,9 +77,14 @@ public class UnapprovedUsers(ILogger<UnapprovedUsers> logger, IHttpClientFactory
             "Bearer",
             bearerToken
         );
-        var response = await _httpClient.PostAsJsonAsync(
-            $"/users/{id}/approve",
-            new { CustomerNo = ApproveCustomerNo }
+
+        var response = await Push(
+            "approve-user",
+            () =>
+                _httpClient.PostAsJsonAsync(
+                    $"/users/{id}/approve",
+                    new { CustomerNo = ApproveCustomerNo }
+                )
         );
 
         if (response.IsSuccessStatusCode)

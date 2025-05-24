@@ -24,10 +24,14 @@ public class UserManagementService(
         candidate.Approve(customerNo);
         await userRepository.Save(candidate);
 
-        logger.LogInformation(
-            "Candidate {CandidateId} was approved by {ApproverId}.",
-            candidateGuid,
-            approverGuid
+        Push(
+            "log-user-management",
+            () =>
+                logger.LogInformation(
+                    "Candidate {CandidateId} was approved by {ApproverId}.",
+                    candidateGuid,
+                    approverGuid
+                )
         );
 
         return candidate;
@@ -47,10 +51,14 @@ public class UserManagementService(
         candidate.Deactivate();
         await userRepository.Save(candidate);
 
-        logger.LogInformation(
-            "User {CandidateId} was deactivated by {UserId}.",
-            candidateGuid,
-            deactivatingPartyGuid
+        Push(
+            "log-user-management",
+            () =>
+                logger.LogInformation(
+                    "User {CandidateId} was deactivated by {UserId}.",
+                    candidateGuid,
+                    deactivatingPartyGuid
+                )
         );
 
         return candidate;

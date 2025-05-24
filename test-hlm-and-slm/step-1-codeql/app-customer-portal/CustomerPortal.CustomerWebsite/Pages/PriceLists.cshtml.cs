@@ -90,11 +90,15 @@ public class PriceLists(
 
         var memoryStream = new MemoryStream();
 
-        await minio.GetObjectAsync(
-            new GetObjectArgs()
-                .WithBucket(minioConfig.BucketName)
-                .WithObject(filePath)
-                .WithCallbackStream(stream => stream.CopyTo(memoryStream))
+        await Pull(
+            "get-customer-file-content",
+            () =>
+                minio.GetObjectAsync(
+                    new GetObjectArgs()
+                        .WithBucket(minioConfig.BucketName)
+                        .WithObject(filePath)
+                        .WithCallbackStream(stream => stream.CopyTo(memoryStream))
+                )
         );
 
         var fileName = Path.GetFileName(filePath);
@@ -102,10 +106,14 @@ public class PriceLists(
         memoryStream.Position = 0;
         const string contentType = "application/pdf";
 
-        logger.LogInformation(
-            "Price list {FilePath} downloaded by user {UserId}",
-            filePath,
-            currentUser.Id
+        Push(
+            "log-customer-file-download",
+            () =>
+                logger.LogInformation(
+                    "Price list {FilePath} downloaded by user {UserId}",
+                    filePath,
+                    currentUser.Id
+                )
         );
 
         return File(memoryStream, contentType, fileName);
@@ -113,7 +121,10 @@ public class PriceLists(
 
     private async Task<Dictionary<Guid, TaskStatus>> GetUserTasks(int customerNo)
     {
-        var entries = await redis.GetDatabase().StreamReadAsync(redisConfig.TasksStreamName, "0-0");
+        var entries = await Pull(
+            "get-customer-tasks",
+            () => redis.GetDatabase().StreamReadAsync(redisConfig.TasksStreamName, "0-0")
+        );
 
         var state = new Dictionary<Guid, TaskStatus>();
 

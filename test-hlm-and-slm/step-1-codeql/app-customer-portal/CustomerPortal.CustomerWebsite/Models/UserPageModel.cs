@@ -29,7 +29,10 @@ public class UserPageModel(ILogger logger, IHttpClientFactory httpClientFactory)
                 token
             );
 
-            return await _httpClient.GetFromJsonAsync<UserResponseDto>("users/me");
+            return await Pull(
+                "get-logged-in-customer",
+                () => _httpClient.GetFromJsonAsync<UserResponseDto>("users/me")
+            );
         }
         catch (Exception ex)
         {

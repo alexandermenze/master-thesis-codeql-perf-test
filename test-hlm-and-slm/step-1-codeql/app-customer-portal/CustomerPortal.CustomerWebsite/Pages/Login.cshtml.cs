@@ -33,7 +33,10 @@ public class Login(IHttpClientFactory httpClientFactory) : PageModel
         if (!ModelState.IsValid)
             return Page();
 
-        var response = await _httpClient.PostAsJsonAsync("users/login", Input);
+        var response = await Push(
+            "login-customer",
+            () => _httpClient.PostAsJsonAsync("users/login", Input)
+        );
 
         if (response.IsSuccessStatusCode)
         {

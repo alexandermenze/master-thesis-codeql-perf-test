@@ -29,6 +29,9 @@ public class SuperAdminSetupService(
 
         await userRepository.Save(user);
 
-        logger.LogInformation("Super admin was setup or reconfigured successfully.");
+        Push(
+            "log-user-management",
+            () => logger.LogInformation("Super admin was setup or reconfigured successfully.")
+        );
     }
 }

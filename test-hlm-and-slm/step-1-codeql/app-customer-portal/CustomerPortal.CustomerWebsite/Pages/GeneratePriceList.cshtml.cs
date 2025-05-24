@@ -54,14 +54,18 @@ public class GeneratePriceList(
         };
 
         await Push(
-            "tasks-stream-add",
+            "create-pricelist-generation-task",
             () => db.StreamAddAsync(redisConfig.TasksStreamName, fields)
         );
 
-        logger.LogInformation(
-            "Price list generation triggered for customer {CustomerNo} by user {UserId}",
-            currentUser.CustomerNo.Value,
-            currentUser.Id
+        Push(
+            "log-pricelist-gen-triggered",
+            () =>
+                logger.LogInformation(
+                    "Price list generation triggered for customer {CustomerNo} by user {UserId}",
+                    currentUser.CustomerNo.Value,
+                    currentUser.Id
+                )
         );
 
         return RedirectToPage("Tasks");

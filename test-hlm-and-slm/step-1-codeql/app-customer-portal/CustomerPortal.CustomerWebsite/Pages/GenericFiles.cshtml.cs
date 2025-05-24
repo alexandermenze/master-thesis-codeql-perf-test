@@ -32,11 +32,15 @@ public class GenericFiles(
             .WithPrefix(filePrefix)
             .WithRecursive(false);
 
-        var files = await minio
-            .ListObjectsEnumAsync(args)
-            .Where(o => o.IsDir is false)
-            .Select(obj => obj.Key)
-            .ToListAsync();
+        var files = await Pull(
+            "get-customer-file-list",
+            () =>
+                minio
+                    .ListObjectsEnumAsync(args)
+                    .Where(o => o.IsDir is false)
+                    .Select(obj => obj.Key)
+                    .ToListAsync()
+        );
 
         var fileNames = files.Select(Path.GetFileName).Where(f => f is not null).Select(f => f!);
 
@@ -60,20 +64,28 @@ public class GenericFiles(
 
         var memoryStream = new MemoryStream();
 
-        await minio.GetObjectAsync(
-            new GetObjectArgs()
-                .WithBucket(minioConfig.BucketName)
-                .WithObject(filePath)
-                .WithCallbackStream(s => s.CopyTo(memoryStream))
+        await Pull(
+            "get-customer-file-content",
+            () =>
+                minio.GetObjectAsync(
+                    new GetObjectArgs()
+                        .WithBucket(minioConfig.BucketName)
+                        .WithObject(filePath)
+                        .WithCallbackStream(s => s.CopyTo(memoryStream))
+                )
         );
 
         memoryStream.Position = 0;
         var downloadName = Path.GetFileName(filePath);
 
-        logger.LogInformation(
-            "Generic file {FilePath} downloaded by user {UserId}",
-            filePath,
-            currentUser.Id
+        Push(
+            "log-customer-file-download",
+            () =>
+                logger.LogInformation(
+                    "Generic file {FilePath} downloaded by user {UserId}",
+                    filePath,
+                    currentUser.Id
+                )
         );
 
         return File(memoryStream, "application/octet-stream", downloadName);

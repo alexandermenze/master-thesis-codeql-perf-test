@@ -25,6 +25,7 @@ public class UserController(
     [HttpGet]
     [Authorize(Policies.AtLeastSalesDepartment)]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<UserResponseDto>))]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> GetUsers()
     {
         var users = await userRepository.GetAll();
@@ -35,6 +36,7 @@ public class UserController(
     [HttpGet("unapproved")]
     [Authorize(Policies.AtLeastSalesDepartment)]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<UserResponseDto>))]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> GetUnapprovedUsers()
     {
         var users = await userRepository.GetAllPendingApproval();
@@ -45,6 +47,7 @@ public class UserController(
     [HttpGet("me")]
     [Authorize(Policies.AtLeastCustomer)]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<UserResponseDto>))]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> GetMe()
     {
         var currentUserGuidString = HttpContext
@@ -63,6 +66,7 @@ public class UserController(
     [Authorize(Policies.AtLeastSalesDepartment)]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserResponseDto))]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> Get(Guid id)
     {
         var user = await userRepository.GetById(id);
@@ -79,6 +83,7 @@ public class UserController(
     [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(UserResponseDto))]
     [ProducesResponseType(StatusCodes.Status409Conflict, Type = typeof(ProblemDetails))]
     [ProducesResponseType(StatusCodes.Status422UnprocessableEntity, Type = typeof(ProblemDetails))]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> Register([FromBody] RegisterUserData data)
     {
         var user = await registerUserService.RegisterExternal(data);
@@ -91,6 +96,7 @@ public class UserController(
     [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(UserResponseDto))]
     [ProducesResponseType(StatusCodes.Status409Conflict, Type = typeof(ProblemDetails))]
     [ProducesResponseType(StatusCodes.Status422UnprocessableEntity, Type = typeof(ProblemDetails))]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> RegisterCustomer([FromBody] RegisterCustomerUserDto dto)
     {
         var user = await registerUserService.RegisterExternal(
@@ -110,6 +116,7 @@ public class UserController(
     [AllowAnonymous]
     [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(TokenResponseDto))]
     [ProducesResponseType(StatusCodes.Status422UnprocessableEntity, Type = typeof(ProblemDetails))]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> Login([FromBody] LoginRequestDto data)
     {
         var result = await authenticateUserService.Login(data.Email, data.Password);
@@ -127,6 +134,7 @@ public class UserController(
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserResponseDto))]
     [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ProblemDetails))]
     [ProducesResponseType(StatusCodes.Status422UnprocessableEntity, Type = typeof(ProblemDetails))]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> Approve(Guid id, ApproveCustomerDto dto)
     {
         var currentUserGuidString = HttpContext
@@ -145,6 +153,7 @@ public class UserController(
     [Authorize(Policies.AtLeastAdmin)]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UserResponseDto))]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ThreatModelProcess("user-auth-service")]
     public async Task<IActionResult> Deactivate(Guid id)
     {
         var currentUserGuidString = HttpContext

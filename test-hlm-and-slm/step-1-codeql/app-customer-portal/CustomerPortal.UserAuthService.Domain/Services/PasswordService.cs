@@ -24,13 +24,18 @@ public class PasswordService(
         {
             PasswordVerificationResult.Success => true,
             PasswordVerificationResult.SuccessRehashNeeded => LogAndAccept(),
-            PasswordVerificationResult.Failed => false,
             _ => false,
         };
 
         bool LogAndAccept()
         {
-            logger.LogWarning("Outdated password hashing algorithm detected. Implement rehash.");
+            Push(
+                "log-user-auth-events",
+                () =>
+                    logger.LogWarning(
+                        "Outdated password hashing algorithm detected. Implement rehash."
+                    )
+            );
             return true;
         }
     }

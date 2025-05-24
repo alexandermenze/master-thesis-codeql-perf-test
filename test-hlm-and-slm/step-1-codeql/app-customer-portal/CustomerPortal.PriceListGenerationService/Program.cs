@@ -10,7 +10,7 @@ namespace CustomerPortal.PriceListGenerationService;
 
 public static class Program
 {
-    [ThreatModelProcess("PriceListGenerationService")]
+    [ThreatModelProcess("pricelist-generation-service")]
     public static async Task Main()
     {
         var config = new ConfigurationBuilder()

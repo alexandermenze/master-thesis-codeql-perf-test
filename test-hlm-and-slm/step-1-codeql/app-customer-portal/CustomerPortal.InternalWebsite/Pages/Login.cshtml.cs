@@ -6,6 +6,7 @@ using CustomerPortal.Messages.Dtos;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using ThreatModel.Attributes;
 
 namespace CustomerPortal.InternalWebsite.Pages;
 
@@ -25,12 +26,16 @@ public class Login(ILogger<Login> logger, IHttpClientFactory httpClientFactory)
         public string? Password { get; set; }
     }
 
+    [ThreatModelProcess("sales-dept-website")]
     public async Task<IActionResult> OnPostAsync()
     {
         if (!ModelState.IsValid)
             return Page();
 
-        var response = await _httpClient.PostAsJsonAsync("users/login", Input);
+        var response = await Push(
+            "authenticate-internal-user",
+            () => _httpClient.PostAsJsonAsync("users/login", Input)
+        );
 
         if (response.IsSuccessStatusCode)
         {

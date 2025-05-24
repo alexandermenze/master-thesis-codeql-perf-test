@@ -1,6 +1,7 @@
 using CustomerPortal.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using ThreatModel.Attributes;
 
 namespace CustomerPortal.InternalWebsite.Pages;
 
@@ -20,12 +21,16 @@ public class RegisterModel(IHttpClientFactory httpClientFactory) : PageModel
     [BindProperty]
     public InputModel Input { get; set; } = new();
 
+    [ThreatModelProcess("sales-dept-website")]
     public async Task<IActionResult> OnPostAsync()
     {
         if (!ModelState.IsValid)
             return Page();
 
-        var response = await _httpClient.PostAsJsonAsync("users/register", Input);
+        var response = await Push(
+            "register-internal-user",
+            () => _httpClient.PostAsJsonAsync("users/register", Input)
+        );
 
         if (response.IsSuccessStatusCode)
         {

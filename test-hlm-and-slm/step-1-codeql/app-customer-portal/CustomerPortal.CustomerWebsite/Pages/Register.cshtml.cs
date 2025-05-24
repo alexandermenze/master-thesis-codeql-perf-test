@@ -21,13 +21,15 @@ public class RegisterModel(IHttpClientFactory httpClientFactory) : PageModel
     public InputModel Input { get; set; } = new();
 
     [ThreatModelProcess("customer-website-auth")]
-    [InboundFlow("register-as-customer")]
     public async Task<IActionResult> OnPostAsync()
     {
         if (!ModelState.IsValid)
             return Page();
 
-        var response = await _httpClient.PostAsJsonAsync("users/register-customer", Input);
+        var response = await Push(
+            "register-as-customer",
+            () => _httpClient.PostAsJsonAsync("users/register-customer", Input)
+        );
 
         if (response.IsSuccessStatusCode)
         {

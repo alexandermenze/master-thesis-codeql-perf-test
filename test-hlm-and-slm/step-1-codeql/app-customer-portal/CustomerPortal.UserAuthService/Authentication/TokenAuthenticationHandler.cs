@@ -6,6 +6,7 @@ using CustomerPortal.UserAuthService.Domain.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
+using ThreatModel.Attributes;
 
 namespace CustomerPortal.UserAuthService.Authentication;
 
@@ -17,6 +18,7 @@ public class TokenAuthenticationHandler(
     IUserRepository userRepository
 ) : AuthenticationHandler<TokenAuthSchemeOptions>(options, loggerFactory, encoder)
 {
+    [ThreatModelProcess("user-auth-service")]
     protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
     {
         if (Request.Headers.TryGetValue(HeaderNames.Authorization, out var value) is false)

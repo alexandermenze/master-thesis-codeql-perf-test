@@ -3,6 +3,7 @@ using System.Net.Http.Headers;
 using CustomerPortal.InternalWebsite.Models;
 using CustomerPortal.Messages.Dtos;
 using Microsoft.AspNetCore.Mvc;
+using ThreatModel.Attributes;
 
 namespace CustomerPortal.InternalWebsite.Pages;
 
@@ -13,6 +14,7 @@ public class Users(ILogger<Users> logger, IHttpClientFactory httpClientFactory)
 
     public ImmutableArray<UserResponseDto> AllUsers { get; set; } = [];
 
+    [ThreatModelProcess("sales-dept-website")]
     public async Task<IActionResult> OnGet()
     {
         var bearerToken = User.FindFirst("BearerToken")?.Value;
@@ -31,6 +33,7 @@ public class Users(ILogger<Users> logger, IHttpClientFactory httpClientFactory)
         return Page();
     }
 
+    [ThreatModelProcess("sales-dept-website")]
     public async Task<IActionResult> OnPostDeactivateAsync(Guid id)
     {
         var bearerToken = User.FindFirst("BearerToken")?.Value;
